@@ -25,6 +25,7 @@ class FieldPanels : public CCArray{
     PanelSprite* createPanel(int indexX, int indexY);
     CCNode* parentNode;
     GroupManager* groupManager;
+    PanelSprite* tapped;
 public:
     void initialize(CCNode* parentNode); //明示的に初期化処理を呼ぶ。
     void restockPanel(CCNode* parentNode);
@@ -39,8 +40,12 @@ public:
     
     void makeRemovedGroups();
     
+    void setTappedPanel(PanelSprite* tapped);
+    PanelSprite* getTappedPanel();
+    
     static FieldPanels* create();
     bool isMoving();
+    void swap(PanelSprite* panel1, PanelSprite* panel2);
     
     FieldPanels();
     ~FieldPanels();

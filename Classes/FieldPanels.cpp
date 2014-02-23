@@ -132,6 +132,10 @@ void FieldPanels::removePanels(){
         if(panel->getWillRemoved()){
             panel->remove();
             this->pushRemovedPanel(panel);
+            if(tapped == panel){
+                this->tapped = NULL;
+            }
+                
             removedIndexes->addObject(CCInteger::create(count));
         }
         count++;
@@ -173,6 +177,13 @@ void FieldPanels::makeRemovedGroups(){
 }
 
 
+void FieldPanels::setTappedPanel(PanelSprite *tapped){
+    this->tapped = tapped;
+}
+
+PanelSprite* FieldPanels::getTappedPanel(){
+    return this->tapped;
+}
 
 void FieldPanels::setMoves(){
     //if(moveState){
@@ -215,4 +226,17 @@ void FieldPanels::update(){
 
 bool FieldPanels::isMoving(){
     return this->moveState;
+}
+
+
+void FieldPanels::swap(PanelSprite *panel1, PanelSprite *panel2){
+    if(panel1 == NULL || panel2 == NULL){
+        return;
+    }
+    //後でリッチにしてもええかもな。
+    CCPoint pos1 = panel1->getPosition();
+    CCPoint pos2 = panel2->getPosition();
+    
+    panel1->setPosition(pos2);
+    panel2->setPosition(pos1);
 }

@@ -20,10 +20,11 @@ class Field : public CCNode
 {
     CCNode* parentNode;
     FieldPanels* panels;
+    PanelSprite* tapped;
 public:
     void initialize();
     void onTouchBegan(const CCPoint &tap);
-    void onTouchMove(CCTouch* touch);
+    void onTouchMove(const CCPoint &tap);
     void onTouchEnded(CCTouch* touch);
     void update();
     void test();

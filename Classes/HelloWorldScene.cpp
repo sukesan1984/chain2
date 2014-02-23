@@ -115,6 +115,7 @@ void HelloWorld::ccTouchesMoved(CCSet* pTouches, CCEvent* event){
         touch = (CCTouch*) (*i);
         if(touch) {
             loc = touch->getLocation();
+            this->field->onTouchMove(loc - FIELD_START_AT);
         }
     }
 }
