@@ -175,6 +175,15 @@
 		25F39A9318B8C219001A10BB /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F39A9218B8C219001A10BB /* AdSupport.framework */; };
 		25F39A9518B8C227001A10BB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F39A9418B8C227001A10BB /* StoreKit.framework */; };
 		25F39A9818B8C430001A10BB /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F39A9718B8C430001A10BB /* libGoogleAdMobAds.a */; };
+		25F39AA718B8C7A6001A10BB /* CoverSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25F39A9B18B8C7A6001A10BB /* CoverSprite.cpp */; };
+		25F39AA818B8C7A6001A10BB /* Field.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25F39A9D18B8C7A6001A10BB /* Field.cpp */; };
+		25F39AA918B8C7A6001A10BB /* FieldPanels.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25F39A9F18B8C7A6001A10BB /* FieldPanels.cpp */; };
+		25F39AAA18B8C7A6001A10BB /* Group.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25F39AA118B8C7A6001A10BB /* Group.cpp */; };
+		25F39AAB18B8C7A6001A10BB /* GroupAddress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25F39AA318B8C7A6001A10BB /* GroupAddress.cpp */; };
+		25F39AAC18B8C7A6001A10BB /* GroupManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25F39AA518B8C7A6001A10BB /* GroupManager.cpp */; };
+		25F39AB018B8C7ED001A10BB /* PanelSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25F39AAE18B8C7ED001A10BB /* PanelSprite.cpp */; };
+		25F39AB318B8C882001A10BB /* panels.plist in Resources */ = {isa = PBXBuildFile; fileRef = 25F39AB118B8C882001A10BB /* panels.plist */; };
+		25F39AB418B8C882001A10BB /* panels.png in Resources */ = {isa = PBXBuildFile; fileRef = 25F39AB218B8C882001A10BB /* panels.png */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		375BD4C31868411B0024609E /* ObjectFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 375BD4BB1868411B0024609E /* ObjectFactory.cpp */; };
 		375BD4C41868411B0024609E /* TriggerBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 375BD4BD1868411B0024609E /* TriggerBase.cpp */; };
@@ -600,6 +609,23 @@
 		25F39A9218B8C219001A10BB /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		25F39A9418B8C227001A10BB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		25F39A9718B8C430001A10BB /* libGoogleAdMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAdMobAds.a; path = GoogleAdMobAdsSdk/libGoogleAdMobAds.a; sourceTree = "<group>"; };
+		25F39A9A18B8C7A6001A10BB /* Const.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Const.h; sourceTree = "<group>"; };
+		25F39A9B18B8C7A6001A10BB /* CoverSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CoverSprite.cpp; sourceTree = "<group>"; };
+		25F39A9C18B8C7A6001A10BB /* CoverSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoverSprite.h; sourceTree = "<group>"; };
+		25F39A9D18B8C7A6001A10BB /* Field.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Field.cpp; sourceTree = "<group>"; };
+		25F39A9E18B8C7A6001A10BB /* Field.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Field.h; sourceTree = "<group>"; };
+		25F39A9F18B8C7A6001A10BB /* FieldPanels.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FieldPanels.cpp; sourceTree = "<group>"; };
+		25F39AA018B8C7A6001A10BB /* FieldPanels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldPanels.h; sourceTree = "<group>"; };
+		25F39AA118B8C7A6001A10BB /* Group.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Group.cpp; sourceTree = "<group>"; };
+		25F39AA218B8C7A6001A10BB /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
+		25F39AA318B8C7A6001A10BB /* GroupAddress.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GroupAddress.cpp; sourceTree = "<group>"; };
+		25F39AA418B8C7A6001A10BB /* GroupAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupAddress.h; sourceTree = "<group>"; };
+		25F39AA518B8C7A6001A10BB /* GroupManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GroupManager.cpp; sourceTree = "<group>"; };
+		25F39AA618B8C7A6001A10BB /* GroupManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupManager.h; sourceTree = "<group>"; };
+		25F39AAE18B8C7ED001A10BB /* PanelSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PanelSprite.cpp; sourceTree = "<group>"; };
+		25F39AAF18B8C7ED001A10BB /* PanelSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanelSprite.h; sourceTree = "<group>"; };
+		25F39AB118B8C882001A10BB /* panels.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = panels.plist; sourceTree = "<group>"; };
+		25F39AB218B8C882001A10BB /* panels.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = panels.png; sourceTree = "<group>"; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		373B911F18788FB000198F86 /* CCComBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCComBase.h; sourceTree = "<group>"; };
 		375BD4BB1868411B0024609E /* ObjectFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObjectFactory.cpp; sourceTree = "<group>"; };
@@ -1265,6 +1291,18 @@
 		15AA9C4015B7EC450033D6C2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				25F39AAD18B8C7AB001A10BB /* panel */,
+				25F39A9A18B8C7A6001A10BB /* Const.h */,
+				25F39A9D18B8C7A6001A10BB /* Field.cpp */,
+				25F39A9E18B8C7A6001A10BB /* Field.h */,
+				25F39A9F18B8C7A6001A10BB /* FieldPanels.cpp */,
+				25F39AA018B8C7A6001A10BB /* FieldPanels.h */,
+				25F39AA118B8C7A6001A10BB /* Group.cpp */,
+				25F39AA218B8C7A6001A10BB /* Group.h */,
+				25F39AA318B8C7A6001A10BB /* GroupAddress.cpp */,
+				25F39AA418B8C7A6001A10BB /* GroupAddress.h */,
+				25F39AA518B8C7A6001A10BB /* GroupManager.cpp */,
+				25F39AA618B8C7A6001A10BB /* GroupManager.h */,
 				1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */,
 				1AFAF8B416D35DE700DB1158 /* AppDelegate.h */,
 				1AFAF8B516D35DE700DB1158 /* HelloWorldScene.cpp */,
@@ -1373,6 +1411,17 @@
 				1AB8703B175E0A92005D39BF /* libwebsockets.a */,
 			);
 			path = lib;
+			sourceTree = "<group>";
+		};
+		25F39AAD18B8C7AB001A10BB /* panel */ = {
+			isa = PBXGroup;
+			children = (
+				25F39A9B18B8C7A6001A10BB /* CoverSprite.cpp */,
+				25F39A9C18B8C7A6001A10BB /* CoverSprite.h */,
+				25F39AAE18B8C7ED001A10BB /* PanelSprite.cpp */,
+				25F39AAF18B8C7ED001A10BB /* PanelSprite.h */,
+			);
+			name = panel;
 			sourceTree = "<group>";
 		};
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
@@ -1729,6 +1778,8 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				25F39AB118B8C882001A10BB /* panels.plist */,
+				25F39AB218B8C882001A10BB /* panels.png */,
 				1AFAF8B916D35E4900DB1158 /* CloseNormal.png */,
 				1AFAF8BA16D35E4900DB1158 /* CloseSelected.png */,
 				1AFAF8BB16D35E4900DB1158 /* HelloWorld.png */,
@@ -1817,6 +1868,7 @@
 				D4EF949A15BD2D8B00D803EB /* Icon-57.png in Resources */,
 				D4EF949C15BD2D8E00D803EB /* Icon-114.png in Resources */,
 				25F39A8D18B8C1B4001A10BB /* GoogleAdMobAdsSdk in Resources */,
+				25F39AB418B8C882001A10BB /* panels.png in Resources */,
 				D4EF949E15BD2D9600D803EB /* Icon-72.png in Resources */,
 				D4EF94A015BD2D9800D803EB /* Icon-144.png in Resources */,
 				D41A0AD1160F154A004552AE /* Default-568h@2x.png in Resources */,
@@ -1824,6 +1876,7 @@
 				15A3D9961682F7F9002FB0C5 /* CMakeLists.txt in Resources */,
 				1AFAF8BC16D35E4900DB1158 /* CloseNormal.png in Resources */,
 				1AFAF8BD16D35E4900DB1158 /* CloseSelected.png in Resources */,
+				25F39AB318B8C882001A10BB /* panels.plist in Resources */,
 				1AFAF8BE16D35E4900DB1158 /* HelloWorld.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1838,6 +1891,7 @@
 				15A3D8FF1682F7D5002FB0C5 /* b2BroadPhase.cpp in Sources */,
 				15A3D9001682F7D5002FB0C5 /* b2CollideCircle.cpp in Sources */,
 				15A3D9011682F7D5002FB0C5 /* b2CollideEdge.cpp in Sources */,
+				25F39AAC18B8C7A6001A10BB /* GroupManager.cpp in Sources */,
 				15A3D9021682F7D5002FB0C5 /* b2CollidePolygon.cpp in Sources */,
 				15A3D9031682F7D5002FB0C5 /* b2Collision.cpp in Sources */,
 				15A3D9041682F7D5002FB0C5 /* b2Distance.cpp in Sources */,
@@ -1873,6 +1927,7 @@
 				15A3D91F1682F7D5002FB0C5 /* b2PolygonContact.cpp in Sources */,
 				15A3D9201682F7D5002FB0C5 /* b2DistanceJoint.cpp in Sources */,
 				15A3D9211682F7D5002FB0C5 /* b2FrictionJoint.cpp in Sources */,
+				25F39AA818B8C7A6001A10BB /* Field.cpp in Sources */,
 				15A3D9221682F7D5002FB0C5 /* b2GearJoint.cpp in Sources */,
 				15A3D9231682F7D5002FB0C5 /* b2Joint.cpp in Sources */,
 				15A3D9241682F7D5002FB0C5 /* b2MouseJoint.cpp in Sources */,
@@ -1946,6 +2001,7 @@
 				15A3DA4D1682F826002FB0C5 /* CCControlPotentiometer.cpp in Sources */,
 				15A3DA4E1682F826002FB0C5 /* CCControlSaturationBrightnessPicker.cpp in Sources */,
 				15A3DA4F1682F826002FB0C5 /* CCControlSlider.cpp in Sources */,
+				25F39AAB18B8C7A6001A10BB /* GroupAddress.cpp in Sources */,
 				15A3DA501682F826002FB0C5 /* CCControlStepper.cpp in Sources */,
 				15A3DA511682F826002FB0C5 /* CCControlSwitch.cpp in Sources */,
 				15A3DA521682F826002FB0C5 /* CCControlUtils.cpp in Sources */,
@@ -1983,6 +2039,7 @@
 				1A8F3B75175E05DA00049216 /* Bone.cpp in Sources */,
 				1A8F3B76175E05DA00049216 /* BoneData.cpp in Sources */,
 				1A8F3B77175E05DA00049216 /* CCSkeleton.cpp in Sources */,
+				25F39AB018B8C7ED001A10BB /* PanelSprite.cpp in Sources */,
 				1A8F3B78175E05DA00049216 /* CCSkeletonAnimation.cpp in Sources */,
 				375BD5121868454E0024609E /* CCActionNode.cpp in Sources */,
 				1A8F3B79175E05DA00049216 /* extension.cpp in Sources */,
@@ -2013,6 +2070,7 @@
 				379BB9A617F03F3700829B88 /* CCArmatureDataManager.cpp in Sources */,
 				379BB9A717F03F3700829B88 /* CCArmatureDefine.cpp in Sources */,
 				379BB9A817F03F3700829B88 /* CCDataReaderHelper.cpp in Sources */,
+				25F39AA918B8C7A6001A10BB /* FieldPanels.cpp in Sources */,
 				379BB9A917F03F3700829B88 /* CCSpriteFrameCacheHelper.cpp in Sources */,
 				379BB9AA17F03F3700829B88 /* CCTransformHelp.cpp in Sources */,
 				379BB9AB17F03F3700829B88 /* CCTweenFunction.cpp in Sources */,
@@ -2021,10 +2079,12 @@
 				379BB9AE17F03F3700829B88 /* CCComAudio.cpp in Sources */,
 				379BB9AF17F03F3700829B88 /* CCComController.cpp in Sources */,
 				379BB9B017F03F3700829B88 /* CCComRender.cpp in Sources */,
+				25F39AA718B8C7A6001A10BB /* CoverSprite.cpp in Sources */,
 				379BB9B117F03F3700829B88 /* CCInputDelegate.cpp in Sources */,
 				379BB9B317F03F3700829B88 /* UIWidget.cpp in Sources */,
 				379BB9B417F03F3700829B88 /* UILayout.cpp in Sources */,
 				379BB9B617F03F3700829B88 /* UILayoutParameter.cpp in Sources */,
+				25F39AAA18B8C7A6001A10BB /* Group.cpp in Sources */,
 				379BB9B717F03F3700829B88 /* UILayoutDefine.cpp in Sources */,
 				379BB9B817F03F3700829B88 /* CocosGUI.cpp in Sources */,
 				379BB9B917F03F3700829B88 /* UIHelper.cpp in Sources */,
@@ -2100,7 +2160,7 @@
 					"\"$(SRCROOT)/GoogleAdMobAdsSdk\"/**",
 					"/Users/takami.kosuke/work/cocos2d/cocos2d-x-2.2.2/projects/chain/proj.ios/GoogleAdMobAdsSdk",
 				);
-				OTHER_CFLAGS = "-O2";
+				OTHER_CFLAGS = "-O0";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = chain;
 				PROVISIONING_PROFILE = "";

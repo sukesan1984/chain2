@@ -39,10 +39,19 @@ bool HelloWorld::init()
                                         "CloseNormal.png",
                                         "CloseSelected.png",
                                         this,
-                                        menu_selector(HelloWorld::menuCloseCallback));
+                                        menu_selector(HelloWorld::test));
     
 	pCloseItem->setPosition(ccp(origin.x + visibleSize.width - pCloseItem->getContentSize().width/2 ,
                                 origin.y + pCloseItem->getContentSize().height/2));
+    
+    CCSpriteFrameCache::sharedSpriteFrameCache()->addSpriteFramesWithFile("panels.plist");
+    
+    
+    this->field = new Field();
+    field->initialize();
+    field->setPosition(FIELD_START_AT);
+    field->setAnchorPoint(CCPoint(0, 0));
+    this->addChild(field);
 
     // create menu, it's an autorelease object
     CCMenu* pMenu = CCMenu::create(pCloseItem, NULL);
@@ -64,15 +73,9 @@ bool HelloWorld::init()
     // add the label as a child to this layer
     this->addChild(pLabel, 1);
 
-    // add "HelloWorld" splash screen"
-    CCSprite* pSprite = CCSprite::create("HelloWorld.png");
-
-    // position the sprite on the center of the screen
-    pSprite->setPosition(ccp(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
-
-    // add the sprite as a child to this layer
-    this->addChild(pSprite, 0);
+    setTouchEnabled(true);
     
+    this->schedule(schedule_selector(HelloWorld::update));
     return true;
 }
 
@@ -87,4 +90,52 @@ void HelloWorld::menuCloseCallback(CCObject* pSender)
     exit(0);
 #endif
 #endif
+}
+
+void HelloWorld::ccTouchesBegan(CCSet* pTouches, CCEvent* event){
+    CCSetIterator i;
+    CCTouch* touch;
+    
+    CCPoint loc;
+    for( i = pTouches->begin(); i != pTouches->end(); i++ ){
+        touch = (CCTouch*) (*i);
+        if(touch) {
+            loc = touch->getLocation();
+            this->field->onTouchBegan(loc - FIELD_START_AT);
+        }
+    }
+}
+
+void HelloWorld::ccTouchesMoved(CCSet* pTouches, CCEvent* event){
+    CCSetIterator i;
+    CCTouch* touch;
+    
+    CCPoint loc;
+    for( i = pTouches->begin(); i != pTouches->end(); i++ ){
+        touch = (CCTouch*) (*i);
+        if(touch) {
+            loc = touch->getLocation();
+        }
+    }
+}
+
+void HelloWorld::ccTouchesEnded(CCSet* pTouches, CCEvent* event){
+    CCSetIterator i;
+    CCTouch* touch;
+    
+    CCPoint loc;
+    for( i = pTouches->begin(); i != pTouches->end(); i++ ){
+        touch = (CCTouch*) (*i);
+        if(touch) {
+            loc = touch->getLocation();
+        }
+    }
+}
+
+void HelloWorld::update(float dt){
+    field->update();
+}
+
+void HelloWorld::test(CCObject* pSender){
+    field->test();
 }
