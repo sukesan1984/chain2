@@ -216,11 +216,23 @@ CCArray* FieldPanelsArray::getRemovedPanels(){
     CCObject* targetObject = NULL;
     CCArray* removedPanels = CCArray::create();
     removedPanels->retain();
+    CCArray* removedIndex = CCArray::create();
+    int index = 0;
     CCARRAY_FOREACH(this->getGroups(), targetObject){
         group = (Group*) targetObject;
         if(group->willBeRemoved()){
             removedPanels->addObjectsFromArray(group->getGroupPanels());
+        } else {
+            removedIndex->addObject(CCInteger::create(index));
         }
+        index++;
+    }
+    
+    int maxIndex = removedIndex->count();
+    //上から順に消す
+    for(int i = (maxIndex - 1); i >= 0; i--){
+        CCInteger* index = (CCInteger*) removedIndex->objectAtIndex(i);
+        this->groups->removeObjectAtIndex(index->getValue());
     }
     return removedPanels;
 }
