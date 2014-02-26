@@ -15,19 +15,22 @@
 
 using namespace cocos2d;
 class Group : public CCNode{
-    int groupNumber;
     int panelType;
     CCArray* groupPanels;
     ~Group();
-    Group(int groupNumber);
+    Group();
 public:
-    static Group* create(int groupNumber);
+    static Group* create();
     CCArray* getGroupPanels();
     void registerPanel(PanelSprite* panel);
     void registerPanels(CCArray* groupPanels);
+    void reset();
     int getGroupNumber();
     int getPanelType();
     bool willBeRemoved();
+    bool exist(PanelSprite* panel);
+    //残数を返す。
+    int removePanel(PanelSprite* panel);
 };
 
 #endif /* defined(__Chain__Group__) */

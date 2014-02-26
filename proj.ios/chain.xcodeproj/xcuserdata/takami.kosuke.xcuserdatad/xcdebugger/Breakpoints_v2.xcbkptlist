@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../classes/GroupManager.cpp"
-            timestampString = "414837412.195836"
+            timestampString = "414944705.230259"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
             landmarkName = "GroupManager::searchGroup(CCPoint &amp;panelPos)"
             landmarkType = "5">
          </BreakpointContent>
@@ -150,11 +150,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../classes/Group.cpp"
-            timestampString = "414830077.911536"
+            timestampString = "415096674.961152"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
             landmarkName = "Group::willBeRemoved()"
             landmarkType = "5">
          </BreakpointContent>
@@ -166,11 +166,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../classes/GroupManager.cpp"
-            timestampString = "414837412.195836"
+            timestampString = "414944705.230259"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
             landmarkName = "GroupManager::categorize(CCPoint &amp;panelPos, PanelSprite* panelSprite, GroupAddress* selfGroupAddress)"
             landmarkType = "5">
          </BreakpointContent>
@@ -182,11 +182,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../classes/GroupManager.cpp"
-            timestampString = "414837412.195836"
+            timestampString = "414944705.230259"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
             landmarkName = "GroupManager::categorize(CCPoint &amp;panelPos, PanelSprite* panelSprite, GroupAddress* selfGroupAddress)"
             landmarkType = "5">
          </BreakpointContent>
@@ -196,13 +196,14 @@
          <BreakpointContent
             shouldBeEnabled = "No"
             ignoreCount = "0"
+            condition = "panel-&gt;getPanelType() == 2"
             continueAfterRunningActions = "No"
             filePath = "../classes/GroupManager.cpp"
-            timestampString = "414837412.195836"
+            timestampString = "414944705.230259"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "169"
-            endingLineNumber = "169"
+            startingLineNumber = "175"
+            endingLineNumber = "175"
             landmarkName = "GroupManager::addGroupToTable(PanelSprite* panel)"
             landmarkType = "5">
          </BreakpointContent>
@@ -214,11 +215,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../classes/GroupManager.cpp"
-            timestampString = "414837412.195836"
+            timestampString = "414944705.230259"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "129"
-            endingLineNumber = "129"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
             landmarkName = "GroupManager::categorize(CCPoint &amp;panelPos, PanelSprite* panelSprite, GroupAddress* selfGroupAddress)"
             landmarkType = "5">
          </BreakpointContent>
@@ -230,11 +231,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../classes/GroupManager.cpp"
-            timestampString = "414837412.195836"
+            timestampString = "414944705.230259"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "127"
-            endingLineNumber = "127"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
             landmarkName = "GroupManager::categorize(CCPoint &amp;panelPos, PanelSprite* panelSprite, GroupAddress* selfGroupAddress)"
             landmarkType = "5">
          </BreakpointContent>
@@ -246,27 +247,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../classes/FieldPanels.cpp"
-            timestampString = "414861364.623805"
+            timestampString = "415098221.58007"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "175"
-            endingLineNumber = "175"
-            landmarkName = "FieldPanels::makeRemovedGroups()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../classes/FieldPanels.cpp"
-            timestampString = "414861364.623805"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "158"
-            endingLineNumber = "158"
+            startingLineNumber = "160"
+            endingLineNumber = "160"
             landmarkName = "FieldPanels::movePanels()"
             landmarkType = "5">
             <Locations>
@@ -308,11 +293,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../classes/FieldPanels.cpp"
-            timestampString = "414861364.623805"
+            timestampString = "415098221.58007"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "159"
-            endingLineNumber = "159"
+            startingLineNumber = "161"
+            endingLineNumber = "161"
             landmarkName = "FieldPanels::movePanels()"
             landmarkType = "5">
             <Locations>
@@ -354,27 +339,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../classes/FieldPanels.cpp"
-            timestampString = "414861364.623805"
+            timestampString = "415098221.58007"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "174"
-            endingLineNumber = "174"
-            landmarkName = "FieldPanels::makeRemovedGroups()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../classes/FieldPanels.cpp"
-            timestampString = "414833061.736914"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
             landmarkName = "FieldPanels::addRemoveflag()"
             landmarkType = "5">
          </BreakpointContent>
@@ -386,11 +355,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../classes/GroupManager.cpp"
-            timestampString = "414837412.195836"
+            timestampString = "414944705.230259"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "199"
-            endingLineNumber = "199"
+            startingLineNumber = "211"
+            endingLineNumber = "211"
             landmarkName = "GroupManager::getRemovedPanels()"
             landmarkType = "5">
          </BreakpointContent>
@@ -402,56 +371,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../classes/GroupManager.cpp"
-            timestampString = "414837412.195836"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "133"
-            endingLineNumber = "133"
-            landmarkName = "GroupManager::categorize(CCPoint &amp;panelPos, PanelSprite* panelSprite, GroupAddress* selfGroupAddress)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../classes/GroupManager.cpp"
-            timestampString = "414837412.195836"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
-            landmarkName = "GroupManager::mergeGroups(GroupAddress* groupAddress1, GroupAddress* groupAddress2)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../classes/Group.cpp"
-            timestampString = "414830077.911536"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "Group::registerPanels(CCArray* groupPanels)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            condition = "checkedGroup-&gt;getGroupNumber() == 0 &amp;&amp; checkedGroup-&gt;getPanelType() == 2"
-            continueAfterRunningActions = "No"
-            filePath = "../classes/GroupManager.cpp"
-            timestampString = "414837412.195836"
+            timestampString = "414944705.230259"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "139"
@@ -467,11 +387,60 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../classes/GroupManager.cpp"
-            timestampString = "414837412.195836"
+            timestampString = "414944705.230259"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "170"
-            endingLineNumber = "170"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "GroupManager::mergeGroups(GroupAddress* groupAddress1, GroupAddress* groupAddress2)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../classes/Group.cpp"
+            timestampString = "415096674.961152"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "Group::registerPanels(CCArray* gPanels)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            condition = "checkedGroup-&gt;getGroupNumber() == 0 &amp;&amp; checkedGroup-&gt;getPanelType() == 2"
+            continueAfterRunningActions = "No"
+            filePath = "../classes/GroupManager.cpp"
+            timestampString = "414944705.230259"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
+            landmarkName = "GroupManager::categorize(CCPoint &amp;panelPos, PanelSprite* panelSprite, GroupAddress* selfGroupAddress)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../classes/GroupManager.cpp"
+            timestampString = "414944705.230259"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "176"
+            endingLineNumber = "176"
             landmarkName = "GroupManager::addGroupToTable(PanelSprite* panel)"
             landmarkType = "5">
          </BreakpointContent>
@@ -483,11 +452,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../classes/GroupManager.cpp"
-            timestampString = "414837412.195836"
+            timestampString = "414944705.230259"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "198"
-            endingLineNumber = "198"
+            startingLineNumber = "210"
+            endingLineNumber = "210"
             landmarkName = "GroupManager::getRemovedPanels()"
             landmarkType = "5">
          </BreakpointContent>
@@ -499,11 +468,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../classes/GroupManager.cpp"
-            timestampString = "414837412.195836"
+            timestampString = "414944705.230259"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "200"
-            endingLineNumber = "200"
+            startingLineNumber = "212"
+            endingLineNumber = "212"
             landmarkName = "GroupManager::getRemovedPanels()"
             landmarkType = "5">
          </BreakpointContent>
@@ -515,11 +484,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../classes/Group.cpp"
-            timestampString = "414830245.524973"
+            timestampString = "415096674.961152"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "Group::registerPanel(PanelSprite* panel)"
             landmarkType = "5">
             <Locations>
@@ -561,11 +530,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../classes/GroupManager.cpp"
-            timestampString = "414837412.195836"
+            timestampString = "414944705.230259"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
             landmarkName = "GroupManager::mergeGroups(GroupAddress* groupAddress1, GroupAddress* groupAddress2)"
             landmarkType = "5">
          </BreakpointContent>
@@ -577,44 +546,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../classes/GroupManager.cpp"
-            timestampString = "414837412.195836"
+            timestampString = "414944705.230259"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
             landmarkName = "GroupManager::searchGroup(CCPoint &amp;panelPos)"
             landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            condition = "this-&gt;group-&gt;getGroupNumber() == 0 &amp;&amp; this-&gt;group-&gt;getPanelType() == 2"
-            continueAfterRunningActions = "No"
-            filePath = "../classes/GroupAddress.cpp"
-            timestampString = "414831155.785312"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "GroupAddress::getGroup()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../classes/GroupAddress.cpp"
-            timestampString = "414832238.337501"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -625,11 +563,11 @@
             condition = "checkedGroup-&gt;getGroupPanels()-&gt;count() &gt;= 4"
             continueAfterRunningActions = "No"
             filePath = "../classes/GroupManager.cpp"
-            timestampString = "414837412.195836"
+            timestampString = "414944705.230259"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "116"
-            endingLineNumber = "116"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
             landmarkName = "GroupManager::categorize(CCPoint &amp;panelPos, PanelSprite* panelSprite, GroupAddress* selfGroupAddress)"
             landmarkType = "5">
          </BreakpointContent>
@@ -642,11 +580,11 @@
             condition = "panel-&gt;getPanelType() == 2"
             continueAfterRunningActions = "No"
             filePath = "../classes/GroupManager.cpp"
-            timestampString = "414837412.195836"
+            timestampString = "414944705.230259"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "167"
-            endingLineNumber = "167"
+            startingLineNumber = "173"
+            endingLineNumber = "173"
             landmarkName = "GroupManager::addGroupToTable(PanelSprite* panel)"
             landmarkType = "5">
          </BreakpointContent>
@@ -656,13 +594,14 @@
          <BreakpointContent
             shouldBeEnabled = "No"
             ignoreCount = "0"
+            condition = "panel-&gt;getPanelType() == 2"
             continueAfterRunningActions = "No"
             filePath = "../classes/GroupManager.cpp"
-            timestampString = "414837412.195836"
+            timestampString = "414944705.230259"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "168"
-            endingLineNumber = "168"
+            startingLineNumber = "174"
+            endingLineNumber = "174"
             landmarkName = "GroupManager::addGroupToTable(PanelSprite* panel)"
             landmarkType = "5">
          </BreakpointContent>
@@ -680,6 +619,214 @@
             startingLineNumber = "86"
             endingLineNumber = "86"
             landmarkName = "PanelSprite::remove()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../classes/GroupManager.cpp"
+            timestampString = "414944705.230259"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "198"
+            endingLineNumber = "198"
+            landmarkName = "GroupManager::addGroupToTable(PanelSprite* panel)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../classes/GroupManager.cpp"
+            timestampString = "414944705.230259"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
+            landmarkName = "GroupManager::categorize(CCPoint &amp;panelPos, PanelSprite* panelSprite, GroupAddress* selfGroupAddress)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../classes/GroupAddress.cpp"
+            timestampString = "414930451.805393"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "GroupAddress::merge(GroupAddress* mergedGroupAddress)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../classes/GroupAddress.cpp"
+            timestampString = "414930476.613409"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "GroupAddress::merge(GroupAddress* mergedGroupAddress)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../classes/GroupAddress.cpp"
+            timestampString = "414930478.653394"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "GroupAddress::merge(GroupAddress* mergedGroupAddress)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../classes/GroupManager.cpp"
+            timestampString = "414944705.230259"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "172"
+            endingLineNumber = "172">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            condition = "panel-&gt;getPanelType() == 4"
+            continueAfterRunningActions = "No"
+            filePath = "../classes/Group.cpp"
+            timestampString = "415096674.961152"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "Group::registerPanel(PanelSprite* panel)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            condition = "panel-&gt;getPanelType() == 4"
+            continueAfterRunningActions = "No"
+            filePath = "../classes/Group.cpp"
+            timestampString = "415096674.961152"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "Group::registerPanel(PanelSprite* panel)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../classes/Field.cpp"
+            timestampString = "415096747.620104"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "Field::test()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../classes/FieldPanels.cpp"
+            timestampString = "415098221.58007"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "181"
+            endingLineNumber = "181"
+            landmarkName = "FieldPanels::makeRemovedGroups()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Classes/FieldPanelsArray.cpp"
+            timestampString = "415102341.048041"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "FieldPanelsArray::group()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Classes/FieldPanelsArray.cpp"
+            timestampString = "415102415.094472"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
+            landmarkName = "FieldPanelsArray::group(int x, int y, Group* map[FIELD_WIDTH_NUM][FIELD_HEIGHT_NUM])"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Classes/FieldPanelsArray.cpp"
+            timestampString = "415102737.450777"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
+            landmarkName = "FieldPanelsArray::group()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

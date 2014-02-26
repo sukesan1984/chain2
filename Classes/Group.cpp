@@ -7,8 +7,7 @@
 //
 
 #include "Group.h"
-Group::Group(int groupNumber){
-    this->groupNumber = groupNumber;
+Group::Group(){
     this->groupPanels = CCArray::create();
     this->groupPanels->retain();
 }
@@ -16,9 +15,9 @@ Group::Group(int groupNumber){
 Group::~Group(){
 }
 
-Group * Group::create(int groupNumber)
+Group * Group::create()
 {
-	Group * ret = new Group(groupNumber);
+	Group * ret = new Group();
     if (ret && ret->init())
     {
         ret->autorelease();
@@ -38,7 +37,6 @@ void Group::registerPanel(PanelSprite* panel){
     //無限に登録されないように
     PanelSprite* panelSprite = NULL;
     CCObject* targetObject = NULL;
-    int movingPanelsNum = 0;
     CCARRAY_FOREACH(this->groupPanels, targetObject){
         panelSprite = (PanelSprite*) targetObject;
         if(panelSprite == panel){
@@ -53,21 +51,26 @@ void Group::registerPanel(PanelSprite* panel){
     this->groupPanels->addObject((CCObject*) panel);
 }
 
-void Group::registerPanels(CCArray* groupPanels){
+void Group::registerPanels(CCArray* gPanels){
     PanelSprite* panelSprite = NULL;
     CCObject* targetObject = NULL;
-    int movingPanelsNum = 0;
-    if(groupPanels->count() == 0){
+    if(gPanels->count() == 0){
         return;
     }
-    CCARRAY_FOREACH(groupPanels, targetObject){
+    CCARRAY_FOREACH(gPanels, targetObject){
         panelSprite = (PanelSprite*) targetObject;
         this->registerPanel(panelSprite);
     }
 }
 
-int Group::getGroupNumber(){
-    return groupNumber;
+void Group::reset(){
+    PanelSprite* panelSprite = NULL;
+    CCObject* targetObject = NULL;
+    
+    CCARRAY_FOREACH(groupPanels, targetObject){
+        panelSprite = (PanelSprite*) targetObject;
+        panelSprite->reset();
+    }
 }
 
 int Group::getPanelType(){
@@ -76,4 +79,22 @@ int Group::getPanelType(){
 
 bool Group::willBeRemoved(){
     return groupPanels->count() >= 5;
+}
+
+bool Group::exist(PanelSprite *panel){
+    PanelSprite* panelSprite = NULL;
+    CCObject* targetObject = NULL;
+    
+    CCARRAY_FOREACH(groupPanels, targetObject){
+        panelSprite = (PanelSprite*) targetObject;
+        if(panelSprite == panel){
+            return true;
+        }
+    }
+    return false;
+}
+
+int Group::removePanel(PanelSprite* panel) {
+    this->groupPanels->removeObject((CCObject*) panel);
+    return this->groupPanels->count();
 }

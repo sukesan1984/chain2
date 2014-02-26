@@ -27,7 +27,7 @@ public:
     static CoverSprite* createPanel();
     bool isFullCovered();
     void start();
-    
+    void reset();
     void update();
     
     CREATE_FUNC(CoverSprite);

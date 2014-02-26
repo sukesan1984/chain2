@@ -9,13 +9,13 @@
 #include "FieldPanels.h"
 
 FieldPanels::FieldPanels(){
-    groupManager = GroupManager::create();
-    groupManager->retain();
     removedPanels = CCArray::create();
     removedPanels->retain();
+    table = new FieldPanelsArray();
 }
 
 FieldPanels::~FieldPanels(){
+    delete(table);
 }
 
 PanelSprite* FieldPanels::createPanel(int indexX, int indexY){
@@ -81,11 +81,13 @@ void FieldPanels::add(PanelSprite* panel){
 }
 
 void FieldPanels::remove(int index){
+    PanelSprite* panel = (PanelSprite*) this->objectAtIndex(index);
+    this->table->removePanel(panel);
     this->removeObjectAtIndex(index);
 }
 
 void FieldPanels::addRemoveflag(){
-    CCArray* willBeRemovedPanels = this->groupManager->getRemovedPanels();
+    CCArray* willBeRemovedPanels = this->table->getRemovedPanels();
     PanelSprite* panel;
     CCObject* targetObject = NULL;
     CCARRAY_FOREACH(willBeRemovedPanels, targetObject){
@@ -102,6 +104,9 @@ void FieldPanels::pushRemovedPanel(PanelSprite* panel){
 //消えたパネルを取得する。
 CCArray* FieldPanels::getRemovedPanels(){
     return removedPanels;
+}
+
+PanelSprite* getPanelSprite(int x, int y){
 }
 
 FieldPanels* FieldPanels::create(){
@@ -168,12 +173,12 @@ void FieldPanels::movePanels(){
 void FieldPanels::makeRemovedGroups(){
     PanelSprite* panel = NULL;
     CCObject* targetObject = NULL;
-    this->groupManager->clearAll();
     CCARRAY_FOREACH(this, targetObject){
         panel = (PanelSprite *) targetObject;
-        CCAssert(panel != NULL, "cast failed");
-        this->groupManager->addGroupToTable(panel);
+        CCPoint index = panel->getIndex();
+        table->registerPanel(index.x, index.y, panel);
     }
+    table->group();
 }
 
 

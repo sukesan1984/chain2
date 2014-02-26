@@ -35,6 +35,10 @@ void CoverSprite::start(){
     this->setVisible(true);
 }
 
+void CoverSprite::reset(){
+    this->scale = 0;
+}
+
 void CoverSprite::update(){
     if(!this->isMoving){
         return;

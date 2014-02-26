@@ -13,7 +13,7 @@
 #include "PanelSprite.h"
 #include "cocos2d.h"
 #include "Const.h"
-#include "GroupManager.h"
+#include "FieldPanelsArray.h"
 using namespace cocos2d;
 
 class FieldPanels : public CCArray{
@@ -24,8 +24,8 @@ class FieldPanels : public CCArray{
     bool moveState = false;
     PanelSprite* createPanel(int indexX, int indexY);
     CCNode* parentNode;
-    GroupManager* groupManager;
     PanelSprite* tapped;
+    FieldPanelsArray* table;
 public:
     void initialize(CCNode* parentNode); //明示的に初期化処理を呼ぶ。
     void restockPanel(CCNode* parentNode);
@@ -39,6 +39,7 @@ public:
     void movePanels();
     
     void makeRemovedGroups();
+    
     
     void setTappedPanel(PanelSprite* tapped);
     PanelSprite* getTappedPanel();

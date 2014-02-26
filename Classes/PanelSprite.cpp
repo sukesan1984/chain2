@@ -92,21 +92,23 @@ void PanelSprite::onTap(){
     this->startToRemove();
     CCPoint currentPos = this->getPosition();
     CCPoint pos = CCPoint(currentPos.x, currentPos.y);
-    CCPoint pos2 = getIndex(pos);
-    CCLog("x: %f, y: %f", pos2.x, pos2.y);
 }
 
 void PanelSprite::startToRemove(){
     this->cover->start();
 }
 
+void PanelSprite::reset(){
+    this->cover->reset();
+}
 
 //移動量に合わせて移動させて、deltaYを減らす。
 bool PanelSprite::move(){
+    float currentY = this->getPositionY();
     if (deltaY >= -0.0001 && deltaY <= 0.0001 ){
+        this->setPositionY(int(currentY + 0.5));
         return false;
     }
-    float currentY = this->getPositionY();
     this->setPositionY(currentY - velocity);
     deltaY -= velocity;
     return true;
@@ -124,7 +126,8 @@ void PanelSprite::update(){
     }
 }
 
-CCPoint PanelSprite::getIndex(CCPoint &panelPos){
+CCPoint PanelSprite::getIndex(){
+    CCPoint panelPos = this->getPosition();
     float posX = panelPos.x;
     float posY = panelPos.y;
     

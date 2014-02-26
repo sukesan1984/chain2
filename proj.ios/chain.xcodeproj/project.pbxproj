@@ -169,6 +169,7 @@
 		1AFCDA8216D4A25900906EA6 /* RootViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1AFCDA8116D4A25900906EA6 /* RootViewController.mm */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		2547873A18BDC7D7009F258A /* FieldPanelsArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2547873818BDC7D7009F258A /* FieldPanelsArray.cpp */; };
 		25F39A8D18B8C1B4001A10BB /* GoogleAdMobAdsSdk in Resources */ = {isa = PBXBuildFile; fileRef = 25F39A8C18B8C1B4001A10BB /* GoogleAdMobAdsSdk */; };
 		25F39A8F18B8C1F7001A10BB /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F39A8E18B8C1F7001A10BB /* MessageUI.framework */; };
 		25F39A9118B8C1FF001A10BB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F39A9018B8C1FF001A10BB /* SystemConfiguration.framework */; };
@@ -179,8 +180,6 @@
 		25F39AA818B8C7A6001A10BB /* Field.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25F39A9D18B8C7A6001A10BB /* Field.cpp */; };
 		25F39AA918B8C7A6001A10BB /* FieldPanels.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25F39A9F18B8C7A6001A10BB /* FieldPanels.cpp */; };
 		25F39AAA18B8C7A6001A10BB /* Group.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25F39AA118B8C7A6001A10BB /* Group.cpp */; };
-		25F39AAB18B8C7A6001A10BB /* GroupAddress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25F39AA318B8C7A6001A10BB /* GroupAddress.cpp */; };
-		25F39AAC18B8C7A6001A10BB /* GroupManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25F39AA518B8C7A6001A10BB /* GroupManager.cpp */; };
 		25F39AB018B8C7ED001A10BB /* PanelSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25F39AAE18B8C7ED001A10BB /* PanelSprite.cpp */; };
 		25F39AB318B8C882001A10BB /* panels.plist in Resources */ = {isa = PBXBuildFile; fileRef = 25F39AB118B8C882001A10BB /* panels.plist */; };
 		25F39AB418B8C882001A10BB /* panels.png in Resources */ = {isa = PBXBuildFile; fileRef = 25F39AB218B8C882001A10BB /* panels.png */; };
@@ -603,6 +602,8 @@
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* chain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2547873818BDC7D7009F258A /* FieldPanelsArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FieldPanelsArray.cpp; path = ../Classes/FieldPanelsArray.cpp; sourceTree = "<group>"; };
+		2547873918BDC7D7009F258A /* FieldPanelsArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FieldPanelsArray.h; path = ../Classes/FieldPanelsArray.h; sourceTree = "<group>"; };
 		25F39A8C18B8C1B4001A10BB /* GoogleAdMobAdsSdk */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GoogleAdMobAdsSdk; sourceTree = "<group>"; };
 		25F39A8E18B8C1F7001A10BB /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		25F39A9018B8C1FF001A10BB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -618,10 +619,6 @@
 		25F39AA018B8C7A6001A10BB /* FieldPanels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldPanels.h; sourceTree = "<group>"; };
 		25F39AA118B8C7A6001A10BB /* Group.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Group.cpp; sourceTree = "<group>"; };
 		25F39AA218B8C7A6001A10BB /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
-		25F39AA318B8C7A6001A10BB /* GroupAddress.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GroupAddress.cpp; sourceTree = "<group>"; };
-		25F39AA418B8C7A6001A10BB /* GroupAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupAddress.h; sourceTree = "<group>"; };
-		25F39AA518B8C7A6001A10BB /* GroupManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GroupManager.cpp; sourceTree = "<group>"; };
-		25F39AA618B8C7A6001A10BB /* GroupManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupManager.h; sourceTree = "<group>"; };
 		25F39AAE18B8C7ED001A10BB /* PanelSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PanelSprite.cpp; sourceTree = "<group>"; };
 		25F39AAF18B8C7ED001A10BB /* PanelSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanelSprite.h; sourceTree = "<group>"; };
 		25F39AB118B8C882001A10BB /* panels.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = panels.plist; sourceTree = "<group>"; };
@@ -1297,16 +1294,14 @@
 				25F39A9E18B8C7A6001A10BB /* Field.h */,
 				25F39A9F18B8C7A6001A10BB /* FieldPanels.cpp */,
 				25F39AA018B8C7A6001A10BB /* FieldPanels.h */,
+				2547873818BDC7D7009F258A /* FieldPanelsArray.cpp */,
+				2547873918BDC7D7009F258A /* FieldPanelsArray.h */,
+				1AFAF8B616D35DE700DB1158 /* HelloWorldScene.h */,
 				25F39AA118B8C7A6001A10BB /* Group.cpp */,
 				25F39AA218B8C7A6001A10BB /* Group.h */,
-				25F39AA318B8C7A6001A10BB /* GroupAddress.cpp */,
-				25F39AA418B8C7A6001A10BB /* GroupAddress.h */,
-				25F39AA518B8C7A6001A10BB /* GroupManager.cpp */,
-				25F39AA618B8C7A6001A10BB /* GroupManager.h */,
 				1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */,
 				1AFAF8B416D35DE700DB1158 /* AppDelegate.h */,
 				1AFAF8B516D35DE700DB1158 /* HelloWorldScene.cpp */,
-				1AFAF8B616D35DE700DB1158 /* HelloWorldScene.h */,
 			);
 			name = Classes;
 			path = ../classes;
@@ -1891,7 +1886,6 @@
 				15A3D8FF1682F7D5002FB0C5 /* b2BroadPhase.cpp in Sources */,
 				15A3D9001682F7D5002FB0C5 /* b2CollideCircle.cpp in Sources */,
 				15A3D9011682F7D5002FB0C5 /* b2CollideEdge.cpp in Sources */,
-				25F39AAC18B8C7A6001A10BB /* GroupManager.cpp in Sources */,
 				15A3D9021682F7D5002FB0C5 /* b2CollidePolygon.cpp in Sources */,
 				15A3D9031682F7D5002FB0C5 /* b2Collision.cpp in Sources */,
 				15A3D9041682F7D5002FB0C5 /* b2Distance.cpp in Sources */,
@@ -2001,7 +1995,6 @@
 				15A3DA4D1682F826002FB0C5 /* CCControlPotentiometer.cpp in Sources */,
 				15A3DA4E1682F826002FB0C5 /* CCControlSaturationBrightnessPicker.cpp in Sources */,
 				15A3DA4F1682F826002FB0C5 /* CCControlSlider.cpp in Sources */,
-				25F39AAB18B8C7A6001A10BB /* GroupAddress.cpp in Sources */,
 				15A3DA501682F826002FB0C5 /* CCControlStepper.cpp in Sources */,
 				15A3DA511682F826002FB0C5 /* CCControlSwitch.cpp in Sources */,
 				15A3DA521682F826002FB0C5 /* CCControlUtils.cpp in Sources */,
@@ -2085,6 +2078,7 @@
 				379BB9B417F03F3700829B88 /* UILayout.cpp in Sources */,
 				379BB9B617F03F3700829B88 /* UILayoutParameter.cpp in Sources */,
 				25F39AAA18B8C7A6001A10BB /* Group.cpp in Sources */,
+				2547873A18BDC7D7009F258A /* FieldPanelsArray.cpp in Sources */,
 				379BB9B717F03F3700829B88 /* UILayoutDefine.cpp in Sources */,
 				379BB9B817F03F3700829B88 /* CocosGUI.cpp in Sources */,
 				379BB9B917F03F3700829B88 /* UIHelper.cpp in Sources */,

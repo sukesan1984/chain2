@@ -18,7 +18,6 @@ using namespace cocos2d;
 class PanelSprite : public CCSprite
 {
     const int SIZE = PANEL_SIZE;
-    CCSprite* sprite;
     CoverSprite* cover;
     bool willRemoved = false;
     float deltaY = 0;
@@ -38,11 +37,12 @@ public:
     void onTap();
     
     void startToRemove();
+    void reset();
     
     bool move();
     void setDeltaY(float deltaY);
     void update();
-    CCPoint getIndex(CCPoint &panelPos);
+    CCPoint getIndex();
     int getPanelType();
 };
 
