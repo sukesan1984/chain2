@@ -49,6 +49,8 @@ public:
     bool isMoving();
     void swap(PanelSprite* panel1, PanelSprite* panel2);
     
+    int getHitNum();
+    
     FieldPanels();
     ~FieldPanels();
     void update();

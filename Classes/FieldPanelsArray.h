@@ -29,6 +29,7 @@ class FieldPanelsArray {
     // checkTableをリセットする。
     void resetGroupCheckTable();
     CCArray* getGroups();
+    int hitNum;
 public:
     // tableにpanelを登録するやつ。
     void registerPanel(int x, int y, PanelSprite* panel);
@@ -51,6 +52,8 @@ public:
     void removePanel(PanelSprite* panel);
     // groupをGroupsから削除する。
     void removeGroup(Group* group);
+    
+    int getHitNum();
     
     FieldPanelsArray();
     ~FieldPanelsArray();

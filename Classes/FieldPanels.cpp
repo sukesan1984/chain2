@@ -254,3 +254,7 @@ void FieldPanels::swap(PanelSprite *panel1, PanelSprite *panel2){
     panel1->setPosition(pos2);
     panel2->setPosition(pos1);
 }
+
+int FieldPanels::getHitNum(){
+    return this->table->getHitNum();
+}

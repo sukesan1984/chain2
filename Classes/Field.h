@@ -28,6 +28,7 @@ public:
     void onTouchEnded(CCTouch* touch);
     void update();
     void test();
+    int getHitNum();
     Field();
     ~Field();
 };

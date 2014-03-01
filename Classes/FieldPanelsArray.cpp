@@ -195,10 +195,13 @@ CCArray* FieldPanelsArray::getRemovedPanels(){
         group = (Group*) targetObject;
         if(group->willBeRemoved()){
             removedPanels->addObjectsFromArray(group->getGroupPanels());
-            //削除される時に、フラグを落とす。
+            //新たに消え始める時は、リセットする。
+            // hitnumをの数を増やす。
             if(group->needToReset()){
                 group->reset();
+                this->hitNum++;
             }
+           //削除される時に、フラグを落とす。
             group->setAddedNewone(false);
         } else {
             removedIndex->addObject(CCInteger::create(index));
@@ -245,4 +248,11 @@ void FieldPanelsArray::removePanel(PanelSprite *panel){
 
 void FieldPanelsArray::removeGroup(Group *group){
     groups->removeObject((CCObject*) group);
+    if(groups->count() == 0){
+        hitNum = 0;
+    }
+}
+
+int FieldPanelsArray::getHitNum(){
+    return hitNum;
 }

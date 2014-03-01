@@ -81,3 +81,7 @@ void Field::test(){
     
     CCLog("test");
 }
+
+int Field::getHitNum(){
+    return this->panels->getHitNum();
+}

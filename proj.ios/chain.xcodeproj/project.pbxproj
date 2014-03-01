@@ -1296,12 +1296,12 @@
 				25F39AA018B8C7A6001A10BB /* FieldPanels.h */,
 				2547873818BDC7D7009F258A /* FieldPanelsArray.cpp */,
 				2547873918BDC7D7009F258A /* FieldPanelsArray.h */,
-				1AFAF8B616D35DE700DB1158 /* HelloWorldScene.h */,
 				25F39AA118B8C7A6001A10BB /* Group.cpp */,
 				25F39AA218B8C7A6001A10BB /* Group.h */,
 				1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */,
 				1AFAF8B416D35DE700DB1158 /* AppDelegate.h */,
 				1AFAF8B516D35DE700DB1158 /* HelloWorldScene.cpp */,
+				1AFAF8B616D35DE700DB1158 /* HelloWorldScene.h */,
 			);
 			name = Classes;
 			path = ../classes;

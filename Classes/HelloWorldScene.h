@@ -13,6 +13,7 @@ private:
     const float FIELD_START_AT_Y = FIELD_OFFSET_Y;
     const CCPoint FIELD_START_AT = CCPoint(FIELD_START_AT_X, FIELD_START_AT_Y);
     Field* field;
+    CCLabelTTF* hitNumLabel;
 public:
     // Here's a difference. Method 'init' in cocos2d-x returns bool, instead of returning 'id' in cocos2d-iphone
     virtual bool init();  
