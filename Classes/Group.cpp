@@ -108,3 +108,7 @@ int Group::removePanel(PanelSprite* panel) {
     this->groupPanels->removeObject((CCObject*) panel);
     return this->groupPanels->count();
 }
+
+int Group::getGroupPanelsNum(){
+    return this->groupPanels->count();
+}

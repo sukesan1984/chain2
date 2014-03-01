@@ -55,8 +55,14 @@ bool HelloWorld::init()
     
     hitNumLabel = CCLabelTTF::create(CCString::createWithFormat("Hits:%d",field->getHitNum())->getCString(), "arial", 20);
     hitNumLabel->setAnchorPoint(CCPoint(0, 0));
-    hitNumLabel->setPosition(CCPoint(20, 80));
+    hitNumLabel->setPosition(CCPoint(visibleSize.width - 200, 80));
     this->addChild(hitNumLabel);
+    
+    scoreLabel = CCLabelTTF::create(CCString::createWithFormat("Score:%d", field->getScore())->getCString(), "arial", 20);
+    scoreLabel->setAnchorPoint(CCPoint(0, 0));
+    scoreLabel->setPosition(CCPoint(visibleSize.width - 200, 60));
+    this->addChild(scoreLabel);
+    
 
     // create menu, it's an autorelease object
     CCMenu* pMenu = CCMenu::create(pCloseItem, NULL);
@@ -141,6 +147,7 @@ void HelloWorld::ccTouchesEnded(CCSet* pTouches, CCEvent* event){
 void HelloWorld::update(float dt){
     field->update();
     hitNumLabel->setString(CCString::createWithFormat("Hits:%d",field->getHitNum())->getCString());
+    scoreLabel->setString(CCString::createWithFormat("Score:%d",field->getScore())->getCString());
 }
 
 void HelloWorld::test(CCObject* pSender){

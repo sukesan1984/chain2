@@ -50,6 +50,7 @@ public:
     void swap(PanelSprite* panel1, PanelSprite* panel2);
     
     int getHitNum();
+    int getScore();
     
     FieldPanels();
     ~FieldPanels();

@@ -29,6 +29,7 @@ public:
     void update();
     void test();
     int getHitNum();
+    int getScore();
     Field();
     ~Field();
 };

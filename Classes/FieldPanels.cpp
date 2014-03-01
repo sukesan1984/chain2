@@ -258,3 +258,7 @@ void FieldPanels::swap(PanelSprite *panel1, PanelSprite *panel2){
 int FieldPanels::getHitNum(){
     return this->table->getHitNum();
 }
+
+int FieldPanels::getScore(){
+    return this->table->getScore();
+}

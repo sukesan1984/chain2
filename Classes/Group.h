@@ -34,6 +34,7 @@ public:
     bool needToReset();
     //残数を返す。
     int removePanel(PanelSprite* panel);
+    int getGroupPanelsNum();
 };
 
 #endif /* defined(__Chain__Group__) */

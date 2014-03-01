@@ -18,6 +18,8 @@ FieldPanelsArray::FieldPanelsArray(){
     }
     groups = CCArray::create();
     groups->retain();
+    score = 0;
+    hitNum = 0;
 }
 
 FieldPanelsArray::~FieldPanelsArray(){
@@ -200,6 +202,7 @@ CCArray* FieldPanelsArray::getRemovedPanels(){
             if(group->needToReset()){
                 group->reset();
                 this->hitNum++;
+                score += this->calcScore();
             }
            //削除される時に、フラグを落とす。
             group->setAddedNewone(false);
@@ -255,4 +258,22 @@ void FieldPanelsArray::removeGroup(Group *group){
 
 int FieldPanelsArray::getHitNum(){
     return hitNum;
+}
+
+int FieldPanelsArray::getScore(){
+    return score;
+}
+
+int FieldPanelsArray::calcScore(){
+    //scoreの計算は、現在のヒット数 x つながっているパネルの数。
+    int panelNum = 0;
+    Group* group = NULL;
+    CCObject* targetObject = NULL;
+    CCARRAY_FOREACH(this->getGroups(), targetObject){
+        group = (Group*) targetObject;
+        if(group->willBeRemoved()){
+            panelNum += group->getGroupPanelsNum();
+        }
+    }
+    return panelNum * this->hitNum;
 }

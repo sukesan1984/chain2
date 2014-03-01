@@ -85,3 +85,7 @@ void Field::test(){
 int Field::getHitNum(){
     return this->panels->getHitNum();
 }
+
+int Field::getScore(){
+    return this->panels->getScore();
+}
