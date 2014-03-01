@@ -60,7 +60,7 @@ void Field::onTouchMove(const CCPoint &tap){
         panel = (PanelSprite*) targetObject;
         if(panel && panel->boundingBox().containsPoint(tap)){
             panels->swap(tapped, panel);
-            this->test();
+            //this->test();
         }
     }
 }
@@ -76,8 +76,8 @@ void Field::update(){
 }
 
 void Field::test(){
-    panels->makeRemovedGroups();
-    panels->addRemoveflag();
+    //panels->makeRemovedGroups();
+    //panels->addRemoveflag();
     
     CCLog("test");
 }

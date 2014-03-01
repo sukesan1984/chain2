@@ -32,6 +32,21 @@ PanelSprite* FieldPanels::createPanel(int indexX, int indexY){
     return pSprite;
 }
 
+void FieldPanels::group(){
+    if(this->isMoving()){
+        return;
+    }
+    PanelSprite* panel = NULL;
+    CCObject* targetObject = NULL;
+    CCARRAY_FOREACH(this, targetObject){
+        panel = (PanelSprite *) targetObject;
+        CCPoint index = panel->getIndex();
+        table->registerPanel(index.x, index.y, panel);
+    }
+    table->group();
+    this->addRemoveflag();
+}
+
 void FieldPanels::initialize(CCNode* parentNode){
     this->parentNode = parentNode;
     for(int i = 0; i < WIDTH; i++){
@@ -171,14 +186,7 @@ void FieldPanels::movePanels(){
 }
 
 void FieldPanels::makeRemovedGroups(){
-    PanelSprite* panel = NULL;
-    CCObject* targetObject = NULL;
-    CCARRAY_FOREACH(this, targetObject){
-        panel = (PanelSprite *) targetObject;
-        CCPoint index = panel->getIndex();
-        table->registerPanel(index.x, index.y, panel);
-    }
-    table->group();
+    this->group();
 }
 
 
@@ -226,6 +234,7 @@ void FieldPanels::update(){
     this->restockPanel(this->parentNode);
     this->setMoves();
     this->movePanels();
+    this->group();
     removedPanels->removeAllObjects();
 }
 

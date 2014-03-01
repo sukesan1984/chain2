@@ -247,11 +247,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../classes/FieldPanels.cpp"
-            timestampString = "415098221.58007"
+            timestampString = "415338857.803583"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "160"
-            endingLineNumber = "160"
+            startingLineNumber = "175"
+            endingLineNumber = "175"
             landmarkName = "FieldPanels::movePanels()"
             landmarkType = "5">
             <Locations>
@@ -293,11 +293,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../classes/FieldPanels.cpp"
-            timestampString = "415098221.58007"
+            timestampString = "415338857.803583"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "161"
-            endingLineNumber = "161"
+            startingLineNumber = "176"
+            endingLineNumber = "176"
             landmarkName = "FieldPanels::movePanels()"
             landmarkType = "5">
             <Locations>
@@ -339,11 +339,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../classes/FieldPanels.cpp"
-            timestampString = "415098221.58007"
+            timestampString = "415338857.803583"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
             landmarkName = "FieldPanels::addRemoveflag()"
             landmarkType = "5">
          </BreakpointContent>
@@ -763,22 +763,6 @@
             startingLineNumber = "79"
             endingLineNumber = "79"
             landmarkName = "Field::test()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../classes/FieldPanels.cpp"
-            timestampString = "415098221.58007"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "181"
-            endingLineNumber = "181"
-            landmarkName = "FieldPanels::makeRemovedGroups()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
