@@ -82,75 +82,48 @@ PanelSprite* FieldPanelsArray::getPanel(int x, int y){
 void FieldPanelsArray::group(){
     //一時的なgroup map;
     Group* map[FIELD_WIDTH_NUM][FIELD_HEIGHT_NUM] = {{NULL}};
+    //前回分から登録する。
+    this->groupFromCurrentGroups(map);
     for(int i = 0; i < FIELD_WIDTH_NUM; i++){
         for(int j = 0; j < FIELD_HEIGHT_NUM; j++){
             this->group(i, j, map);
         }
     }
-    
-    /*
-    for(int j = 0; j < FIELD_HEIGHT_NUM; j++){
-        for(int i = 0; i < (FIELD_WIDTH_NUM - 1) + FIELD_WIDTH_NUM; i++){
-                //横同士
-                if(i < FIELD_WIDTH_NUM - 1){
-                    PanelSprite* left = this->getPanel(i, j);
-                    PanelSprite* right = this->getPanel(i + 1, j);
-                    if(left->getPanelType() == right->getPanelType()){
-                        if(map[i][j] != NULL ){
-                            map[i][j]->registerPanel(right);
-                            map[i+1][j] = map[i][j];
-                        } else if(map[i+1][j] != NULL){
-                            map[i+1][j]->registerPanel(left);
-                            map[i][j] = map[i+1][j];
-                        } else {
-                            Group* newGroup = Group::create();
-                            groups->addObject((CCObject*) newGroup);
-                            newGroup->registerPanel(left);
-                            newGroup->registerPanel(right);
-                            map[i][j] = map[i+1][j] = newGroup;
-                        }
-                    }
-                //縦同士
-                } else {
-                    //最上段は、上下のチェックはしない。
-                    if(j < FIELD_HEIGHT_NUM - 1){
-                        int startX = i - FIELD_WIDTH_NUM + 1;
-                        PanelSprite* down = this->getPanel(startX, j);
-                        PanelSprite* top = this->getPanel(startX, j + 1);
-                        if(down->getPanelType() == top->getPanelType()){
-                        //下あるいは上にgroupがあれば、それぞれを登録する。
-                        //どちらもグループに属さないときは、新たにグループを作る
-                        if(map[startX][j] != NULL){
-                            map[startX][j]->registerPanel(top);
-                            map[startX][j+1] = map[startX][j];
-                        } else if(map[startX][j+1] != NULL){
-                            map[startX][j+1]->registerPanel(down);
-                            map[startX][j] = map[i][j+1];
-                        } else {
-                            Group* newGroup = Group::create();
-                            groups->addObject((CCObject*) newGroup);
-                            newGroup->registerPanel(down);
-                            newGroup->registerPanel(top);
-                            map[startX][j] = newGroup;
-                            map[startX][j+1] = newGroup;
-                        }
-                    }
-                }
-            }
-        }
+}
+
+void FieldPanelsArray::groupFromCurrentGroups(Group* map[FIELD_WIDTH_NUM][FIELD_HEIGHT_NUM]){
+    Group* group = NULL;
+    CCObject* targetObject = NULL;
+    CCARRAY_FOREACH(this->getGroups(), targetObject){
+        group = (Group*) targetObject;
+        this->group(group, map);
     }
-    */
+}
+
+void FieldPanelsArray::group(Group* group, Group* map[FIELD_WIDTH_NUM][FIELD_HEIGHT_NUM]){
+    PanelSprite* panel = NULL;
+    CCObject* targetObject = NULL;
+    CCARRAY_FOREACH(group->getGroupPanels(), targetObject){
+        panel = (PanelSprite*) targetObject;
+        CCPoint index = panel->getIndex();
+        int x = (int) index.x;
+        int y = (int) index.y;
+        map[x][y] = group;
+        this->group(x, y, map);
+    }
 }
 
 Group* FieldPanelsArray::group(int x, int y, Group* map[FIELD_WIDTH_NUM][FIELD_HEIGHT_NUM]){
-    //再帰的に見るので、どこかにくっついているなら、selfGroupは既に何らかのグループに所属している
-    Group* selfGroup = map[x][y];
+    // 前回分を取得
+    Group* selfGroup = this->getBelongingGroup(x, y);
     PanelSprite* selfPanel = this->getPanel(x, y);
+    //再帰的に見るので、どこかにくっついているなら、selfGroupは既に何らかのグループに所属している
     if(selfGroup == NULL){
         selfGroup = Group::create();
         groups->addObject((CCObject*) selfGroup);
         selfGroup->registerPanel(selfPanel);
     }
+    map[x][y] = selfGroup;
     
     //下とのグルーピングをチェック
     if(y > 0){
@@ -222,6 +195,11 @@ CCArray* FieldPanelsArray::getRemovedPanels(){
         group = (Group*) targetObject;
         if(group->willBeRemoved()){
             removedPanels->addObjectsFromArray(group->getGroupPanels());
+            //削除される時に、フラグを落とす。
+            if(group->needToReset()){
+                group->reset();
+            }
+            group->setAddedNewone(false);
         } else {
             removedIndex->addObject(CCInteger::create(index));
         }
@@ -235,6 +213,19 @@ CCArray* FieldPanelsArray::getRemovedPanels(){
         this->groups->removeObjectAtIndex(index->getValue());
     }
     return removedPanels;
+}
+
+Group* FieldPanelsArray::getBelongingGroup(int x, int y){
+    PanelSprite* panel = this->getPanel(x, y);
+    Group* group = NULL;
+    CCObject* targetObject = NULL;
+    CCARRAY_FOREACH(this->getGroups(), targetObject){
+        group = (Group*) targetObject;
+        if(group->exist(panel)){
+            return group;
+        }
+    }
+    return NULL;
 }
 
 void FieldPanelsArray::removePanel(PanelSprite *panel){

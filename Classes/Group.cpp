@@ -8,6 +8,7 @@
 
 #include "Group.h"
 Group::Group(){
+    addedNewone = false;
     this->groupPanels = CCArray::create();
     this->groupPanels->retain();
 }
@@ -48,6 +49,7 @@ void Group::registerPanel(PanelSprite* panel){
         this->panelType = panel->getPanelType();
     }
     
+    this->setAddedNewone(true);
     this->groupPanels->addObject((CCObject*) panel);
 }
 
@@ -92,6 +94,14 @@ bool Group::exist(PanelSprite *panel){
         }
     }
     return false;
+}
+
+void Group::setAddedNewone(bool addedNewone){
+    this->addedNewone = addedNewone;
+}
+
+bool Group::needToReset(){
+    return this->addedNewone;
 }
 
 int Group::removePanel(PanelSprite* panel) {

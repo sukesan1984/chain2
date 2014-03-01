@@ -39,8 +39,13 @@ public:
     PanelSprite* getPanel(int x, int y);
     
     void group();
-    Group* group(int x, int y, Group* mapw[FIELD_WIDTH_NUM][FIELD_HEIGHT_NUM]);
+    void groupFromCurrentGroups(Group* map[FIELD_WIDTH_NUM][FIELD_HEIGHT_NUM]);
+    void group(Group* group, Group* map[FIELD_WIDTH_NUM][FIELD_HEIGHT_NUM]);
+    Group* group(int x, int y, Group* map[FIELD_WIDTH_NUM][FIELD_HEIGHT_NUM]);
     CCArray* getRemovedPanels();
+    
+    // x, yのパネルが属しているグループ
+    Group* getBelongingGroup(int x, int y);
     
     //
     void removePanel(PanelSprite* panel);
