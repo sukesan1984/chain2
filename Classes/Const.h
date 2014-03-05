@@ -21,4 +21,6 @@ const int PANEL_SIZE = 32;
 const float FIELD_OFFSET_X = 2.5;
 const float FIELD_OFFSET_Y = 104;
 
+const int MAX_GAUGE_VALUE = 1000000;
+
 #endif

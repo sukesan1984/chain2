@@ -174,6 +174,9 @@
             <filename>sky.png</filename>
             <filename>yellow.png</filename>
             <filename>white.png</filename>
+            <filename>gauge.png</filename>
+            <filename>memori.png</filename>
+            <filename>back_gauge.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

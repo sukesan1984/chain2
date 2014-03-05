@@ -68,7 +68,13 @@ bool HelloWorld::init()
     totalRemovedNumLabel->setPosition(CCPoint(visibleSize.width - 200, 40));
     this->addChild(totalRemovedNumLabel);
     
-
+    gauge = Gauge::createGauge();
+    gauge->setAnchorPoint(CCPoint(0, 0));
+    gauge->setPosition(CCPoint(0, visibleSize.height - 60));
+    gauge->setScaleX(visibleSize.width / 640);
+    gauge->setScaleY(visibleSize.width / 640);
+    this->addChild(gauge, 2);
+    
     // create menu, it's an autorelease object
     CCMenu* pMenu = CCMenu::create(pCloseItem, NULL);
     pMenu->setPosition(CCPointZero);
@@ -80,15 +86,6 @@ bool HelloWorld::init()
     // add a label shows "Hello World"
     // create and initialize a label
     
-    CCLabelTTF* pLabel = CCLabelTTF::create("Hello World", "Arial", 24);
-    
-    // position the label on the center of the screen
-    pLabel->setPosition(ccp(origin.x + visibleSize.width/2,
-                            origin.y + visibleSize.height - pLabel->getContentSize().height));
-
-    // add the label as a child to this layer
-    this->addChild(pLabel, 1);
-
     setTouchEnabled(true);
     
     this->schedule(schedule_selector(HelloWorld::update));
@@ -154,7 +151,10 @@ void HelloWorld::update(float dt){
     hitNumLabel->setString(CCString::createWithFormat("Hits:%d",field->getHitNum())->getCString());
     scoreLabel->setString(CCString::createWithFormat("Score:%d",field->getScore())->getCString());
     totalRemovedNumLabel->setString(CCString::createWithFormat("Removed:%d", field->getTotalRemovedPanelsNum())->getCString());
+    gauge->reduce(500);
+    passedframe++;
 }
+
 
 void HelloWorld::test(CCObject* pSender){
     field->test();

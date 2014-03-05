@@ -5,6 +5,7 @@
 #include "Field.h"
 #include "CoverSprite.h"
 #include "Const.h"
+#include "Gauge.h"
 
 class HelloWorld : public cocos2d::CCLayer
 {
@@ -16,6 +17,8 @@ private:
     CCLabelTTF* hitNumLabel;
     CCLabelTTF* scoreLabel;
     CCLabelTTF* totalRemovedNumLabel;
+    Gauge* gauge;
+    int passedframe;
 public:
     // Here's a difference. Method 'init' in cocos2d-x returns bool, instead of returning 'id' in cocos2d-iphone
     virtual bool init();  
