@@ -63,6 +63,11 @@ bool HelloWorld::init()
     scoreLabel->setPosition(CCPoint(visibleSize.width - 200, 60));
     this->addChild(scoreLabel);
     
+    totalRemovedNumLabel = CCLabelTTF::create(CCString::createWithFormat("Removed:%d", field->getTotalRemovedPanelsNum())->getCString(), "arial", 20);
+    totalRemovedNumLabel->setAnchorPoint(CCPoint(0, 0));
+    totalRemovedNumLabel->setPosition(CCPoint(visibleSize.width - 200, 40));
+    this->addChild(totalRemovedNumLabel);
+    
 
     // create menu, it's an autorelease object
     CCMenu* pMenu = CCMenu::create(pCloseItem, NULL);
@@ -148,6 +153,7 @@ void HelloWorld::update(float dt){
     field->update();
     hitNumLabel->setString(CCString::createWithFormat("Hits:%d",field->getHitNum())->getCString());
     scoreLabel->setString(CCString::createWithFormat("Score:%d",field->getScore())->getCString());
+    totalRemovedNumLabel->setString(CCString::createWithFormat("Removed:%d", field->getTotalRemovedPanelsNum())->getCString());
 }
 
 void HelloWorld::test(CCObject* pSender){
