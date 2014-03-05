@@ -15,6 +15,7 @@ private:
     Field* field;
     CCLabelTTF* hitNumLabel;
     CCLabelTTF* scoreLabel;
+    CCLabelTTF* totalRemovedNumLabel;
 public:
     // Here's a difference. Method 'init' in cocos2d-x returns bool, instead of returning 'id' in cocos2d-iphone
     virtual bool init();  

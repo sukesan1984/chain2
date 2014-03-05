@@ -30,6 +30,7 @@ public:
     void test();
     int getHitNum();
     int getScore();
+    int getTotalRemovedPanelsNum();
     Field();
     ~Field();
 };

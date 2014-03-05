@@ -12,6 +12,7 @@ FieldPanels::FieldPanels(){
     removedPanels = CCArray::create();
     removedPanels->retain();
     table = new FieldPanelsArray();
+    totalRemovedPanelsNum = 0;
 }
 
 FieldPanels::~FieldPanels(){
@@ -99,6 +100,7 @@ void FieldPanels::remove(int index){
     PanelSprite* panel = (PanelSprite*) this->objectAtIndex(index);
     this->table->removePanel(panel);
     this->removeObjectAtIndex(index);
+    totalRemovedPanelsNum++;
 }
 
 void FieldPanels::addRemoveflag(){
@@ -261,4 +263,8 @@ int FieldPanels::getHitNum(){
 
 int FieldPanels::getScore(){
     return this->table->getScore();
+}
+
+int FieldPanels::getTotalRemovedPanelsNum(){
+    return this->totalRemovedPanelsNum;
 }

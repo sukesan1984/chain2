@@ -29,6 +29,7 @@ public:
     void start();
     void reset();
     void update();
+    void setTime(float time);
     
     CREATE_FUNC(CoverSprite);
 };

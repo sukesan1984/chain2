@@ -31,7 +31,7 @@ public:
     bool willBeRemoved();
     bool exist(PanelSprite* panel);
     void setAddedNewone(bool addedNewOne);
-    bool needToReset();
+    bool needToReset()host = "#{handshake.headers['Host']}";
     //残数を返す。
     int removePanel(PanelSprite* panel);
     int getGroupPanelsNum();

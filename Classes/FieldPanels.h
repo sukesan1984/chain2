@@ -26,6 +26,7 @@ class FieldPanels : public CCArray{
     CCNode* parentNode;
     PanelSprite* tapped;
     FieldPanelsArray* table;
+    int totalRemovedPanelsNum;
     void group();
 public:
     void initialize(CCNode* parentNode); //明示的に初期化処理を呼ぶ。
@@ -51,6 +52,7 @@ public:
     
     int getHitNum();
     int getScore();
+    int getTotalRemovedPanelsNum();
     
     FieldPanels();
     ~FieldPanels();

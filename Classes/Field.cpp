@@ -89,3 +89,7 @@ int Field::getHitNum(){
 int Field::getScore(){
     return this->panels->getScore();
 }
+
+int Field::getTotalRemovedPanelsNum(){
+    return this->panels->getTotalRemovedPanelsNum();
+}

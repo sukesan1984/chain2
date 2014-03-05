@@ -275,5 +275,5 @@ int FieldPanelsArray::calcScore(){
             panelNum += group->getGroupPanelsNum();
         }
     }
-    return panelNum * this->hitNum;
+    return panelNum * ( this->hitNum / 5 + 1);
 }
