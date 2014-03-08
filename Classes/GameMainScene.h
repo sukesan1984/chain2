@@ -1,5 +1,5 @@
-#ifndef __HELLOWORLD_SCENE_H__
-#define __HELLOWORLD_SCENE_H__
+#ifndef __GAMEMAIN_SCENE_H__
+#define __GAMEMAIN_SCENE_H__
 
 #include "cocos2d.h"
 #include "Field.h"
@@ -7,7 +7,7 @@
 #include "Const.h"
 #include "Gauge.h"
 
-class HelloWorld : public cocos2d::CCLayer
+class GameMain : public cocos2d::CCLayer
 {
 private:
     const float FIELD_START_AT_X = FIELD_OFFSET_X;
@@ -33,11 +33,11 @@ public:
     void ccTouchesMoved(cocos2d::CCSet* pTouches, cocos2d::CCEvent* event);
     void ccTouchesEnded(cocos2d::CCSet* pTouches, cocos2d::CCEvent* event);
     // implement the "static create()" method manually
-    CREATE_FUNC(HelloWorld);
+    CREATE_FUNC(GameMain);
     
     void update(float dt);
     
     void test(CCObject* pSender);
 };
 
-#endif // __HELLOWORLD_SCENE_H__
+#endif // __GAMEMAIN_SCENE_H__

@@ -1,14 +1,14 @@
-#include "HelloWorldScene.h"
+#include "GameMainScene.h"
 
 USING_NS_CC;
 
-CCScene* HelloWorld::scene()
+CCScene* GameMain::scene()
 {
     // 'scene' is an autorelease object
     CCScene *scene = CCScene::create();
     
     // 'layer' is an autorelease object
-    HelloWorld *layer = HelloWorld::create();
+    GameMain *layer = GameMain::create();
 
     // add layer as a child to scene
     scene->addChild(layer);
@@ -18,7 +18,7 @@ CCScene* HelloWorld::scene()
 }
 
 // on "init" you need to initialize your instance
-bool HelloWorld::init()
+bool GameMain::init()
 {
     //////////////////////////////
     // 1. super init first
@@ -39,7 +39,7 @@ bool HelloWorld::init()
                                         "CloseNormal.png",
                                         "CloseSelected.png",
                                         this,
-                                        menu_selector(HelloWorld::test));
+                                        menu_selector(GameMain::test));
     
 	pCloseItem->setPosition(ccp(origin.x + visibleSize.width - pCloseItem->getContentSize().width/2 ,
                                 origin.y + pCloseItem->getContentSize().height/2));
@@ -88,12 +88,12 @@ bool HelloWorld::init()
     
     setTouchEnabled(true);
     
-    this->schedule(schedule_selector(HelloWorld::update));
+    this->schedule(schedule_selector(GameMain::update));
     return true;
 }
 
 
-void HelloWorld::menuCloseCallback(CCObject* pSender)
+void GameMain::menuCloseCallback(CCObject* pSender)
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_WINRT) || (CC_TARGET_PLATFORM == CC_PLATFORM_WP8)
 	CCMessageBox("You pressed the close button. Windows Store Apps do not implement a close button.","Alert");
@@ -105,7 +105,7 @@ void HelloWorld::menuCloseCallback(CCObject* pSender)
 #endif
 }
 
-void HelloWorld::ccTouchesBegan(CCSet* pTouches, CCEvent* event){
+void GameMain::ccTouchesBegan(CCSet* pTouches, CCEvent* event){
     CCSetIterator i;
     CCTouch* touch;
     
@@ -119,7 +119,7 @@ void HelloWorld::ccTouchesBegan(CCSet* pTouches, CCEvent* event){
     }
 }
 
-void HelloWorld::ccTouchesMoved(CCSet* pTouches, CCEvent* event){
+void GameMain::ccTouchesMoved(CCSet* pTouches, CCEvent* event){
     CCSetIterator i;
     CCTouch* touch;
     
@@ -133,7 +133,7 @@ void HelloWorld::ccTouchesMoved(CCSet* pTouches, CCEvent* event){
     }
 }
 
-void HelloWorld::ccTouchesEnded(CCSet* pTouches, CCEvent* event){
+void GameMain::ccTouchesEnded(CCSet* pTouches, CCEvent* event){
     CCSetIterator i;
     CCTouch* touch;
     
@@ -146,7 +146,7 @@ void HelloWorld::ccTouchesEnded(CCSet* pTouches, CCEvent* event){
     }
 }
 
-void HelloWorld::update(float dt){
+void GameMain::update(float dt){
     field->update();
     hitNumLabel->setString(CCString::createWithFormat("Hits:%d",field->getHitNum())->getCString());
     scoreLabel->setString(CCString::createWithFormat("Score:%d",field->getScore())->getCString());
@@ -156,6 +156,6 @@ void HelloWorld::update(float dt){
 }
 
 
-void HelloWorld::test(CCObject* pSender){
+void GameMain::test(CCObject* pSender){
     field->test();
 }

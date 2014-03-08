@@ -9,13 +9,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../Classes/HelloWorldScene.cpp"
+            filePath = "../Classes/GameMainScene.cpp"
             timestampString = "415716601.711967"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "150"
             endingLineNumber = "150"
-            landmarkName = "HelloWorld::update(float dt)"
+            landmarkName = "GameMain::update(float dt)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -920,7 +920,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "47"
             endingLineNumber = "47"
-            landmarkName = "Gauge::reduce(int value)"
+            landmarkName = "Gauge::setGaugeScale(float scale)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
