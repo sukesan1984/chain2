@@ -244,6 +244,9 @@ bool FieldPanels::isMoving(){
     return this->moveState;
 }
 
+bool FieldPanels::hasRemovingPanels(){
+    return this->table->hasRemovingPanels();
+}
 
 void FieldPanels::swap(PanelSprite *panel1, PanelSprite *panel2){
     if(panel1 == NULL || panel2 == NULL){

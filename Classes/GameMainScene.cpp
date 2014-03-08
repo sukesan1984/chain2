@@ -26,6 +26,7 @@ bool GameMain::init()
     {
         return false;
     }
+    this->goneToGameOver = false;
     
     CCSize visibleSize = CCDirector::sharedDirector()->getVisibleSize();
     CCPoint origin = CCDirector::sharedDirector()->getVisibleOrigin();
@@ -151,11 +152,26 @@ void GameMain::update(float dt){
     hitNumLabel->setString(CCString::createWithFormat("Hits:%d",field->getHitNum())->getCString());
     scoreLabel->setString(CCString::createWithFormat("Score:%d",field->getScore())->getCString());
     totalRemovedNumLabel->setString(CCString::createWithFormat("Removed:%d", field->getTotalRemovedPanelsNum())->getCString());
-    gauge->reduce(500);
+    gauge->reduce(2000);
+    if(gauge->isGameOver() && !this->field->hasRemovingPanels() && !this->field->isMoving()){
+        this->setTouchEnabled(false);
+        if(!goneToGameOver){
+            goneToGameOver = true;
+            this->gotoGameOverScene();
+        }
+    }
     passedframe++;
 }
 
-
 void GameMain::test(CCObject* pSender){
     field->test();
+}
+
+void GameMain::gotoGameOverScene(){
+    //切り替え先のシーン
+    CCScene *scene = GameOver::scene();
+    //0.5秒でクロスフェード
+    CCTransitionCrossFade *crossFade = CCTransitionCrossFade::create(0.5f, scene);
+    //切り替え
+    CCDirector::sharedDirector()->replaceScene(crossFade);
 }

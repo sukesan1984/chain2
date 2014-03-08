@@ -172,6 +172,8 @@
 		2547873A18BDC7D7009F258A /* FieldPanelsArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2547873818BDC7D7009F258A /* FieldPanelsArray.cpp */; };
 		2591444E18C74DBB007712B8 /* Gauge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2591444C18C74DBB007712B8 /* Gauge.cpp */; };
 		2591445218C74F8A007712B8 /* Memori.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2591445018C74F8A007712B8 /* Memori.cpp */; };
+		2591445618CB04F8007712B8 /* TitleScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2591445418CB04F8007712B8 /* TitleScene.cpp */; };
+		2591445D18CB0BE2007712B8 /* GameOverScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2591445B18CB0BE2007712B8 /* GameOverScene.cpp */; };
 		25F39A8D18B8C1B4001A10BB /* GoogleAdMobAdsSdk in Resources */ = {isa = PBXBuildFile; fileRef = 25F39A8C18B8C1B4001A10BB /* GoogleAdMobAdsSdk */; };
 		25F39A8F18B8C1F7001A10BB /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F39A8E18B8C1F7001A10BB /* MessageUI.framework */; };
 		25F39A9118B8C1FF001A10BB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F39A9018B8C1FF001A10BB /* SystemConfiguration.framework */; };
@@ -610,6 +612,10 @@
 		2591444D18C74DBB007712B8 /* Gauge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Gauge.h; path = ../Classes/Gauge.h; sourceTree = "<group>"; };
 		2591445018C74F8A007712B8 /* Memori.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Memori.cpp; path = ../Classes/Memori.cpp; sourceTree = "<group>"; };
 		2591445118C74F8A007712B8 /* Memori.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Memori.h; path = ../Classes/Memori.h; sourceTree = "<group>"; };
+		2591445418CB04F8007712B8 /* TitleScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TitleScene.cpp; path = ../Classes/TitleScene.cpp; sourceTree = "<group>"; };
+		2591445518CB04F8007712B8 /* TitleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TitleScene.h; path = ../Classes/TitleScene.h; sourceTree = "<group>"; };
+		2591445B18CB0BE2007712B8 /* GameOverScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameOverScene.cpp; path = ../Classes/GameOverScene.cpp; sourceTree = "<group>"; };
+		2591445C18CB0BE2007712B8 /* GameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameOverScene.h; path = ../Classes/GameOverScene.h; sourceTree = "<group>"; };
 		25F39A8C18B8C1B4001A10BB /* GoogleAdMobAdsSdk */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GoogleAdMobAdsSdk; sourceTree = "<group>"; };
 		25F39A8E18B8C1F7001A10BB /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		25F39A9018B8C1FF001A10BB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -1306,12 +1312,11 @@
 				25F39AA218B8C7A6001A10BB /* Group.h */,
 				1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */,
 				1AFAF8B416D35DE700DB1158 /* AppDelegate.h */,
-				1AFAF8B516D35DE700DB1158 /* GameMainScene.cpp */,
-				1AFAF8B616D35DE700DB1158 /* GameMainScene.h */,
 				2591444C18C74DBB007712B8 /* Gauge.cpp */,
 				2591444D18C74DBB007712B8 /* Gauge.h */,
 				2591445018C74F8A007712B8 /* Memori.cpp */,
 				2591445118C74F8A007712B8 /* Memori.h */,
+				2591445718CB0BB3007712B8 /* Scene */,
 			);
 			name = Classes;
 			path = ../classes;
@@ -1416,6 +1421,19 @@
 				1AB8703B175E0A92005D39BF /* libwebsockets.a */,
 			);
 			path = lib;
+			sourceTree = "<group>";
+		};
+		2591445718CB0BB3007712B8 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				1AFAF8B516D35DE700DB1158 /* GameMainScene.cpp */,
+				1AFAF8B616D35DE700DB1158 /* GameMainScene.h */,
+				2591445518CB04F8007712B8 /* TitleScene.h */,
+				2591445418CB04F8007712B8 /* TitleScene.cpp */,
+				2591445C18CB0BE2007712B8 /* GameOverScene.h */,
+				2591445B18CB0BE2007712B8 /* GameOverScene.cpp */,
+			);
+			name = Scene;
 			sourceTree = "<group>";
 		};
 		25F39AAD18B8C7AB001A10BB /* panel */ = {
@@ -1970,6 +1988,7 @@
 				15A3D9AE1682F7F9002FB0C5 /* cpSpaceQuery.c in Sources */,
 				15A3D9AF1682F7F9002FB0C5 /* cpSpaceStep.c in Sources */,
 				15A3D9B01682F7F9002FB0C5 /* cpSpatialIndex.c in Sources */,
+				2591445618CB04F8007712B8 /* TitleScene.cpp in Sources */,
 				15A3D9B11682F7F9002FB0C5 /* cpSweep1D.c in Sources */,
 				15A3D9B21682F7F9002FB0C5 /* cpVect.c in Sources */,
 				15A3DA311682F826002FB0C5 /* CCBAnimationManager.cpp in Sources */,
@@ -2001,6 +2020,7 @@
 				15A3DA491682F826002FB0C5 /* CCControl.cpp in Sources */,
 				15A3DA4A1682F826002FB0C5 /* CCControlButton.cpp in Sources */,
 				15A3DA4B1682F826002FB0C5 /* CCControlColourPicker.cpp in Sources */,
+				2591445D18CB0BE2007712B8 /* GameOverScene.cpp in Sources */,
 				2591444E18C74DBB007712B8 /* Gauge.cpp in Sources */,
 				15A3DA4C1682F826002FB0C5 /* CCControlHuePicker.cpp in Sources */,
 				375BD50F1868454E0024609E /* CCActionFrame.cpp in Sources */,

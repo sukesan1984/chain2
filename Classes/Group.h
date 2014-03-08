@@ -17,6 +17,7 @@ using namespace cocos2d;
 class Group : public CCNode{
     int panelType;
     bool addedNewone;
+    bool removing;
     CCArray* groupPanels;
     ~Group();
     Group();
@@ -28,6 +29,8 @@ public:
     void reset();
     int getGroupNumber();
     int getPanelType();
+    void setRemoving(bool removing);
+    bool isRemoving();
     bool willBeRemoved();
     bool exist(PanelSprite* panel);
     void setAddedNewone(bool addedNewOne);

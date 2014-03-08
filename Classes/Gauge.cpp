@@ -64,3 +64,7 @@ void Gauge::increase(int value) {
     float scale = (float) this->value / MAX_GAUGE_VALUE;
     this->setGaugeScale(scale);
 }
+
+bool Gauge::isGameOver(){
+    return this->value == 0;
+}

@@ -47,10 +47,11 @@ public:
     Group* group(int x, int y, Group* map[FIELD_WIDTH_NUM][FIELD_HEIGHT_NUM]);
     CCArray* getRemovedPanels();
     
+    bool hasRemovingPanels();
+    
     // x, yのパネルが属しているグループ
     Group* getBelongingGroup(int x, int y);
     
-    //
     void removePanel(PanelSprite* panel);
     // groupをGroupsから削除する。
     void removeGroup(Group* group);

@@ -196,6 +196,7 @@ CCArray* FieldPanelsArray::getRemovedPanels(){
     CCARRAY_FOREACH(this->getGroups(), targetObject){
         group = (Group*) targetObject;
         if(group->willBeRemoved()){
+            group->setRemoving(true);
             removedPanels->addObjectsFromArray(group->getGroupPanels());
             //新たに消え始める時は、リセットする。
             // hitnumをの数を増やす。
@@ -219,6 +220,18 @@ CCArray* FieldPanelsArray::getRemovedPanels(){
         this->groups->removeObjectAtIndex(index->getValue());
     }
     return removedPanels;
+}
+
+bool FieldPanelsArray::hasRemovingPanels(){
+    Group* group = NULL;
+    CCObject* targetObject = NULL;
+    CCARRAY_FOREACH(this->getGroups(), targetObject) {
+        group = (Group*) targetObject;
+        if(group->isRemoving()){
+            return true;
+        }
+    }
+    return false;
 }
 
 Group* FieldPanelsArray::getBelongingGroup(int x, int y){

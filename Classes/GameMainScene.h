@@ -6,6 +6,7 @@
 #include "CoverSprite.h"
 #include "Const.h"
 #include "Gauge.h"
+#include "GameOverScene.h"
 
 class GameMain : public cocos2d::CCLayer
 {
@@ -18,6 +19,7 @@ private:
     CCLabelTTF* scoreLabel;
     CCLabelTTF* totalRemovedNumLabel;
     Gauge* gauge;
+    bool goneToGameOver;
     int passedframe;
 public:
     // Here's a difference. Method 'init' in cocos2d-x returns bool, instead of returning 'id' in cocos2d-iphone
@@ -38,6 +40,8 @@ public:
     void update(float dt);
     
     void test(CCObject* pSender);
+    
+    void gotoGameOverScene();
 };
 
 #endif // __GAMEMAIN_SCENE_H__

@@ -25,6 +25,7 @@ public:
     static Gauge* createGauge();
     void reduce(int value);
     void increase(int value);
+    bool isGameOver();
 };
 
 #endif /* defined(__chain__Gauge__) */
