@@ -48,6 +48,7 @@ public:
     
     static FieldPanels* create();
     bool isMoving();
+    bool hasRemovingPanels();
     void swap(PanelSprite* panel1, PanelSprite* panel2);
     
     int getHitNum();

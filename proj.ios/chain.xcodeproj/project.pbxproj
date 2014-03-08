@@ -174,6 +174,7 @@
 		2591445218C74F8A007712B8 /* Memori.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2591445018C74F8A007712B8 /* Memori.cpp */; };
 		2591445618CB04F8007712B8 /* TitleScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2591445418CB04F8007712B8 /* TitleScene.cpp */; };
 		2591445D18CB0BE2007712B8 /* GameOverScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2591445B18CB0BE2007712B8 /* GameOverScene.cpp */; };
+		2591446018CB1656007712B8 /* Score.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2591445E18CB1655007712B8 /* Score.cpp */; };
 		25F39A8D18B8C1B4001A10BB /* GoogleAdMobAdsSdk in Resources */ = {isa = PBXBuildFile; fileRef = 25F39A8C18B8C1B4001A10BB /* GoogleAdMobAdsSdk */; };
 		25F39A8F18B8C1F7001A10BB /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F39A8E18B8C1F7001A10BB /* MessageUI.framework */; };
 		25F39A9118B8C1FF001A10BB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F39A9018B8C1FF001A10BB /* SystemConfiguration.framework */; };
@@ -616,6 +617,8 @@
 		2591445518CB04F8007712B8 /* TitleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TitleScene.h; path = ../Classes/TitleScene.h; sourceTree = "<group>"; };
 		2591445B18CB0BE2007712B8 /* GameOverScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameOverScene.cpp; path = ../Classes/GameOverScene.cpp; sourceTree = "<group>"; };
 		2591445C18CB0BE2007712B8 /* GameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameOverScene.h; path = ../Classes/GameOverScene.h; sourceTree = "<group>"; };
+		2591445E18CB1655007712B8 /* Score.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Score.cpp; path = ../Classes/Score.cpp; sourceTree = "<group>"; };
+		2591445F18CB1656007712B8 /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Score.h; path = ../Classes/Score.h; sourceTree = "<group>"; };
 		25F39A8C18B8C1B4001A10BB /* GoogleAdMobAdsSdk */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GoogleAdMobAdsSdk; sourceTree = "<group>"; };
 		25F39A8E18B8C1F7001A10BB /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		25F39A9018B8C1FF001A10BB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -1317,6 +1320,8 @@
 				2591445018C74F8A007712B8 /* Memori.cpp */,
 				2591445118C74F8A007712B8 /* Memori.h */,
 				2591445718CB0BB3007712B8 /* Scene */,
+				2591445E18CB1655007712B8 /* Score.cpp */,
+				2591445F18CB1656007712B8 /* Score.h */,
 			);
 			name = Classes;
 			path = ../classes;
@@ -2049,6 +2054,7 @@
 				15A3DAEE1682F8A6002FB0C5 /* SimpleAudioEngine.mm in Sources */,
 				15A3DAEF1682F8A6002FB0C5 /* SimpleAudioEngine_objc.m in Sources */,
 				1A27573F1697CF2B00504026 /* CCEditBoxImplAndroid.cpp in Sources */,
+				2591446018CB1656007712B8 /* Score.cpp in Sources */,
 				1AFAF8B716D35DE700DB1158 /* AppDelegate.cpp in Sources */,
 				1AFAF8B816D35DE700DB1158 /* GameMainScene.cpp in Sources */,
 				1AC3624916D4A1E8000847F2 /* AppController.mm in Sources */,

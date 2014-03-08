@@ -9,6 +9,7 @@
 #include "Group.h"
 Group::Group(){
     addedNewone = false;
+    removing = false;
     this->groupPanels = CCArray::create();
     this->groupPanels->retain();
 }
@@ -77,6 +78,14 @@ void Group::reset(){
 
 int Group::getPanelType(){
     return panelType;
+}
+
+void Group::setRemoving(bool removing){
+    this->removing = removing;
+}
+
+bool Group::isRemoving(){
+    return this->removing;
 }
 
 bool Group::willBeRemoved(){

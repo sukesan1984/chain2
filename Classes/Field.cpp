@@ -93,3 +93,11 @@ int Field::getScore(){
 int Field::getTotalRemovedPanelsNum(){
     return this->panels->getTotalRemovedPanelsNum();
 }
+
+bool Field::isMoving(){
+    return this->panels->isMoving();
+}
+
+bool Field::hasRemovingPanels(){
+    return this->panels->hasRemovingPanels();
+}

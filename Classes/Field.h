@@ -31,6 +31,8 @@ public:
     int getHitNum();
     int getScore();
     int getTotalRemovedPanelsNum();
+    bool isMoving();
+    bool hasRemovingPanels();
     Field();
     ~Field();
 };

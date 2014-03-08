@@ -202,8 +202,11 @@ CCArray* FieldPanelsArray::getRemovedPanels(){
             // hitnumをの数を増やす。
             if(group->needToReset()){
                 group->reset();
+                Score &scoreInstance = Score::instance();
                 this->hitNum++;
                 score += this->calcScore();
+                scoreInstance.setScore(score);
+                scoreInstance.setHitNum(this->hitNum);
             }
            //削除される時に、フラグを落とす。
             group->setAddedNewone(false);
@@ -265,16 +268,18 @@ void FieldPanelsArray::removePanel(PanelSprite *panel){
 void FieldPanelsArray::removeGroup(Group *group){
     groups->removeObject((CCObject*) group);
     if(groups->count() == 0){
-        hitNum = 0;
+        Score::instance().setHitNum(0);
+        //hitNum = 0;
     }
 }
 
 int FieldPanelsArray::getHitNum(){
-    return hitNum;
+    return Score::instance().getHitNum();
 }
 
 int FieldPanelsArray::getScore(){
-    return score;
+    //Score &scoreInstance = Score::instance();
+    return Score::instance().getScore();
 }
 
 int FieldPanelsArray::calcScore(){
@@ -288,5 +293,5 @@ int FieldPanelsArray::calcScore(){
             panelNum += group->getGroupPanelsNum();
         }
     }
-    return panelNum * ( this->hitNum / 5 + 1);
+    return panelNum * ( Score::instance().getHitNum() / 5 + 1);
 }
