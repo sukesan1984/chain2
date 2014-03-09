@@ -31,19 +31,6 @@ bool GameMain::init()
     CCSize visibleSize = CCDirector::sharedDirector()->getVisibleSize();
     CCPoint origin = CCDirector::sharedDirector()->getVisibleOrigin();
 
-    /////////////////////////////
-    // 2. add a menu item with "X" image, which is clicked to quit the program
-    //    you may modify it.
-
-    // add a "close" icon to exit the progress. it's an autorelease object
-    CCMenuItemImage *pCloseItem = CCMenuItemImage::create(
-                                        "CloseNormal.png",
-                                        "CloseSelected.png",
-                                        this,
-                                        menu_selector(GameMain::test));
-    
-	pCloseItem->setPosition(ccp(origin.x + visibleSize.width - pCloseItem->getContentSize().width/2 ,
-                                origin.y + pCloseItem->getContentSize().height/2));
     
     CCSpriteFrameCache::sharedSpriteFrameCache()->addSpriteFramesWithFile("panels.plist");
     
@@ -56,33 +43,28 @@ bool GameMain::init()
     this->addChild(field);
     
     hitNumLabel = CCLabelTTF::create(CCString::createWithFormat("Hits:%d",field->getHitNum())->getCString(), "arial", 20);
-    hitNumLabel->setAnchorPoint(CCPoint(0, 0));
-    hitNumLabel->setPosition(CCPoint(visibleSize.width - 200, 80));
+    hitNumLabel->setAnchorPoint(CCPoint(0, 1.0));
+    hitNumLabel->setPosition(CCPoint(0, visibleSize.height - 20));
     this->addChild(hitNumLabel);
     
     scoreLabel = CCLabelTTF::create(CCString::createWithFormat("Score:%d", field->getScore())->getCString(), "arial", 20);
-    scoreLabel->setAnchorPoint(CCPoint(0, 0));
-    scoreLabel->setPosition(CCPoint(visibleSize.width - 200, 60));
+    scoreLabel->setAnchorPoint(CCPoint(1.0, 1.0));
+    scoreLabel->setPosition(CCPoint(visibleSize.width,visibleSize.height - 20));
     this->addChild(scoreLabel);
     
-    totalRemovedNumLabel = CCLabelTTF::create(CCString::createWithFormat("Removed:%d", field->getTotalRemovedPanelsNum())->getCString(), "arial", 20);
-    totalRemovedNumLabel->setAnchorPoint(CCPoint(0, 0));
-    totalRemovedNumLabel->setPosition(CCPoint(visibleSize.width - 200, 40));
-    this->addChild(totalRemovedNumLabel);
+    levelLabel = CCLabelTTF::create(CCString::createWithFormat("Level:%d", 1)->getCString(), "arial", 20);
+    levelLabel->setAnchorPoint(CCPoint(0.5, 1.0));
+    levelLabel->setPosition(CCPoint(visibleSize.width / 2, visibleSize.height));
+    this->addChild(levelLabel);
     
     gauge = Gauge::createGauge();
-    gauge->setAnchorPoint(CCPoint(0, 0));
-    gauge->setPosition(CCPoint(0, visibleSize.height - 60));
+    gauge->setAnchorPoint(CCPoint(0, 1.0));
+    gauge->setPosition(CCPoint(0, visibleSize.height - 40));
     gauge->setScaleX(visibleSize.width / 640);
     gauge->setScaleY(visibleSize.width / 640);
     this->addChild(gauge, 2);
     this->field->setGauge(gauge);
     
-    // create menu, it's an autorelease object
-    CCMenu* pMenu = CCMenu::create(pCloseItem, NULL);
-    pMenu->setPosition(CCPointZero);
-    this->addChild(pMenu, 1);
-
     /////////////////////////////
     // 3. add your codes below...
 
@@ -153,7 +135,7 @@ void GameMain::update(float dt){
     field->update();
     hitNumLabel->setString(CCString::createWithFormat("Hits:%d",field->getHitNum())->getCString());
     scoreLabel->setString(CCString::createWithFormat("Score:%d",field->getScore())->getCString());
-    totalRemovedNumLabel->setString(CCString::createWithFormat("Removed:%d", field->getTotalRemovedPanelsNum())->getCString());
+    levelLabel->setString(CCString::createWithFormat("Level:%d", int(field->getTotalRemovedPanelsNum() / SPEED_UP_PANEL_NUM) + 1)->getCString());
     if(beforeTotalRemovedNum + SPEED_UP_PANEL_NUM < field->getTotalRemovedPanelsNum()){
         PanelTime::instance().speedUp();
         beforeTotalRemovedNum = field->getTotalRemovedPanelsNum();

@@ -37,10 +37,10 @@ bool Title::init()
     
     CCMenuItemLabel *gameMainButton = CCMenuItemFont::create("GameMain", this, menu_selector(Title::gameMainAction));
     CCMenuItemLabel *rankingButton  = CCMenuItemFont::create("Ranking", this, menu_selector(Title::rankingAction));
-    CCMenuItemLabel *gamecenterButton  = CCMenuItemFont::create("GameCenterLogin", this, menu_selector(Title::login));
+    //CCMenuItemLabel *gamecenterButton  = CCMenuItemFont::create("GameCenterLogin", this, menu_selector(Title::login));
     
     //CCMenu *menu = CCMenu::createWithItems(gameMainButton, NULL);
-    CCMenu *menu  = CCMenu::create(gameMainButton, rankingButton, gamecenterButton, NULL);
+    CCMenu *menu  = CCMenu::create(gameMainButton, rankingButton, NULL);
     menu->setPosition(ccp(visibleSize.width/2, visibleSize.height/2));
     menu->alignItemsVertically();
     

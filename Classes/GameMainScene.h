@@ -18,7 +18,7 @@ private:
     Field* field;
     CCLabelTTF* hitNumLabel;
     CCLabelTTF* scoreLabel;
-    CCLabelTTF* totalRemovedNumLabel;
+    CCLabelTTF* levelLabel;
     Gauge* gauge;
     bool goneToGameOver;
     int passedframe;

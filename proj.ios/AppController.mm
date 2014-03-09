@@ -55,8 +55,8 @@ static AppDelegate s_sharedApplication;
     [[UIApplication sharedApplication] setStatusBarHidden:true];
     
     bannerView_ = [GADBannerView alloc];
-    //CGPoint origin = CGPointMake( 0.0, self->viewController.view.frame.size.height - GAD_SIZE_320x50.height);
-    CGPoint origin = CGPointMake( 0.0, 0.0 );
+    CGPoint origin = CGPointMake( self->viewController.view.frame.size.width / 2 - GAD_SIZE_320x50.width / 2, self->viewController.view.frame.size.height - GAD_SIZE_320x50.height);
+    //CGPoint origin = CGPointMake( 0.0, 0.0 );
     //CGPoint origin = CGPointMake( 0.0, self->viewController.view.frame.size.height);
     bannerView_ = [[[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner origin:origin] autorelease];
     
