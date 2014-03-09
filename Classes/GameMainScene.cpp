@@ -154,10 +154,10 @@ void GameMain::update(float dt){
     hitNumLabel->setString(CCString::createWithFormat("Hits:%d",field->getHitNum())->getCString());
     scoreLabel->setString(CCString::createWithFormat("Score:%d",field->getScore())->getCString());
     totalRemovedNumLabel->setString(CCString::createWithFormat("Removed:%d", field->getTotalRemovedPanelsNum())->getCString());
-    //if(beforeTotalRemovedNum < field->getTotalRemovedPanelsNum()){
-    //    gauge->increaseByPanelNum(field->getTotalRemovedPanelsNum() - beforeTotalRemovedNum);
-    //    beforeTotalRemovedNum = field->getTotalRemovedPanelsNum();
-    //}
+    if(beforeTotalRemovedNum + SPEED_UP_PANEL_NUM < field->getTotalRemovedPanelsNum()){
+        PanelTime::instance().speedUp();
+        beforeTotalRemovedNum = field->getTotalRemovedPanelsNum();
+    }
     gauge->reduce();
     if(gauge->isGameOver() && !this->field->hasRemovingPanels() && !this->field->isMoving()){
         this->setTouchEnabled(false);

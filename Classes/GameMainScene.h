@@ -7,6 +7,7 @@
 #include "Const.h"
 #include "Gauge.h"
 #include "GameOverScene.h"
+#include "PanelTime.h"
 
 class GameMain : public cocos2d::CCLayer
 {

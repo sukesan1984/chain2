@@ -108,6 +108,7 @@ void FieldPanelsArray::group(Group* group, Group* map[FIELD_WIDTH_NUM][FIELD_HEI
     CCObject* targetObject = NULL;
     CCARRAY_FOREACH(group->getGroupPanels(), targetObject){
         panel = (PanelSprite*) targetObject;
+        CCAssert(panel != NULL, "panel must not be null");
         CCPoint index = panel->getIndex();
         int x = (int) index.x;
         int y = (int) index.y;

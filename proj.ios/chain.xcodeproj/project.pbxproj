@@ -175,6 +175,7 @@
 		2591445618CB04F8007712B8 /* TitleScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2591445418CB04F8007712B8 /* TitleScene.cpp */; };
 		2591445D18CB0BE2007712B8 /* GameOverScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2591445B18CB0BE2007712B8 /* GameOverScene.cpp */; };
 		2591446018CB1656007712B8 /* Score.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2591445E18CB1655007712B8 /* Score.cpp */; };
+		25C640BE18CC4FA800D4B1BE /* PanelTime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25C640BC18CC4FA800D4B1BE /* PanelTime.cpp */; };
 		25F39A8D18B8C1B4001A10BB /* GoogleAdMobAdsSdk in Resources */ = {isa = PBXBuildFile; fileRef = 25F39A8C18B8C1B4001A10BB /* GoogleAdMobAdsSdk */; };
 		25F39A8F18B8C1F7001A10BB /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F39A8E18B8C1F7001A10BB /* MessageUI.framework */; };
 		25F39A9118B8C1FF001A10BB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F39A9018B8C1FF001A10BB /* SystemConfiguration.framework */; };
@@ -619,6 +620,8 @@
 		2591445C18CB0BE2007712B8 /* GameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameOverScene.h; path = ../Classes/GameOverScene.h; sourceTree = "<group>"; };
 		2591445E18CB1655007712B8 /* Score.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Score.cpp; path = ../Classes/Score.cpp; sourceTree = "<group>"; };
 		2591445F18CB1656007712B8 /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Score.h; path = ../Classes/Score.h; sourceTree = "<group>"; };
+		25C640BC18CC4FA800D4B1BE /* PanelTime.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PanelTime.cpp; path = ../Classes/PanelTime.cpp; sourceTree = "<group>"; };
+		25C640BD18CC4FA800D4B1BE /* PanelTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PanelTime.h; path = ../Classes/PanelTime.h; sourceTree = "<group>"; };
 		25F39A8C18B8C1B4001A10BB /* GoogleAdMobAdsSdk */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GoogleAdMobAdsSdk; sourceTree = "<group>"; };
 		25F39A8E18B8C1F7001A10BB /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		25F39A9018B8C1FF001A10BB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -1445,6 +1448,8 @@
 			children = (
 				2591445E18CB1655007712B8 /* Score.cpp */,
 				2591445F18CB1656007712B8 /* Score.h */,
+				25C640BC18CC4FA800D4B1BE /* PanelTime.cpp */,
+				25C640BD18CC4FA800D4B1BE /* PanelTime.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -2114,6 +2119,7 @@
 				379BB9AA17F03F3700829B88 /* CCTransformHelp.cpp in Sources */,
 				379BB9AB17F03F3700829B88 /* CCTweenFunction.cpp in Sources */,
 				379BB9AC17F03F3700829B88 /* CCUtilMath.cpp in Sources */,
+				25C640BE18CC4FA800D4B1BE /* PanelTime.cpp in Sources */,
 				379BB9AD17F03F3700829B88 /* CCComAttribute.cpp in Sources */,
 				379BB9AE17F03F3700829B88 /* CCComAudio.cpp in Sources */,
 				379BB9AF17F03F3700829B88 /* CCComController.cpp in Sources */,

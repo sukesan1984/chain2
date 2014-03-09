@@ -11,13 +11,14 @@
 
 #include <iostream>
 #include "cocos2d.h"
+#include "Const.h"
+#include "PanelTime.h"
 using namespace cocos2d;
 
 class CoverSprite : public CCSprite
 {
     const int SIZE = 32;
     float scale = 0;
-    float time = 2;
     float isMoving = false;
     float size;
     bool isFull = false;

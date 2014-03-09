@@ -24,10 +24,13 @@ const float FIELD_OFFSET_Y = 104;
 
 const int MAX_GAUGE_VALUE = 1000000;
 
-const int INITIAL_GAUGE_TIME = 20;
-const int FINAL_GAUGE_TIME = 10;
-const int SPEED_UP_PANEL_NUM = 100;
-const float SPEED_UP_RATE = 1.2;
-const int INCREASE_BY_PANEL = 3000;
+//ゲージ
+const int INITIAL_GAUGE_TIME = 15;
+const int INCREASE_BY_PANEL = 4000;
+
+//パネルの消えるスピード
+const int PANEL_REMOVE_TIME = 20000;
+const int SPEED_UP_PANEL_NUM = 10;
+const float SPEED_UP_RATE = 1.02;
 
 #endif
