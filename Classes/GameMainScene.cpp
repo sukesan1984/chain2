@@ -1,4 +1,5 @@
 #include "GameMainScene.h"
+#include "CCGATracker.h"
 
 USING_NS_CC;
 
@@ -72,6 +73,8 @@ bool GameMain::init()
     // create and initialize a label
     
     setTouchEnabled(true);
+    
+    CCGATracker::sendView("GameMain");
     
     this->schedule(schedule_selector(GameMain::update));
     return true;

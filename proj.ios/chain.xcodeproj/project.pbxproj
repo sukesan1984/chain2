@@ -181,6 +181,7 @@
 		25C640C618CC5C4100D4B1BE /* NativeCodeLauncher_objc.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C640C518CC5C4100D4B1BE /* NativeCodeLauncher_objc.m */; };
 		25C6435018CC8EF600D4B1BE /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C6434F18CC8EF600D4B1BE /* libGoogleAnalyticsServices.a */; };
 		25C6435218CC8F1000D4B1BE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C6435118CC8F1000D4B1BE /* CoreData.framework */; };
+		25C6435618CC907400D4B1BE /* CCGATracker.mm in Sources */ = {isa = PBXBuildFile; fileRef = 25C6435518CC907400D4B1BE /* CCGATracker.mm */; };
 		25F39A8D18B8C1B4001A10BB /* GoogleAdMobAdsSdk in Resources */ = {isa = PBXBuildFile; fileRef = 25F39A8C18B8C1B4001A10BB /* GoogleAdMobAdsSdk */; };
 		25F39A8F18B8C1F7001A10BB /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F39A8E18B8C1F7001A10BB /* MessageUI.framework */; };
 		25F39A9118B8C1FF001A10BB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F39A9018B8C1FF001A10BB /* SystemConfiguration.framework */; };
@@ -640,6 +641,8 @@
 		25C6434E18CC8EF600D4B1BE /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAITracker.h; path = GoogleAnalytics/GAITracker.h; sourceTree = "<group>"; };
 		25C6434F18CC8EF600D4B1BE /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAnalyticsServices.a; path = GoogleAnalytics/libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
 		25C6435118CC8F1000D4B1BE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		25C6435418CC907400D4B1BE /* CCGATracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCGATracker.h; sourceTree = SOURCE_ROOT; };
+		25C6435518CC907400D4B1BE /* CCGATracker.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CCGATracker.mm; sourceTree = SOURCE_ROOT; };
 		25F39A8C18B8C1B4001A10BB /* GoogleAdMobAdsSdk */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GoogleAdMobAdsSdk; sourceTree = "<group>"; };
 		25F39A8E18B8C1F7001A10BB /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		25F39A9018B8C1FF001A10BB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -845,6 +848,8 @@
 				1AC3624616D4A1E8000847F2 /* Prefix.pch */,
 				1AFCDA8016D4A25900906EA6 /* RootViewController.h */,
 				1AFCDA8116D4A25900906EA6 /* RootViewController.mm */,
+				25C6435418CC907400D4B1BE /* CCGATracker.h */,
+				25C6435518CC907400D4B1BE /* CCGATracker.mm */,
 				25C640C118CC5A4800D4B1BE /* NativeCodeLauncher.h */,
 				25C640C218CC5A4800D4B1BE /* NativeCodeLauncher.mm */,
 				25C640C418CC5C4100D4B1BE /* NativeCodeLauncher_objc.h */,
@@ -2011,6 +2016,7 @@
 				15A3D9271682F7D5002FB0C5 /* b2RevoluteJoint.cpp in Sources */,
 				15A3D9281682F7D5002FB0C5 /* b2RopeJoint.cpp in Sources */,
 				15A3D9291682F7D5002FB0C5 /* b2WeldJoint.cpp in Sources */,
+				25C6435618CC907400D4B1BE /* CCGATracker.mm in Sources */,
 				15A3D92A1682F7D5002FB0C5 /* b2WheelJoint.cpp in Sources */,
 				15A3D9391682F7D5002FB0C5 /* b2Rope.cpp in Sources */,
 				15A3D9951682F7F9002FB0C5 /* chipmunk.c in Sources */,

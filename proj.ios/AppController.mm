@@ -3,6 +3,7 @@
 #import "cocos2d.h"
 #import "AppDelegate.h"
 #import "RootViewController.h"
+#import "GAI.h"
 
 extern "C"{
 #import "GADBannerView.h"
@@ -53,6 +54,13 @@ static AppDelegate s_sharedApplication;
     [window makeKeyAndVisible];
     
     [[UIApplication sharedApplication] setStatusBarHidden:true];
+    
+    // initialization: Google Analytics
+    GAI *gai = [GAI sharedInstance];
+    gai.trackUncaughtExceptions = YES;
+    gai.dispatchInterval = 20;
+    [[gai logger] setLogLevel:kGAILogLevelInfo]; // ログレベルを変えることができる
+    [gai trackerWithTrackingId: @"UA-8468750-6"];
     
     bannerView_ = [GADBannerView alloc];
     CGPoint origin = CGPointMake( self->viewController.view.frame.size.width / 2 - GAD_SIZE_320x50.width / 2, self->viewController.view.frame.size.height - GAD_SIZE_320x50.height);

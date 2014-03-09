@@ -46,6 +46,7 @@ bool Title::init()
     
     this->addChild(menu, 2);
     
+    CCGATracker::sendView("Title");
     
     setTouchEnabled(true);
     
@@ -63,5 +64,6 @@ void Title::gameMainAction(){
 }
 
 void Title::rankingAction(){
+    CCGATracker::sendView("Ranking");
     Cocos2dExt::NativeCodeLauncher::openRanking();
 }

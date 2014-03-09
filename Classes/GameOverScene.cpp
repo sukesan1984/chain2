@@ -1,4 +1,5 @@
 #include "GameOverScene.h"
+#include "CCGATracker.h"
 
 USING_NS_CC;
 
@@ -58,6 +59,12 @@ bool GameOver::init()
     
     setTouchEnabled(true);
     
+    CCGATracker::sendEvent("score", "score", "score", Score::instance().getScore());
+    CCGATracker::sendEvent("score", "score", "hit", Score::instance().getMaxHitNum());
+    
+    CCGATracker::sendView("GameOver");
+    
+    
     this->schedule(schedule_selector(GameOver::update));
     return true;
 }
@@ -72,5 +79,6 @@ void GameOver::gameMainAction(){
 }
 
 void GameOver::rankingAction(){
+    CCGATracker::sendView("Ranking");
     Cocos2dExt::NativeCodeLauncher::openRanking();
 }

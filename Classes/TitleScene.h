@@ -4,6 +4,7 @@
 #include "cocos2d.h"
 #include "GameMainScene.h"
 #include "GameOverScene.h"
+#include "CCGATracker.h"
 
 using namespace cocos2d;
 
