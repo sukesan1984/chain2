@@ -50,5 +50,5 @@ void CoverSprite::update(){
         return;
     }
     this->setScaleY(scale);
-    scale += 1 / time / 60;
+    scale += 1 / PanelTime::instance().getPanelRemoveTime() / 60;
 }

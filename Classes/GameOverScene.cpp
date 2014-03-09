@@ -52,6 +52,9 @@ bool GameOver::init()
     
     this->addChild(menu, 2);
     
+    Cocos2dExt::NativeCodeLauncher::postHighScore(1, Score::instance().getScore());
+    Cocos2dExt::NativeCodeLauncher::postHighScore(2, Score::instance().getMaxHitNum());
+ 
     
     setTouchEnabled(true);
     
@@ -69,4 +72,5 @@ void GameOver::gameMainAction(){
 }
 
 void GameOver::rankingAction(){
+    Cocos2dExt::NativeCodeLauncher::openRanking();
 }

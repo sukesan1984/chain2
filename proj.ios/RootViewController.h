@@ -1,7 +1,7 @@
 #import <UIKit/UIKit.h>
+#import <GameKit/GKLeaderboardViewController.h>
 
-
-@interface RootViewController : UIViewController {
+@interface RootViewController : UIViewController<GKLeaderboardViewControllerDelegate>{
 
 }
 

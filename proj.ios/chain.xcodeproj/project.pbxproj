@@ -176,6 +176,9 @@
 		2591445D18CB0BE2007712B8 /* GameOverScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2591445B18CB0BE2007712B8 /* GameOverScene.cpp */; };
 		2591446018CB1656007712B8 /* Score.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2591445E18CB1655007712B8 /* Score.cpp */; };
 		25C640BE18CC4FA800D4B1BE /* PanelTime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25C640BC18CC4FA800D4B1BE /* PanelTime.cpp */; };
+		25C640C018CC586600D4B1BE /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C640BF18CC586600D4B1BE /* GameKit.framework */; };
+		25C640C318CC5A4800D4B1BE /* NativeCodeLauncher.mm in Sources */ = {isa = PBXBuildFile; fileRef = 25C640C218CC5A4800D4B1BE /* NativeCodeLauncher.mm */; };
+		25C640C618CC5C4100D4B1BE /* NativeCodeLauncher_objc.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C640C518CC5C4100D4B1BE /* NativeCodeLauncher_objc.m */; };
 		25F39A8D18B8C1B4001A10BB /* GoogleAdMobAdsSdk in Resources */ = {isa = PBXBuildFile; fileRef = 25F39A8C18B8C1B4001A10BB /* GoogleAdMobAdsSdk */; };
 		25F39A8F18B8C1F7001A10BB /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F39A8E18B8C1F7001A10BB /* MessageUI.framework */; };
 		25F39A9118B8C1FF001A10BB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F39A9018B8C1FF001A10BB /* SystemConfiguration.framework */; };
@@ -622,6 +625,11 @@
 		2591445F18CB1656007712B8 /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Score.h; path = ../Classes/Score.h; sourceTree = "<group>"; };
 		25C640BC18CC4FA800D4B1BE /* PanelTime.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PanelTime.cpp; path = ../Classes/PanelTime.cpp; sourceTree = "<group>"; };
 		25C640BD18CC4FA800D4B1BE /* PanelTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PanelTime.h; path = ../Classes/PanelTime.h; sourceTree = "<group>"; };
+		25C640BF18CC586600D4B1BE /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		25C640C118CC5A4800D4B1BE /* NativeCodeLauncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeCodeLauncher.h; sourceTree = SOURCE_ROOT; };
+		25C640C218CC5A4800D4B1BE /* NativeCodeLauncher.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NativeCodeLauncher.mm; sourceTree = SOURCE_ROOT; };
+		25C640C418CC5C4100D4B1BE /* NativeCodeLauncher_objc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeCodeLauncher_objc.h; sourceTree = SOURCE_ROOT; };
+		25C640C518CC5C4100D4B1BE /* NativeCodeLauncher_objc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeCodeLauncher_objc.m; sourceTree = SOURCE_ROOT; };
 		25F39A8C18B8C1B4001A10BB /* GoogleAdMobAdsSdk */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GoogleAdMobAdsSdk; sourceTree = "<group>"; };
 		25F39A8E18B8C1F7001A10BB /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		25F39A9018B8C1FF001A10BB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -790,6 +798,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25C640C018CC586600D4B1BE /* GameKit.framework in Frameworks */,
 				25F39A9818B8C430001A10BB /* libGoogleAdMobAds.a in Frameworks */,
 				25F39A9518B8C227001A10BB /* StoreKit.framework in Frameworks */,
 				D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */,
@@ -824,6 +833,10 @@
 				1AC3624616D4A1E8000847F2 /* Prefix.pch */,
 				1AFCDA8016D4A25900906EA6 /* RootViewController.h */,
 				1AFCDA8116D4A25900906EA6 /* RootViewController.mm */,
+				25C640C118CC5A4800D4B1BE /* NativeCodeLauncher.h */,
+				25C640C218CC5A4800D4B1BE /* NativeCodeLauncher.mm */,
+				25C640C418CC5C4100D4B1BE /* NativeCodeLauncher_objc.h */,
+				25C640C518CC5C4100D4B1BE /* NativeCodeLauncher_objc.m */,
 			);
 			name = ios;
 			path = Classes;
@@ -1487,6 +1500,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				25C640BF18CC586600D4B1BE /* GameKit.framework */,
 				25F39A9718B8C430001A10BB /* libGoogleAdMobAds.a */,
 				25F39A9418B8C227001A10BB /* StoreKit.framework */,
 				25F39A9218B8C219001A10BB /* AdSupport.framework */,
@@ -2049,6 +2063,7 @@
 				15A3DA511682F826002FB0C5 /* CCControlSwitch.cpp in Sources */,
 				15A3DA521682F826002FB0C5 /* CCControlUtils.cpp in Sources */,
 				375BD4C41868411B0024609E /* TriggerBase.cpp in Sources */,
+				25C640C618CC5C4100D4B1BE /* NativeCodeLauncher_objc.m in Sources */,
 				15A3DA531682F826002FB0C5 /* CCInvocation.cpp in Sources */,
 				15A3DA541682F826002FB0C5 /* CCScale9Sprite.cpp in Sources */,
 				15A3DA551682F826002FB0C5 /* CCEditBox.cpp in Sources */,
@@ -2092,6 +2107,7 @@
 				1A8F3B7C175E05DA00049216 /* Skeleton.cpp in Sources */,
 				1A8F3B7D175E05DA00049216 /* SkeletonData.cpp in Sources */,
 				1A8F3B7E175E05DA00049216 /* SkeletonJson.cpp in Sources */,
+				25C640C318CC5A4800D4B1BE /* NativeCodeLauncher.mm in Sources */,
 				1A8F3B7F175E05DA00049216 /* Skin.cpp in Sources */,
 				1A8F3B80175E05DA00049216 /* Slot.cpp in Sources */,
 				1A8F3B81175E05DA00049216 /* SlotData.cpp in Sources */,

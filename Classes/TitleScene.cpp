@@ -37,9 +37,10 @@ bool Title::init()
     
     CCMenuItemLabel *gameMainButton = CCMenuItemFont::create("GameMain", this, menu_selector(Title::gameMainAction));
     CCMenuItemLabel *rankingButton  = CCMenuItemFont::create("Ranking", this, menu_selector(Title::rankingAction));
+    CCMenuItemLabel *gamecenterButton  = CCMenuItemFont::create("GameCenterLogin", this, menu_selector(Title::login));
     
     //CCMenu *menu = CCMenu::createWithItems(gameMainButton, NULL);
-    CCMenu *menu  = CCMenu::create(gameMainButton, rankingButton, NULL);
+    CCMenu *menu  = CCMenu::create(gameMainButton, rankingButton, gamecenterButton, NULL);
     menu->setPosition(ccp(visibleSize.width/2, visibleSize.height/2));
     menu->alignItemsVertically();
     
@@ -62,10 +63,9 @@ void Title::gameMainAction(){
 }
 
 void Title::rankingAction(){
-    //切り替え先のシーン
-    CCScene *scene = GameOver::scene();
-    //0.5秒でクロスフェード
-    CCTransitionCrossFade *crossFade = CCTransitionCrossFade::create(0.5f, scene);
-    //切り替え
-    CCDirector::sharedDirector()->replaceScene(crossFade);
+    Cocos2dExt::NativeCodeLauncher::openRanking();
+}
+
+void Title::login(){
+    Cocos2dExt::NativeCodeLauncher::loginGameCenter();
 }

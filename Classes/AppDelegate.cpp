@@ -30,6 +30,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     // create a scene. it's an autorelease object
     ///CCScene *pScene = GameMain::scene();
     CCScene *pScene = Title::scene();
+    Cocos2dExt::NativeCodeLauncher::loginGameCenter();
 
     // run
     pDirector->runWithScene(pScene);

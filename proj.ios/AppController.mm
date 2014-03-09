@@ -4,7 +4,12 @@
 #import "AppDelegate.h"
 #import "RootViewController.h"
 
+extern "C"{
+#import "GADBannerView.h"
+};
+
 @implementation AppController
+@synthesize viewController;
 
 #pragma mark -
 #pragma mark Application lifecycle

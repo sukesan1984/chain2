@@ -3,6 +3,7 @@
 
 #include "cocos2d.h"
 #include "GameMainScene.h"
+#include "NativeCodeLauncher.h"
 
 using namespace cocos2d;
 

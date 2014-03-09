@@ -1,15 +1,16 @@
 #import <UIKit/UIKit.h>
 
+
 @class RootViewController;
-extern "C"{
-#import "GADBannerView.h"
-};
+@class GADBannerView;
 
 @interface AppController : NSObject <UIApplicationDelegate> {
     UIWindow *window;
     RootViewController    *viewController;
     GADBannerView *bannerView_;
 }
+
+@property(nonatomic, assign) RootViewController *viewController;
 
 @end
 

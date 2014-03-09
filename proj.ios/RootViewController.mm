@@ -40,6 +40,12 @@
 //#endif
 //}
 
+// GKLeaderboardViewControllerのDelegate
+-(void)leaderboardViewControllerDidFinish:(GKLeaderboardViewController *)viewController
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 - (BOOL) shouldAutorotate {
     return YES;
 }
