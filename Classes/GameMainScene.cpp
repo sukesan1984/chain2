@@ -76,6 +76,7 @@ bool GameMain::init()
     gauge->setScaleX(visibleSize.width / 640);
     gauge->setScaleY(visibleSize.width / 640);
     this->addChild(gauge, 2);
+    this->field->setGauge(gauge);
     
     // create menu, it's an autorelease object
     CCMenu* pMenu = CCMenu::create(pCloseItem, NULL);
@@ -153,7 +154,11 @@ void GameMain::update(float dt){
     hitNumLabel->setString(CCString::createWithFormat("Hits:%d",field->getHitNum())->getCString());
     scoreLabel->setString(CCString::createWithFormat("Score:%d",field->getScore())->getCString());
     totalRemovedNumLabel->setString(CCString::createWithFormat("Removed:%d", field->getTotalRemovedPanelsNum())->getCString());
-    gauge->reduce(2000);
+    //if(beforeTotalRemovedNum < field->getTotalRemovedPanelsNum()){
+    //    gauge->increaseByPanelNum(field->getTotalRemovedPanelsNum() - beforeTotalRemovedNum);
+    //    beforeTotalRemovedNum = field->getTotalRemovedPanelsNum();
+    //}
+    gauge->reduce();
     if(gauge->isGameOver() && !this->field->hasRemovingPanels() && !this->field->isMoving()){
         this->setTouchEnabled(false);
         if(!goneToGameOver){

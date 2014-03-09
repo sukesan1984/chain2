@@ -277,3 +277,7 @@ int FieldPanels::getScore(){
 int FieldPanels::getTotalRemovedPanelsNum(){
     return this->totalRemovedPanelsNum;
 }
+
+void FieldPanels::setGauge(Gauge *gauge){
+    this->table->setGauge(gauge);
+}

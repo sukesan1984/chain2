@@ -24,6 +24,7 @@ FieldPanelsArray::FieldPanelsArray(){
 
 FieldPanelsArray::~FieldPanelsArray(){
     this->removeAllPanels();
+    this->gauge->release();
 }
 
 void FieldPanelsArray::removeAllPanels(){
@@ -209,6 +210,7 @@ CCArray* FieldPanelsArray::getRemovedPanels(){
                 scoreInstance.increaseScore(this->calcScore());
                 //scoreInstance.setHitNum(this->hitNum);
                 scoreInstance.increaseHitNum();
+                this->gauge->increaseByPanelNum(group->getGroupPanelsNum());
             }
            //削除される時に、フラグを落とす。
             group->setAddedNewone(false);
@@ -296,4 +298,9 @@ int FieldPanelsArray::calcScore(){
         }
     }
     return panelNum * ( Score::instance().getHitNum() / 5 + 1);
+}
+
+void FieldPanelsArray::setGauge(Gauge* gauge){
+    this->gauge = gauge;
+    this->gauge->retain();
 }

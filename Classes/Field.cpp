@@ -101,3 +101,7 @@ bool Field::isMoving(){
 bool Field::hasRemovingPanels(){
     return this->panels->hasRemovingPanels();
 }
+
+void Field::setGauge(Gauge* gauge){
+    this->panels->setGauge(gauge);
+}

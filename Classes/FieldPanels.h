@@ -14,6 +14,7 @@
 #include "cocos2d.h"
 #include "Const.h"
 #include "FieldPanelsArray.h"
+#include "Gauge.h"
 using namespace cocos2d;
 
 class FieldPanels : public CCArray{
@@ -58,6 +59,7 @@ public:
     FieldPanels();
     ~FieldPanels();
     void update();
+    void setGauge(Gauge* gauge);
 };
 
 

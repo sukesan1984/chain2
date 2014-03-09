@@ -20,11 +20,15 @@ class Gauge : public CCSprite {
     ~Gauge();
     Memori* memori;
     int value;
+    int time;
     void setGaugeScale(float scale);
+    int count;
 public:
     static Gauge* createGauge();
+    void reduce();
     void reduce(int value);
     void increase(int value);
+    void increaseByPanelNum(int panelNum);
     bool isGameOver();
 };
 

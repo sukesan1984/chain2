@@ -14,6 +14,7 @@
 #include "Group.h"
 #include "cocos2d.h"
 #include "Score.h"
+#include "Gauge.h"
 
 using namespace cocos2d;
 
@@ -33,6 +34,7 @@ class FieldPanelsArray {
     //int hitNum;
     
     //int score;
+    Gauge* gauge;
 public:
     // tableにpanelを登録するやつ。
     void registerPanel(int x, int y, PanelSprite* panel);
@@ -61,6 +63,7 @@ public:
     int getScore();
     
     int calcScore();
+    void setGauge(Gauge* gauge);
     
     FieldPanelsArray();
     ~FieldPanelsArray();

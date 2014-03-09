@@ -10,6 +10,8 @@
 
 Gauge::Gauge(){
     value = MAX_GAUGE_VALUE;
+    time = INITIAL_GAUGE_TIME;
+    count = 0;
 }
 
 Gauge::~Gauge(){
@@ -47,6 +49,11 @@ void Gauge::setGaugeScale(float scale){
     this->memori->setScaleX(scale);
 }
 
+void Gauge::reduce(){
+    int reduceValuePerSec = (int) MAX_GAUGE_VALUE / time / FPS;
+    this->reduce(reduceValuePerSec);
+}
+
 void Gauge::reduce(int value){
     this->value -= value;
     if( this->value < 0 ){
@@ -63,6 +70,10 @@ void Gauge::increase(int value) {
     }
     float scale = (float) this->value / MAX_GAUGE_VALUE;
     this->setGaugeScale(scale);
+}
+
+void Gauge::increaseByPanelNum(int panelNum){
+    this->increase(panelNum * INCREASE_BY_PANEL);
 }
 
 bool Gauge::isGameOver(){

@@ -13,6 +13,7 @@
 #include "cocos2d.h"
 #include "PanelSprite.h"
 #include "FieldPanels.h"
+#include "Gauge.h"
 using namespace cocos2d;
 
 
@@ -33,6 +34,7 @@ public:
     int getTotalRemovedPanelsNum();
     bool isMoving();
     bool hasRemovingPanels();
+    void setGauge(Gauge* gauge);
     Field();
     ~Field();
 };
