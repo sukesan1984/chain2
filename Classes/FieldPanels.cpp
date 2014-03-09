@@ -76,17 +76,20 @@ void FieldPanels::restockPanel(CCNode* parentNode){
     CCARRAY_FOREACH(removedPanels, targetObject){
         removedPanel = (PanelSprite*) targetObject;
         int y = HEIGHT;
-        CCInteger* count = (CCInteger*) removedCount->objectForKey(removedPanel->getPosition().x);
+        
+        CCPoint index = removedPanel->getIndex();
+        
+        CCInteger* count = (CCInteger*) removedCount->objectForKey(index.x);
         //既にその列が消えている場合は、追加する場所がn段上になる。
         if(count){
             y += count->getValue();
-            removedCount->setObject(CCInteger::create(count->getValue()+1),removedPanel->getPosition().x);
+            removedCount->setObject(CCInteger::create(count->getValue()+1),index.x);
             //その列がまだ消えていない場合は、dictionaryに追加
         } else {
-            removedCount->setObject(CCInteger::create(1),removedPanel->getPosition().x);
+            removedCount->setObject(CCInteger::create(1),index.x);
         }
         
-        PanelSprite* pSprite = this->createPanel(int(removedPanel->getPosition().x / (FIELD_SIZE / WIDTH)), y);
+        PanelSprite* pSprite = this->createPanel(index.x, y);
         this->add(pSprite);
         parentNode->addChild(pSprite);
     }
@@ -216,7 +219,10 @@ void FieldPanels::setMoves(){
         CCARRAY_FOREACH(removedPanels, targetObject2){
             removedPanel = (PanelSprite*) targetObject2;
             
-            if(removedPanel->getPosition().x == panel->getPosition().x && removedPanel->getPosition().y < panel->getPosition().y){
+            //if(removedPanel->getPosition().x == panel->getPosition().x && removedPanel->getPosition().y < panel->getPosition().y){
+            CCPoint indexRemoved = removedPanel->getIndex();
+            CCPoint index = panel->getIndex();
+            if(indexRemoved.x == index.x && indexRemoved.y < index.y){
                 moveState = true;
                 panel->setDeltaY(FIELD_SIZE / WIDTH);
             }

@@ -10,8 +10,8 @@
 #define Chain_Const_h
 
 
-const int FIELD_WIDTH_NUM  = 9;
-const int FIELD_HEIGHT_NUM = 9;
+const int FIELD_WIDTH_NUM  = 7;
+const int FIELD_HEIGHT_NUM = 7;
 
 const int FIELD_WIDTH_SIZE = 315;
 const int FIELD_HEIGHT_SIZE = 315;

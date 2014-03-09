@@ -23,7 +23,6 @@ class PanelSprite : public CCSprite
     float deltaY = 0;
     float velocity = 0;
     int panelType;
-    
 public:
     PanelSprite();
     ~PanelSprite();

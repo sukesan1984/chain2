@@ -20,9 +20,15 @@ class Score {
 public:
     static Score& instance();
     void setScore(int value);
+    void increaseScore(int value);
     int getScore();
     void setHitNum(int value);
+    void increaseHitNum();
     int getHitNum();
+    
+    int getMaxHitNum();
+    
+    void reset();
 };
 
 #endif /* defined(__chain__Score__) */

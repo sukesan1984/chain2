@@ -30,9 +30,9 @@ class FieldPanelsArray {
     // checkTableをリセットする。
     void resetGroupCheckTable();
     CCArray* getGroups();
-    int hitNum;
+    //int hitNum;
     
-    int score;
+    //int score;
 public:
     // tableにpanelを登録するやつ。
     void registerPanel(int x, int y, PanelSprite* panel);

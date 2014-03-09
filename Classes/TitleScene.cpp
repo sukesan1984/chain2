@@ -26,6 +26,7 @@ bool Title::init()
     {
         return false;
     }
+    srand(time(NULL));
     
     CCSize visibleSize = CCDirector::sharedDirector()->getVisibleSize();
     CCPoint origin = CCDirector::sharedDirector()->getVisibleOrigin();

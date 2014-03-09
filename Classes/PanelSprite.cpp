@@ -131,8 +131,8 @@ CCPoint PanelSprite::getIndex(){
     float posX = panelPos.x;
     float posY = panelPos.y;
     
-    int x = int(posX) / int(FIELD_WIDTH_SIZE / FIELD_WIDTH_NUM);
-    int y = int(posY) / int(FIELD_HEIGHT_SIZE / FIELD_HEIGHT_NUM);
+    int x = (int) ((posX + 1)  / FIELD_WIDTH_SIZE * FIELD_WIDTH_NUM);
+    int y = (int) ((posY + 1) / FIELD_HEIGHT_SIZE * FIELD_HEIGHT_NUM);
     return CCPoint(x, y);
 }
 
