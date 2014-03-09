@@ -1303,6 +1303,7 @@
 		15AA9C4015B7EC450033D6C2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				25C640BB18CC355200D4B1BE /* Model */,
 				25F39AAD18B8C7AB001A10BB /* panel */,
 				25F39A9A18B8C7A6001A10BB /* Const.h */,
 				25F39A9D18B8C7A6001A10BB /* Field.cpp */,
@@ -1320,8 +1321,6 @@
 				2591445018C74F8A007712B8 /* Memori.cpp */,
 				2591445118C74F8A007712B8 /* Memori.h */,
 				2591445718CB0BB3007712B8 /* Scene */,
-				2591445E18CB1655007712B8 /* Score.cpp */,
-				2591445F18CB1656007712B8 /* Score.h */,
 			);
 			name = Classes;
 			path = ../classes;
@@ -1439,6 +1438,15 @@
 				2591445B18CB0BE2007712B8 /* GameOverScene.cpp */,
 			);
 			name = Scene;
+			sourceTree = "<group>";
+		};
+		25C640BB18CC355200D4B1BE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2591445E18CB1655007712B8 /* Score.cpp */,
+				2591445F18CB1656007712B8 /* Score.h */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		25F39AAD18B8C7AB001A10BB /* panel */ = {

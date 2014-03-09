@@ -34,6 +34,14 @@ bool GameOver::init()
     titleLabel->setPosition(CCPoint(visibleSize.width / 2, visibleSize.height * 3 / 4));
     this->addChild(titleLabel);
     
+    CCLabelTTF* score = CCLabelTTF::create(CCString::createWithFormat("score: %d", Score::instance().getScore())->getCString(), "Arial", 20);
+    score->setPosition(CCPoint(visibleSize.width / 2, visibleSize.height * 3 / 4 - 30));
+    this->addChild(score);
+   
+    CCLabelTTF* hit = CCLabelTTF::create(CCString::createWithFormat("maxHit: %d", Score::instance().getMaxHitNum())->getCString(), "Arial", 20);
+    hit->setPosition(CCPoint(visibleSize.width / 2, visibleSize.height * 3 / 4 - 60));
+    this->addChild(hit);
+    
     CCMenuItemLabel *gameMainButton = CCMenuItemFont::create("Retry", this, menu_selector(GameOver::gameMainAction));
     CCMenuItemLabel *rankingButton  = CCMenuItemFont::create("Ranking", this, menu_selector(GameOver::rankingAction));
     

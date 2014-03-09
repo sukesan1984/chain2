@@ -23,6 +23,11 @@ void Score::setScore(int value){
     this->score = value;
 }
 
+void Score::increaseScore(int value){
+    int current = this->getScore();
+    this->setScore(current + value);
+}
+
 int Score::getScore(){
     return this->score;
 }
@@ -34,6 +39,21 @@ void Score::setHitNum(int value){
     }
 }
 
+void Score::increaseHitNum(){
+    int current = this->getHitNum();
+    this->setHitNum(++current);
+}
+
 int Score::getHitNum(){
     return this->hitNum;
+}
+
+int Score::getMaxHitNum(){
+    return this->maxHitNum;
+}
+
+void Score::reset(){
+    hitNum = 0;
+    maxHitNum = 0;
+    score = 0;
 }

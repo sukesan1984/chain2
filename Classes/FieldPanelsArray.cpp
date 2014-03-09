@@ -18,8 +18,8 @@ FieldPanelsArray::FieldPanelsArray(){
     }
     groups = CCArray::create();
     groups->retain();
-    score = 0;
-    hitNum = 0;
+    //score = 0;
+    //hitNum = 0;
 }
 
 FieldPanelsArray::~FieldPanelsArray(){
@@ -203,10 +203,12 @@ CCArray* FieldPanelsArray::getRemovedPanels(){
             if(group->needToReset()){
                 group->reset();
                 Score &scoreInstance = Score::instance();
-                this->hitNum++;
-                score += this->calcScore();
-                scoreInstance.setScore(score);
-                scoreInstance.setHitNum(this->hitNum);
+                //this->hitNum++;
+                //score += this->calcScore();
+                //scoreInstance.setScore(score);
+                scoreInstance.increaseScore(this->calcScore());
+                //scoreInstance.setHitNum(this->hitNum);
+                scoreInstance.increaseHitNum();
             }
            //削除される時に、フラグを落とす。
             group->setAddedNewone(false);
