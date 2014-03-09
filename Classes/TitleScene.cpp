@@ -65,7 +65,3 @@ void Title::gameMainAction(){
 void Title::rankingAction(){
     Cocos2dExt::NativeCodeLauncher::openRanking();
 }
-
-void Title::login(){
-    Cocos2dExt::NativeCodeLauncher::loginGameCenter();
-}
