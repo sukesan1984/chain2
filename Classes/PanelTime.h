@@ -19,6 +19,7 @@ public:
     static PanelTime& instance();
     void speedUp();
     float getPanelRemoveTime();
+    void reset();
     
 };
 
