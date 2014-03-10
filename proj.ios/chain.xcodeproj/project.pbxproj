@@ -170,6 +170,7 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		2547873A18BDC7D7009F258A /* FieldPanelsArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2547873818BDC7D7009F258A /* FieldPanelsArray.cpp */; };
+		2547874118CDFD4E009F258A /* TutorialScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2547873F18CDFD4E009F258A /* TutorialScene.cpp */; };
 		2591444E18C74DBB007712B8 /* Gauge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2591444C18C74DBB007712B8 /* Gauge.cpp */; };
 		2591445218C74F8A007712B8 /* Memori.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2591445018C74F8A007712B8 /* Memori.cpp */; };
 		2591445618CB04F8007712B8 /* TitleScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2591445418CB04F8007712B8 /* TitleScene.cpp */; };
@@ -616,6 +617,8 @@
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2547873818BDC7D7009F258A /* FieldPanelsArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FieldPanelsArray.cpp; path = ../Classes/FieldPanelsArray.cpp; sourceTree = "<group>"; };
 		2547873918BDC7D7009F258A /* FieldPanelsArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FieldPanelsArray.h; path = ../Classes/FieldPanelsArray.h; sourceTree = "<group>"; };
+		2547873F18CDFD4E009F258A /* TutorialScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TutorialScene.cpp; path = ../Classes/TutorialScene.cpp; sourceTree = "<group>"; };
+		2547874018CDFD4E009F258A /* TutorialScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TutorialScene.h; path = ../Classes/TutorialScene.h; sourceTree = "<group>"; };
 		2591444C18C74DBB007712B8 /* Gauge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Gauge.cpp; path = ../Classes/Gauge.cpp; sourceTree = "<group>"; };
 		2591444D18C74DBB007712B8 /* Gauge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Gauge.h; path = ../Classes/Gauge.h; sourceTree = "<group>"; };
 		2591445018C74F8A007712B8 /* Memori.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Memori.cpp; path = ../Classes/Memori.cpp; sourceTree = "<group>"; };
@@ -1469,6 +1472,8 @@
 				2591445418CB04F8007712B8 /* TitleScene.cpp */,
 				2591445C18CB0BE2007712B8 /* GameOverScene.h */,
 				2591445B18CB0BE2007712B8 /* GameOverScene.cpp */,
+				2547873F18CDFD4E009F258A /* TutorialScene.cpp */,
+				2547874018CDFD4E009F258A /* TutorialScene.h */,
 			);
 			name = Scene;
 			sourceTree = "<group>";
@@ -2018,6 +2023,7 @@
 				15A3D9291682F7D5002FB0C5 /* b2WeldJoint.cpp in Sources */,
 				25C6435618CC907400D4B1BE /* CCGATracker.mm in Sources */,
 				15A3D92A1682F7D5002FB0C5 /* b2WheelJoint.cpp in Sources */,
+				2547874118CDFD4E009F258A /* TutorialScene.cpp in Sources */,
 				15A3D9391682F7D5002FB0C5 /* b2Rope.cpp in Sources */,
 				15A3D9951682F7F9002FB0C5 /* chipmunk.c in Sources */,
 				15A3D9971682F7F9002FB0C5 /* cpConstraint.c in Sources */,

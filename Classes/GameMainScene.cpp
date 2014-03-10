@@ -33,10 +33,10 @@ bool GameMain::init()
     CCPoint origin = CCDirector::sharedDirector()->getVisibleOrigin();
 
     
-    CCSpriteFrameCache::sharedSpriteFrameCache()->addSpriteFramesWithFile("panels.plist");
     
     
     Score::instance().reset();
+    PanelTime::instance().reset();
     this->field = new Field();
     field->initialize();
     field->setPosition(FIELD_START_AT);

@@ -1,4 +1,5 @@
 #include "TitleScene.h"
+#include "CCGATracker.h"
 
 USING_NS_CC;
 
@@ -30,12 +31,13 @@ bool Title::init()
     
     CCSize visibleSize = CCDirector::sharedDirector()->getVisibleSize();
     CCPoint origin = CCDirector::sharedDirector()->getVisibleOrigin();
+    CCSpriteFrameCache::sharedSpriteFrameCache()->addSpriteFramesWithFile("panels.plist");
     
     //CCLabelTTF* titleLabel  = CCLabelTTF::create("Hello", "arial", 20);
     //titleLabel->setPosition(CCPoint(visibleSize.width / 2, visibleSize.height / 2));
     //this->addChild(titleLabel);
     
-    CCMenuItemLabel *gameMainButton = CCMenuItemFont::create("GameMain", this, menu_selector(Title::gameMainAction));
+    CCMenuItemLabel *gameMainButton = CCMenuItemFont::create("Game Start", this, menu_selector(Title::gameMainAction));
     CCMenuItemLabel *rankingButton  = CCMenuItemFont::create("Ranking", this, menu_selector(Title::rankingAction));
     //CCMenuItemLabel *gamecenterButton  = CCMenuItemFont::create("GameCenterLogin", this, menu_selector(Title::login));
     
@@ -56,7 +58,7 @@ bool Title::init()
 
 void Title::gameMainAction(){
     //切り替え先のシーン
-    CCScene *scene = GameMain::scene();
+    CCScene *scene = Tutorial::scene();
     //0.5秒でクロスフェード
     CCTransitionCrossFade *crossFade = CCTransitionCrossFade::create(0.5f, scene);
     //切り替え

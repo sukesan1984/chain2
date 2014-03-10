@@ -26,3 +26,6 @@ float PanelTime::getPanelRemoveTime(){
     return removeTime;
 }
 
+void PanelTime::reset(){
+    panelRemoveTime = PANEL_REMOVE_TIME;
+}

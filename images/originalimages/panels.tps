@@ -177,6 +177,7 @@
             <filename>gauge.png</filename>
             <filename>memori.png</filename>
             <filename>back_gauge.png</filename>
+            <filename>tutorial.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
