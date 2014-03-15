@@ -1,5 +1,8 @@
 #include "TutorialScene.h"
 #include "CCGATracker.h"
+#include "SimpleAudioEngine.h"
+
+using namespace CocosDenshion;
 
 USING_NS_CC;
 
@@ -32,9 +35,17 @@ bool Tutorial::init()
     CCSize visibleSize = CCDirector::sharedDirector()->getVisibleSize();
     CCPoint origin = CCDirector::sharedDirector()->getVisibleOrigin();
     
-    CCLabelTTF* title = CCLabelTTF::create("Tutorial", "arial", 40);
+    CCLayerColor *background = CCLayerColor::create(ccc4(255, 255 , 255, 255));
+    background->setAnchorPoint(CCPoint(0.5,0.5));
+    background->setContentSize(CCSizeMake(visibleSize.width, visibleSize.height));
+    //background->setPosition(ccp(visibleSize.width / 2, visibleSize.height / 2));
+    background->setPosition(ccp(0, 0));
+    this->addChild(background);
+    
+    CCLabelTTF* title = CCLabelTTF::create("遊び方", "MisakiGothic", 40);
     title->setAnchorPoint(ccp(0.5, 1.0));
     title->setPosition(ccp(visibleSize.width / 2, visibleSize.height -20));
+    title->setColor(ccBLACK);
     this->addChild(title);
     
     CCSprite* tutorial = CCSprite::createWithSpriteFrameName("tutorial.png");
@@ -45,7 +56,10 @@ bool Tutorial::init()
     
     this->addChild(tutorial);
     
-    CCMenuItemLabel *gameMainButton = CCMenuItemFont::create("Start", this, menu_selector(Tutorial::gameMainAction));
+    CCMenuItemFont* gameMainFont = CCMenuItemFont::create("START", this, menu_selector(GameOver::gameMainAction));
+    gameMainFont->setFontNameObj("MisakiGothic");
+    CCMenuItemLabel *gameMainButton = gameMainFont;
+    gameMainButton->setColor(ccBLACK);
     
     CCMenu *menu = CCMenu::create(gameMainButton, NULL);
     //menu->setAnchorPoint(CCPoint(1.0, 0));
@@ -63,6 +77,7 @@ bool Tutorial::init()
 }
 
 void Tutorial::gameMainAction(){
+    SimpleAudioEngine::sharedEngine()->playEffect("menu.wav");
     //切り替え先のシーン
     CCScene *scene = GameMain::scene();
     //0.5秒でクロスフェード

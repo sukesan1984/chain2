@@ -32,7 +32,12 @@ bool GameMain::init()
     CCSize visibleSize = CCDirector::sharedDirector()->getVisibleSize();
     CCPoint origin = CCDirector::sharedDirector()->getVisibleOrigin();
 
-    
+    CCLayerColor *background = CCLayerColor::create(ccc4(255, 255 , 255, 255));
+    background->setAnchorPoint(CCPoint(0.5,0.5));
+    background->setContentSize(CCSizeMake(visibleSize.width, visibleSize.height));
+    //background->setPosition(ccp(visibleSize.width / 2, visibleSize.height / 2));
+    background->setPosition(ccp(0, 0));
+    this->addChild(background);
     
     
     Score::instance().reset();
@@ -43,19 +48,22 @@ bool GameMain::init()
     field->setAnchorPoint(CCPoint(0, 0));
     this->addChild(field);
     
-    hitNumLabel = CCLabelTTF::create(CCString::createWithFormat("Hits:%d",field->getHitNum())->getCString(), "arial", 20);
+    hitNumLabel = CCLabelTTF::create(CCString::createWithFormat("HITS:%d",field->getHitNum())->getCString(), MISAKI_FONT, 20);
+    hitNumLabel->setColor(ccBLACK);
     hitNumLabel->setAnchorPoint(CCPoint(0, 1.0));
     hitNumLabel->setPosition(CCPoint(0, visibleSize.height - 20));
     this->addChild(hitNumLabel);
     
-    scoreLabel = CCLabelTTF::create(CCString::createWithFormat("Score:%d", field->getScore())->getCString(), "arial", 20);
+    scoreLabel = CCLabelTTF::create(CCString::createWithFormat("SCORE:%d", field->getScore())->getCString(), MISAKI_FONT, 20);
+    scoreLabel->setColor(ccBLACK);
     scoreLabel->setAnchorPoint(CCPoint(1.0, 1.0));
     scoreLabel->setPosition(CCPoint(visibleSize.width,visibleSize.height - 20));
     this->addChild(scoreLabel);
     
-    levelLabel = CCLabelTTF::create(CCString::createWithFormat("Level:%d", 1)->getCString(), "arial", 20);
+    levelLabel = CCLabelTTF::create(CCString::createWithFormat("LEVEL:%d", 1)->getCString(), "MisakiGothic", 20);
     levelLabel->setAnchorPoint(CCPoint(0.5, 1.0));
     levelLabel->setPosition(CCPoint(visibleSize.width / 2, visibleSize.height));
+    levelLabel->setColor(ccBLACK);
     this->addChild(levelLabel);
     
     gauge = Gauge::createGauge();
@@ -136,9 +144,9 @@ void GameMain::ccTouchesEnded(CCSet* pTouches, CCEvent* event){
 
 void GameMain::update(float dt){
     field->update();
-    hitNumLabel->setString(CCString::createWithFormat("Hits:%d",field->getHitNum())->getCString());
-    scoreLabel->setString(CCString::createWithFormat("Score:%d",field->getScore())->getCString());
-    levelLabel->setString(CCString::createWithFormat("Level:%d", int(field->getTotalRemovedPanelsNum() / SPEED_UP_PANEL_NUM) + 1)->getCString());
+    hitNumLabel->setString(CCString::createWithFormat("HITS:%d",field->getHitNum())->getCString());
+    scoreLabel->setString(CCString::createWithFormat("SCORE:%d",field->getScore())->getCString());
+    levelLabel->setString(CCString::createWithFormat("LEVEL:%d", int(field->getTotalRemovedPanelsNum() / SPEED_UP_PANEL_NUM) + 1)->getCString());
     if(beforeTotalRemovedNum + SPEED_UP_PANEL_NUM < field->getTotalRemovedPanelsNum()){
         PanelTime::instance().speedUp();
         beforeTotalRemovedNum = field->getTotalRemovedPanelsNum();

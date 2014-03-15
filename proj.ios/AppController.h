@@ -8,6 +8,7 @@
     UIWindow *window;
     RootViewController    *viewController;
     GADBannerView *bannerView_;
+    UIView* obi;
 }
 
 @property(nonatomic, assign) RootViewController *viewController;

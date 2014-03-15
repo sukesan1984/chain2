@@ -8,6 +8,12 @@
 #include "Gauge.h"
 #include "GameOverScene.h"
 #include "PanelTime.h"
+// 美咲フォント（MISAKI_FONT）
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
+#define MISAKI_FONT "Font/misaki_gothic.ttf"
+#else
+#define MISAKI_FONT "MisakiGothic"
+#endif
 
 class GameMain : public cocos2d::CCLayer
 {

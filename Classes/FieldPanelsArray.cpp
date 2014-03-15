@@ -7,6 +7,9 @@
 //
 
 #include "FieldPanelsArray.h"
+#include "SimpleAudioEngine.h"
+
+using namespace CocosDenshion;
 
 FieldPanelsArray::FieldPanelsArray(){
     //初期化
@@ -203,6 +206,7 @@ CCArray* FieldPanelsArray::getRemovedPanels(){
             //新たに消え始める時は、リセットする。
             // hitnumをの数を増やす。
             if(group->needToReset()){
+                SimpleAudioEngine::sharedEngine()->playEffect("pon.wav");
                 group->reset();
                 Score &scoreInstance = Score::instance();
                 //this->hitNum++;
@@ -264,6 +268,7 @@ void FieldPanelsArray::removePanel(PanelSprite *panel){
             int remainings = group->removePanel(panel);
             //最後の一つを消去した場合
             if(remainings == 0){
+                SimpleAudioEngine::sharedEngine()->playEffect("shupiin.wav");
                 this->removeGroup(group);
             }
         }

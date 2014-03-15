@@ -7,6 +7,9 @@
 //
 
 #include "FieldPanels.h"
+#include "SimpleAudioEngine.h"
+
+using namespace CocosDenshion;
 
 FieldPanels::FieldPanels(){
     removedPanels = CCArray::create();

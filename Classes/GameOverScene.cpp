@@ -1,6 +1,10 @@
 #include "GameOverScene.h"
 #include "CCGATracker.h"
 
+#include "SimpleAudioEngine.h"
+
+using namespace CocosDenshion;
+
 USING_NS_CC;
 
 CCScene* GameOver::scene()
@@ -31,20 +35,38 @@ bool GameOver::init()
     CCSize visibleSize = CCDirector::sharedDirector()->getVisibleSize();
     CCPoint origin = CCDirector::sharedDirector()->getVisibleOrigin();
     
-    CCLabelTTF* titleLabel  = CCLabelTTF::create("GameOver", "arial", 20);
-    titleLabel->setPosition(CCPoint(visibleSize.width / 2, visibleSize.height * 3 / 4));
+    CCLayerColor *background = CCLayerColor::create(ccc4(255, 255 , 255, 255));
+    background->setAnchorPoint(CCPoint(0.5,0.5));
+    background->setContentSize(CCSizeMake(visibleSize.width, visibleSize.height));
+    //background->setPosition(ccp(visibleSize.width / 2, visibleSize.height / 2));
+    background->setPosition(ccp(0, 0));
+    this->addChild(background);
+    
+    CCLabelTTF* titleLabel  = CCLabelTTF::create("GAME OVER", "MisakiGothic", 40);
+    titleLabel->setPosition(CCPoint(visibleSize.width / 2, visibleSize.height * 7 / 8));
+    titleLabel->setColor(ccBLACK);
     this->addChild(titleLabel);
     
-    CCLabelTTF* score = CCLabelTTF::create(CCString::createWithFormat("score: %d", Score::instance().getScore())->getCString(), "Arial", 20);
+    CCLabelTTF* score = CCLabelTTF::create(CCString::createWithFormat("SCORE: %d", Score::instance().getScore())->getCString(), "MisakiGothic", 20);
     score->setPosition(CCPoint(visibleSize.width / 2, visibleSize.height * 3 / 4 - 30));
+    score->setColor(ccBLACK);
     this->addChild(score);
    
-    CCLabelTTF* hit = CCLabelTTF::create(CCString::createWithFormat("maxHit: %d", Score::instance().getMaxHitNum())->getCString(), "Arial", 20);
+    CCLabelTTF* hit = CCLabelTTF::create(CCString::createWithFormat("MAX HITS: %d", Score::instance().getMaxHitNum())->getCString(), "MisakiGothic", 20);
+    hit->setColor(ccBLACK);
     hit->setPosition(CCPoint(visibleSize.width / 2, visibleSize.height * 3 / 4 - 60));
     this->addChild(hit);
     
-    CCMenuItemLabel *gameMainButton = CCMenuItemFont::create("Retry", this, menu_selector(GameOver::gameMainAction));
-    CCMenuItemLabel *rankingButton  = CCMenuItemFont::create("Ranking", this, menu_selector(GameOver::rankingAction));
+    CCMenuItemFont* gameMainFont = CCMenuItemFont::create("RETRY", this, menu_selector(GameOver::gameMainAction));
+    gameMainFont->setFontNameObj("MisakiGothic");
+    CCMenuItemLabel *gameMainButton = gameMainFont;
+    gameMainButton->setColor(ccBLACK);
+    
+    CCMenuItemFont* rankingFont = CCMenuItemFont::create("RANKING", this, menu_selector(GameOver::rankingAction));
+    rankingFont->setFontNameObj("MisakiGothic");
+    CCMenuItemLabel *rankingButton  = rankingFont;
+    
+    rankingButton->setColor(ccBLACK);
     
     //CCMenu *menu = CCMenu::createWithItems(gameMainButton, NULL);
     CCMenu *menu  = CCMenu::create(gameMainButton, rankingButton, NULL);
@@ -70,6 +92,7 @@ bool GameOver::init()
 }
 
 void GameOver::gameMainAction(){
+    SimpleAudioEngine::sharedEngine()->playEffect("menu.wav");
     //切り替え先のシーン
     CCScene *scene = GameMain::scene();
     //0.5秒でクロスフェード
@@ -79,6 +102,7 @@ void GameOver::gameMainAction(){
 }
 
 void GameOver::rankingAction(){
+    SimpleAudioEngine::sharedEngine()->playEffect("menu.wav");
     CCGATracker::sendView("Ranking");
     Cocos2dExt::NativeCodeLauncher::openRanking();
 }

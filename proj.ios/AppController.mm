@@ -61,6 +61,10 @@ static AppDelegate s_sharedApplication;
     gai.dispatchInterval = 20;
     [[gai logger] setLogLevel:kGAILogLevelInfo]; // ログレベルを変えることができる
     [gai trackerWithTrackingId: @"UA-8468750-6"];
+       
+    obi = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self->viewController.view.frame.size.width, (self->viewController.view.frame.size.height - 480) / 2)];
+    obi.backgroundColor = [UIColor whiteColor];
+    [viewController.view addSubview: obi];
     
     bannerView_ = [GADBannerView alloc];
     CGPoint origin = CGPointMake( self->viewController.view.frame.size.width / 2 - GAD_SIZE_320x50.width / 2, self->viewController.view.frame.size.height - GAD_SIZE_320x50.height);
