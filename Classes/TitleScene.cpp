@@ -61,8 +61,13 @@ bool Title::init()
     rankingButton->setColor(ccBLACK);
     //CCMenuItemLabel *gamecenterButton  = CCMenuItemFont::create("GameCenterLogin", this, menu_selector(Title::login));
     
+    CCMenuItemFont* creditFont = CCMenuItemFont::create("CREDIT", this, menu_selector(Title::creditAction));
+    creditFont->setFontNameObj("MisakiGothic");
+    CCMenuItemLabel *creditButton  =creditFont;
+    creditButton->setColor(ccBLACK);
+    
     //CCMenu *menu = CCMenu::createWithItems(gameMainButton, NULL);
-    CCMenu *menu  = CCMenu::create(gameMainButton, rankingButton, NULL);
+    CCMenu *menu  = CCMenu::create(gameMainButton, rankingButton, creditButton, NULL);
     menu->setPosition(ccp(visibleSize.width/2, visibleSize.height/4));
     menu->alignItemsVertically();
     
@@ -91,3 +96,14 @@ void Title::rankingAction(){
     CCGATracker::sendView("Ranking");
     Cocos2dExt::NativeCodeLauncher::openRanking();
 }
+
+void Title::creditAction(){
+    SimpleAudioEngine::sharedEngine()->playEffect("menu.wav");
+    //切り替え先のシーン
+    CCScene *scene = Credit::scene();
+    //0.5秒でクロスフェード
+    CCTransitionCrossFade *crossFade = CCTransitionCrossFade::create(0.5f, scene);
+    //切り替え
+    CCDirector::sharedDirector()->replaceScene(crossFade);
+}
+
