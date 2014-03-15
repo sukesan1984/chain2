@@ -65,12 +65,16 @@ bool GameOver::init()
     CCMenuItemFont* rankingFont = CCMenuItemFont::create("RANKING", this, menu_selector(GameOver::rankingAction));
     rankingFont->setFontNameObj("MisakiGothic");
     CCMenuItemLabel *rankingButton  = rankingFont;
-    
     rankingButton->setColor(ccBLACK);
     
+    CCMenuItemFont* topFont = CCMenuItemFont::create("TO TITLE", this, menu_selector(GameOver::topAction));
+    topFont->setFontNameObj("MisakiGothic");
+    CCMenuItemLabel *topButton  = topFont;
+    topButton->setColor(ccBLACK);
+    
     //CCMenu *menu = CCMenu::createWithItems(gameMainButton, NULL);
-    CCMenu *menu  = CCMenu::create(gameMainButton, rankingButton, NULL);
-    menu->setPosition(ccp(visibleSize.width/2, visibleSize.height/2));
+    CCMenu *menu  = CCMenu::create(gameMainButton, rankingButton, topButton, NULL);
+    menu->setPosition(ccp(visibleSize.width/2, visibleSize.height/4));
     menu->alignItemsVertically();
     
     this->addChild(menu, 2);
@@ -105,4 +109,14 @@ void GameOver::rankingAction(){
     SimpleAudioEngine::sharedEngine()->playEffect("menu.wav");
     CCGATracker::sendView("Ranking");
     Cocos2dExt::NativeCodeLauncher::openRanking();
+}
+
+void GameOver::topAction(){
+    SimpleAudioEngine::sharedEngine()->playEffect("menu.wav");
+    //切り替え先のシーン
+    CCScene *scene = Title::scene();
+    //0.5秒でクロスフェード
+    CCTransitionCrossFade *crossFade = CCTransitionCrossFade::create(0.5f, scene);
+    //切り替え
+    CCDirector::sharedDirector()->replaceScene(crossFade);
 }

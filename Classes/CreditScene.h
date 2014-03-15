@@ -1,14 +1,13 @@
-#ifndef __GAMEOVER_SCENE_H__
-#define __GAMEOVER_SCENE_H__
+#ifndef __CREDIT_SCENE_H__
+#define __CREDIT_SCENE_H__
 
 #include "cocos2d.h"
-#include "GameMainScene.h"
 #include "TitleScene.h"
-#include "NativeCodeLauncher.h"
+
 
 using namespace cocos2d;
 
-class GameOver : public cocos2d::CCLayer
+class Credit : public cocos2d::CCLayer
 {
 private:
 public:
@@ -16,11 +15,10 @@ public:
     virtual bool init();
     
     // there's no 'id' in cpp, so we recommend returning the class instance pointer
-    void gameMainAction();
-    void rankingAction();
-    void topAction();
     static cocos2d::CCScene* scene();
-    CREATE_FUNC(GameOver);
+    
+    void titleAction();
+    CREATE_FUNC(Credit);
 };
 
-#endif // __GAMEOVER_SCENE_H__
+#endif // __CREDIT_SCENE_H__

@@ -189,6 +189,7 @@
 		25DA1B8F18D4B71900EBDDDA /* shupiin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 25DA1B8D18D4B71900EBDDDA /* shupiin.wav */; };
 		25DA1B9218D4BB4E00EBDDDA /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = 25DA1B9018D4BB4E00EBDDDA /* title.png */; };
 		25DA1B9318D4BB4E00EBDDDA /* title.plist in Resources */ = {isa = PBXBuildFile; fileRef = 25DA1B9118D4BB4E00EBDDDA /* title.plist */; };
+		25DA1B9618D4C3C500EBDDDA /* CreditScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25DA1B9418D4C3C500EBDDDA /* CreditScene.cpp */; };
 		25F39A8D18B8C1B4001A10BB /* GoogleAdMobAdsSdk in Resources */ = {isa = PBXBuildFile; fileRef = 25F39A8C18B8C1B4001A10BB /* GoogleAdMobAdsSdk */; };
 		25F39A8F18B8C1F7001A10BB /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F39A8E18B8C1F7001A10BB /* MessageUI.framework */; };
 		25F39A9118B8C1FF001A10BB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F39A9018B8C1FF001A10BB /* SystemConfiguration.framework */; };
@@ -658,6 +659,8 @@
 		25DA1B8D18D4B71900EBDDDA /* shupiin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shupiin.wav; sourceTree = "<group>"; };
 		25DA1B9018D4BB4E00EBDDDA /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
 		25DA1B9118D4BB4E00EBDDDA /* title.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = title.plist; sourceTree = "<group>"; };
+		25DA1B9418D4C3C500EBDDDA /* CreditScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CreditScene.cpp; path = ../Classes/CreditScene.cpp; sourceTree = "<group>"; };
+		25DA1B9518D4C3C500EBDDDA /* CreditScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreditScene.h; path = ../Classes/CreditScene.h; sourceTree = "<group>"; };
 		25F39A8C18B8C1B4001A10BB /* GoogleAdMobAdsSdk */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GoogleAdMobAdsSdk; sourceTree = "<group>"; };
 		25F39A8E18B8C1F7001A10BB /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		25F39A9018B8C1FF001A10BB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -1493,6 +1496,8 @@
 				2591445B18CB0BE2007712B8 /* GameOverScene.cpp */,
 				2547873F18CDFD4E009F258A /* TutorialScene.cpp */,
 				2547874018CDFD4E009F258A /* TutorialScene.h */,
+				25DA1B9418D4C3C500EBDDDA /* CreditScene.cpp */,
+				25DA1B9518D4C3C500EBDDDA /* CreditScene.h */,
 			);
 			name = Scene;
 			sourceTree = "<group>";
@@ -2068,6 +2073,7 @@
 				15A3D99E1682F7F9002FB0C5 /* cpRatchetJoint.c in Sources */,
 				15A3D99F1682F7F9002FB0C5 /* cpRotaryLimitJoint.c in Sources */,
 				15A3D9A01682F7F9002FB0C5 /* cpSimpleMotor.c in Sources */,
+				25DA1B9618D4C3C500EBDDDA /* CreditScene.cpp in Sources */,
 				15A3D9A11682F7F9002FB0C5 /* cpSlideJoint.c in Sources */,
 				15A3D9A21682F7F9002FB0C5 /* cpArbiter.c in Sources */,
 				15A3D9A31682F7F9002FB0C5 /* cpArray.c in Sources */,

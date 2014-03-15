@@ -5,6 +5,7 @@
 #include "GameMainScene.h"
 #include "GameOverScene.h"
 #include "TutorialScene.h"
+#include "CreditScene.h"
 
 
 using namespace cocos2d;
@@ -21,6 +22,7 @@ public:
     
     void gameMainAction();
     void rankingAction();
+    void creditAction();
     CREATE_FUNC(Title);
 };
 
