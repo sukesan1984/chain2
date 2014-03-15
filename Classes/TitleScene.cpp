@@ -46,7 +46,8 @@ bool Title::init()
     
     CCSprite* titleBackground = CCSprite::createWithSpriteFrameName("title.png");
     titleBackground->setAnchorPoint(CCPoint(0.5, 0.5));
-    titleBackground->setScale(1.18);
+    titleBackground->setScale(visibleSize.width / 640);
+    titleBackground->setPosition(CCPoint(visibleSize.width / 2, visibleSize.height / 2));
     this->addChild(titleBackground, 1);
     
     CCMenuItemFont* gameMainFont = CCMenuItemFont::create("GAME START", this, menu_selector(Title::gameMainAction));

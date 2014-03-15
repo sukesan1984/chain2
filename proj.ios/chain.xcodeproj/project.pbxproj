@@ -171,8 +171,6 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		2547873A18BDC7D7009F258A /* FieldPanelsArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2547873818BDC7D7009F258A /* FieldPanelsArray.cpp */; };
 		2547874118CDFD4E009F258A /* TutorialScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2547873F18CDFD4E009F258A /* TutorialScene.cpp */; };
-		2547874618D1DCE5009F258A /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = 2547874418D1DCE5009F258A /* title.png */; };
-		2547874718D1DCE5009F258A /* title.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2547874518D1DCE5009F258A /* title.plist */; };
 		2591444E18C74DBB007712B8 /* Gauge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2591444C18C74DBB007712B8 /* Gauge.cpp */; };
 		2591445218C74F8A007712B8 /* Memori.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2591445018C74F8A007712B8 /* Memori.cpp */; };
 		2591445618CB04F8007712B8 /* TitleScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2591445418CB04F8007712B8 /* TitleScene.cpp */; };
@@ -189,6 +187,8 @@
 		25DA1B8B18D4B54800EBDDDA /* menu.wav in Resources */ = {isa = PBXBuildFile; fileRef = 25DA1B8A18D4B54800EBDDDA /* menu.wav */; };
 		25DA1B8E18D4B71900EBDDDA /* pon.wav in Resources */ = {isa = PBXBuildFile; fileRef = 25DA1B8C18D4B71900EBDDDA /* pon.wav */; };
 		25DA1B8F18D4B71900EBDDDA /* shupiin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 25DA1B8D18D4B71900EBDDDA /* shupiin.wav */; };
+		25DA1B9218D4BB4E00EBDDDA /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = 25DA1B9018D4BB4E00EBDDDA /* title.png */; };
+		25DA1B9318D4BB4E00EBDDDA /* title.plist in Resources */ = {isa = PBXBuildFile; fileRef = 25DA1B9118D4BB4E00EBDDDA /* title.plist */; };
 		25F39A8D18B8C1B4001A10BB /* GoogleAdMobAdsSdk in Resources */ = {isa = PBXBuildFile; fileRef = 25F39A8C18B8C1B4001A10BB /* GoogleAdMobAdsSdk */; };
 		25F39A8F18B8C1F7001A10BB /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F39A8E18B8C1F7001A10BB /* MessageUI.framework */; };
 		25F39A9118B8C1FF001A10BB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F39A9018B8C1FF001A10BB /* SystemConfiguration.framework */; };
@@ -625,8 +625,6 @@
 		2547873918BDC7D7009F258A /* FieldPanelsArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FieldPanelsArray.h; path = ../Classes/FieldPanelsArray.h; sourceTree = "<group>"; };
 		2547873F18CDFD4E009F258A /* TutorialScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TutorialScene.cpp; path = ../Classes/TutorialScene.cpp; sourceTree = "<group>"; };
 		2547874018CDFD4E009F258A /* TutorialScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TutorialScene.h; path = ../Classes/TutorialScene.h; sourceTree = "<group>"; };
-		2547874418D1DCE5009F258A /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = title.png; path = ../proj.ios/title.png; sourceTree = "<group>"; };
-		2547874518D1DCE5009F258A /* title.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = title.plist; path = ../proj.ios/title.plist; sourceTree = "<group>"; };
 		2547874918D4986B009F258A /* misaki_gothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = misaki_gothic.ttf; sourceTree = "<group>"; };
 		2591444C18C74DBB007712B8 /* Gauge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Gauge.cpp; path = ../Classes/Gauge.cpp; sourceTree = "<group>"; };
 		2591444D18C74DBB007712B8 /* Gauge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Gauge.h; path = ../Classes/Gauge.h; sourceTree = "<group>"; };
@@ -658,6 +656,8 @@
 		25DA1B8A18D4B54800EBDDDA /* menu.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = menu.wav; sourceTree = "<group>"; };
 		25DA1B8C18D4B71900EBDDDA /* pon.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pon.wav; sourceTree = "<group>"; };
 		25DA1B8D18D4B71900EBDDDA /* shupiin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shupiin.wav; sourceTree = "<group>"; };
+		25DA1B9018D4BB4E00EBDDDA /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
+		25DA1B9118D4BB4E00EBDDDA /* title.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = title.plist; sourceTree = "<group>"; };
 		25F39A8C18B8C1B4001A10BB /* GoogleAdMobAdsSdk */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GoogleAdMobAdsSdk; sourceTree = "<group>"; };
 		25F39A8E18B8C1F7001A10BB /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		25F39A9018B8C1FF001A10BB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -1882,13 +1882,13 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				25DA1B9018D4BB4E00EBDDDA /* title.png */,
+				25DA1B9118D4BB4E00EBDDDA /* title.plist */,
 				25DA1B8A18D4B54800EBDDDA /* menu.wav */,
 				25DA1B8C18D4B71900EBDDDA /* pon.wav */,
 				25DA1B8D18D4B71900EBDDDA /* shupiin.wav */,
 				2547874918D4986B009F258A /* misaki_gothic.ttf */,
 				2547874818D49853009F258A /* Font */,
-				2547874418D1DCE5009F258A /* title.png */,
-				2547874518D1DCE5009F258A /* title.plist */,
 				25F39AB118B8C882001A10BB /* panels.plist */,
 				25F39AB218B8C882001A10BB /* panels.png */,
 				1AFAF8B916D35E4900DB1158 /* CloseNormal.png */,
@@ -1977,6 +1977,7 @@
 			files = (
 				7855E0E1153FEF240059DD9A /* Default.png in Resources */,
 				25DA1B8E18D4B71900EBDDDA /* pon.wav in Resources */,
+				25DA1B9218D4BB4E00EBDDDA /* title.png in Resources */,
 				D4EF949A15BD2D8B00D803EB /* Icon-57.png in Resources */,
 				D4EF949C15BD2D8E00D803EB /* Icon-114.png in Resources */,
 				25F39A8D18B8C1B4001A10BB /* GoogleAdMobAdsSdk in Resources */,
@@ -1984,17 +1985,16 @@
 				D4EF949E15BD2D9600D803EB /* Icon-72.png in Resources */,
 				25DA1B8F18D4B71900EBDDDA /* shupiin.wav in Resources */,
 				D4EF94A015BD2D9800D803EB /* Icon-144.png in Resources */,
-				2547874718D1DCE5009F258A /* title.plist in Resources */,
 				D41A0AD1160F154A004552AE /* Default-568h@2x.png in Resources */,
 				D446FD6E16102124000ADA7B /* Default@2x.png in Resources */,
 				25DA1B8518D4A49D00EBDDDA /* misaki_gothic.ttf in Resources */,
 				15A3D9961682F7F9002FB0C5 /* CMakeLists.txt in Resources */,
+				25DA1B9318D4BB4E00EBDDDA /* title.plist in Resources */,
 				1AFAF8BC16D35E4900DB1158 /* CloseNormal.png in Resources */,
 				25DA1B8B18D4B54800EBDDDA /* menu.wav in Resources */,
 				1AFAF8BD16D35E4900DB1158 /* CloseSelected.png in Resources */,
 				25F39AB318B8C882001A10BB /* panels.plist in Resources */,
 				1AFAF8BE16D35E4900DB1158 /* HelloWorld.png in Resources */,
-				2547874618D1DCE5009F258A /* title.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
