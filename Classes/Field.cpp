@@ -9,6 +9,7 @@
 #include "Field.h"
 
 Field::Field(){
+    tapped = NULL;
 }
 
 Field::~Field(){
