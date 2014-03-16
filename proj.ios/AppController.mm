@@ -61,10 +61,16 @@ static AppDelegate s_sharedApplication;
     gai.dispatchInterval = 20;
     [[gai logger] setLogLevel:kGAILogLevelInfo]; // ログレベルを変えることができる
     [gai trackerWithTrackingId: @"UA-8468750-6"];
-       
-    obi = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self->viewController.view.frame.size.width, (self->viewController.view.frame.size.height - 480) / 2)];
-    obi.backgroundColor = [UIColor whiteColor];
-    [viewController.view addSubview: obi];
+    
+    if([self isIphone5] == true){
+        obitop = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self->viewController.view.frame.size.width, (self->viewController.view.frame.size.height - 480) / 2)];
+        obitop.backgroundColor = [UIColor whiteColor];
+        [viewController.view addSubview: obitop];
+        
+        obibottom = [[UIView alloc] initWithFrame:CGRectMake(0,  self.viewController.view.frame.size.height - (self->viewController.view.frame.size.height - 480) / 2, self->viewController.view.frame.size.width, (self->viewController.view.frame.size.height - 480 ) / 2)];
+        obibottom.backgroundColor = [UIColor whiteColor];
+            [viewController.view addSubview: obibottom];
+    }
     
     bannerView_ = [GADBannerView alloc];
     CGPoint origin = CGPointMake( self->viewController.view.frame.size.width / 2 - GAD_SIZE_320x50.width / 2, self->viewController.view.frame.size.height - GAD_SIZE_320x50.height);
@@ -83,6 +89,12 @@ static AppDelegate s_sharedApplication;
     cocos2d::CCApplication::sharedApplication()->run();
     
     return YES;
+}
+
+-(BOOL)isIphone5{
+    float scale = [UIScreen mainScreen].scale;
+    float height = self->viewController.view.frame.size.height;
+    return ((int)(scale * height) == 1136);
 }
 
 

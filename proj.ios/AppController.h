@@ -8,7 +8,11 @@
     UIWindow *window;
     RootViewController    *viewController;
     GADBannerView *bannerView_;
-    UIView* obi;
+    UIView* obitop;
+    UIView* obibottom;
+    BOOL isIphone5;
+    Rect getTopObi;
+    Rect getBottomObi;
 }
 
 @property(nonatomic, assign) RootViewController *viewController;

@@ -58,6 +58,11 @@ bool Credit::init()
     shinchoku->setColor(ccBLACK);
     this->addChild(shinchoku);
     
+    CCLabelTTF* misaki = CCLabelTTF::create("美咲フォント", "MisakiGothic", 20);
+    misaki->setPosition(CCPoint(visibleSize.width / 2, visibleSize.height * 3 / 4 - 110));
+    misaki->setColor(ccBLACK);
+    this->addChild(misaki);
+    
     CCMenuItemFont* titleFont = CCMenuItemFont::create("TO TITLE", this, menu_selector(Credit::titleAction));
     titleFont->setFontNameObj("MisakiGothic");
     CCMenuItemLabel *titleButton  =titleFont;
