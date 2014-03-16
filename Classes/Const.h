@@ -26,7 +26,7 @@ const int MAX_GAUGE_VALUE = 1000000;
 
 //ゲージ
 const int INITIAL_GAUGE_TIME = 15;
-const int INCREASE_BY_PANEL = 4000;
+const int INCREASE_BY_PANEL = 5500;
 
 //パネルの消えるスピード
 const int PANEL_REMOVE_TIME = 20000;
