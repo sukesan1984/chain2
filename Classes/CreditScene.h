@@ -5,6 +5,13 @@
 #include "TitleScene.h"
 
 
+// 美咲フォント（MISAKI_FONT）
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
+#define MISAKI_FONT "misaki_gothic.ttf"
+#else
+#define MISAKI_FONT "MisakiGothic"
+#endif
+
 using namespace cocos2d;
 
 class Credit : public cocos2d::CCLayer

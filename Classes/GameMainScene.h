@@ -10,7 +10,7 @@
 #include "PanelTime.h"
 // 美咲フォント（MISAKI_FONT）
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
-#define MISAKI_FONT "Font/misaki_gothic.ttf"
+#define MISAKI_FONT "misaki_gothic.ttf"
 #else
 #define MISAKI_FONT "MisakiGothic"
 #endif
@@ -18,9 +18,6 @@
 class GameMain : public cocos2d::CCLayer
 {
 private:
-    const float FIELD_START_AT_X = FIELD_OFFSET_X;
-    const float FIELD_START_AT_Y = FIELD_OFFSET_Y;
-    const CCPoint FIELD_START_AT = CCPoint(FIELD_START_AT_X, FIELD_START_AT_Y);
     Field* field;
     CCLabelTTF* hitNumLabel;
     CCLabelTTF* scoreLabel;

@@ -1,5 +1,11 @@
 APPNAME="chain"
 
+NDK_ROOT="/Users/takami.kosuke/Downloads/android-ndk-r9d"
+if [ $NDK_ROOT"aaa" != "aaa" ]; then
+echo "use global definition of NDK_ROOT: $NDK_ROOT"
+NDK_ROOT=$NDK_ROOT
+fi
+
 # options
 
 buildexternalsfromsource=

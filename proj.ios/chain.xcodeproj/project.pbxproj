@@ -629,6 +629,8 @@
 		2547874018CDFD4E009F258A /* TutorialScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TutorialScene.h; path = ../Classes/TutorialScene.h; sourceTree = "<group>"; };
 		2547874918D4986B009F258A /* misaki_gothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = misaki_gothic.ttf; sourceTree = "<group>"; };
 		254CF27B18D4D08500228B9F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = chain/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		257DE56918D7317400AAABAD /* CCGATracker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CCGATracker.cpp; path = ../Classes/CCGATracker.cpp; sourceTree = "<group>"; };
+		257DE56A18D7317400AAABAD /* CCGATracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCGATracker.h; path = ../Classes/CCGATracker.h; sourceTree = "<group>"; };
 		2591444C18C74DBB007712B8 /* Gauge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Gauge.cpp; path = ../Classes/Gauge.cpp; sourceTree = "<group>"; };
 		2591444D18C74DBB007712B8 /* Gauge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Gauge.h; path = ../Classes/Gauge.h; sourceTree = "<group>"; };
 		2591445018C74F8A007712B8 /* Memori.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Memori.cpp; path = ../Classes/Memori.cpp; sourceTree = "<group>"; };
@@ -639,6 +641,8 @@
 		2591445C18CB0BE2007712B8 /* GameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameOverScene.h; path = ../Classes/GameOverScene.h; sourceTree = "<group>"; };
 		2591445E18CB1655007712B8 /* Score.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Score.cpp; path = ../Classes/Score.cpp; sourceTree = "<group>"; };
 		2591445F18CB1656007712B8 /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Score.h; path = ../Classes/Score.h; sourceTree = "<group>"; };
+		25BA32D518D6D9A1001B4BB4 /* NativeCodeLauncher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NativeCodeLauncher.cpp; path = ../Classes/NativeCodeLauncher.cpp; sourceTree = "<group>"; };
+		25BA32D618D6D9A1001B4BB4 /* NativeCodeLauncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NativeCodeLauncher.h; path = ../Classes/NativeCodeLauncher.h; sourceTree = "<group>"; };
 		25C640BC18CC4FA800D4B1BE /* PanelTime.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PanelTime.cpp; path = ../Classes/PanelTime.cpp; sourceTree = "<group>"; };
 		25C640BD18CC4FA800D4B1BE /* PanelTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PanelTime.h; path = ../Classes/PanelTime.h; sourceTree = "<group>"; };
 		25C640BF18CC586600D4B1BE /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
@@ -1480,6 +1484,18 @@
 			path = lib;
 			sourceTree = "<group>";
 		};
+		257DE56818D7247800AAABAD /* android */ = {
+			isa = PBXGroup;
+			children = (
+				25BA32D518D6D9A1001B4BB4 /* NativeCodeLauncher.cpp */,
+				25BA32D618D6D9A1001B4BB4 /* NativeCodeLauncher.h */,
+				257DE56918D7317400AAABAD /* CCGATracker.cpp */,
+				257DE56A18D7317400AAABAD /* CCGATracker.h */,
+			);
+			name = android;
+			path = ../classes;
+			sourceTree = "<group>";
+		};
 		2591445718CB0BB3007712B8 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
@@ -1537,6 +1553,7 @@
 				15A3DA6B1682F8A6002FB0C5 /* CocosDenshion */,
 				15A3D9B31682F826002FB0C5 /* extensions */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				257DE56818D7247800AAABAD /* android */,
 				080E96DDFE201D6D7F000001 /* ios */,
 				1AB87036175E0A92005D39BF /* libwebsockets */,
 				19C28FACFE9D520D11CA2CBB /* Products */,

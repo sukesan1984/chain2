@@ -12,6 +12,7 @@
 using namespace CocosDenshion;
 
 FieldPanels::FieldPanels(){
+    moveState = false;
     removedPanels = CCArray::create();
     removedPanels->retain();
     table = new FieldPanelsArray();
@@ -28,7 +29,7 @@ PanelSprite* FieldPanels::createPanel(int indexX, int indexY){
     
     //float size = PANEL_SIZE * PANEL_SCALE;
     //float scale = PANEL_SCALE;
-    float size = FIELD_SIZE / WIDTH;
+    float size = FIELD_WIDTH_SIZE / FIELD_WIDTH_NUM;
     pSprite->setSize(size);
     pSprite->setAnchorPoint(CCPoint(0, 0));
     // position the sprite on the center of the screen
@@ -53,13 +54,13 @@ void FieldPanels::group(){
 
 void FieldPanels::initialize(CCNode* parentNode){
     this->parentNode = parentNode;
-    for(int i = 0; i < WIDTH; i++){
-        for(int j = 0; j < HEIGHT; j++){
+    for(int i = 0; i < FIELD_WIDTH_NUM; i++){
+        for(int j = 0; j < FIELD_HEIGHT_NUM; j++){
             int panelType = rand() % 6 + 1;
             PanelSprite* panel = PanelSprite::createWithPanelType(panelType);
-            int x = i * FIELD_SIZE / WIDTH;
-            int y = j * FIELD_SIZE / HEIGHT;
-            panel->setSize(FIELD_SIZE / WIDTH);
+            int x = i * FIELD_WIDTH_SIZE / FIELD_WIDTH_NUM;
+            int y = j * FIELD_WIDTH_SIZE / FIELD_HEIGHT_NUM;
+            panel->setSize(FIELD_WIDTH_SIZE / FIELD_WIDTH_NUM);
             panel->setPosition(CCPoint(x, y));
             panel->setAnchorPoint(CCPoint(0, 0));
             parentNode->addChild(panel);
@@ -78,7 +79,7 @@ void FieldPanels::restockPanel(CCNode* parentNode){
     
     CCARRAY_FOREACH(removedPanels, targetObject){
         removedPanel = (PanelSprite*) targetObject;
-        int y = HEIGHT;
+        int y = FIELD_HEIGHT_NUM;
         
         CCPoint index = removedPanel->getIndex();
         
@@ -227,7 +228,7 @@ void FieldPanels::setMoves(){
             CCPoint index = panel->getIndex();
             if(indexRemoved.x == index.x && indexRemoved.y < index.y){
                 moveState = true;
-                panel->setDeltaY(FIELD_SIZE / WIDTH);
+                panel->setDeltaY(FIELD_WIDTH_SIZE / FIELD_WIDTH_NUM);
             }
         }
     }

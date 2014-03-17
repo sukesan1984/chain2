@@ -9,6 +9,9 @@
 #include "CoverSprite.h"
 
 CoverSprite::CoverSprite(){
+    scale = 0;
+    isMoving = false;
+    isFull = false;
 }
 
 CoverSprite::~CoverSprite(){

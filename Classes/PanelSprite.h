@@ -17,11 +17,10 @@ using namespace cocos2d;
 
 class PanelSprite : public CCSprite
 {
-    const int SIZE = PANEL_SIZE;
     CoverSprite* cover;
-    bool willRemoved = false;
-    float deltaY = 0;
-    float velocity = 0;
+    bool willRemoved;
+    float deltaY;
+    float velocity;
     int panelType;
 public:
     PanelSprite();

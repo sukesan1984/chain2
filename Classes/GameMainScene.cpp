@@ -44,7 +44,7 @@ bool GameMain::init()
     PanelTime::instance().reset();
     this->field = new Field();
     field->initialize();
-    field->setPosition(FIELD_START_AT);
+    field->setPosition(CCPoint(FIELD_OFFSET_X, FIELD_OFFSET_Y));
     field->setAnchorPoint(CCPoint(0, 0));
     this->addChild(field);
     
@@ -60,7 +60,7 @@ bool GameMain::init()
     scoreLabel->setPosition(CCPoint(visibleSize.width,visibleSize.height - 20));
     this->addChild(scoreLabel);
     
-    levelLabel = CCLabelTTF::create(CCString::createWithFormat("LEVEL:%d", 1)->getCString(), "MisakiGothic", 20);
+    levelLabel = CCLabelTTF::create(CCString::createWithFormat("LEVEL:%d", 1)->getCString(), MISAKI_FONT, 20);
     levelLabel->setAnchorPoint(CCPoint(0.5, 1.0));
     levelLabel->setPosition(CCPoint(visibleSize.width / 2, visibleSize.height));
     levelLabel->setColor(ccBLACK);
@@ -110,7 +110,7 @@ void GameMain::ccTouchesBegan(CCSet* pTouches, CCEvent* event){
         touch = (CCTouch*) (*i);
         if(touch) {
             loc = touch->getLocation();
-            this->field->onTouchBegan(loc - FIELD_START_AT);
+            this->field->onTouchBegan(loc - CCPoint(FIELD_OFFSET_X, FIELD_OFFSET_Y));
         }
     }
 }
@@ -124,7 +124,7 @@ void GameMain::ccTouchesMoved(CCSet* pTouches, CCEvent* event){
         touch = (CCTouch*) (*i);
         if(touch) {
             loc = touch->getLocation();
-            this->field->onTouchMove(loc - FIELD_START_AT);
+            this->field->onTouchMove(loc - CCPoint(FIELD_OFFSET_X, FIELD_OFFSET_Y));
         }
     }
 }

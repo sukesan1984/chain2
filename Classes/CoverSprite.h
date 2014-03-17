@@ -17,11 +17,10 @@ using namespace cocos2d;
 
 class CoverSprite : public CCSprite
 {
-    const int SIZE = 32;
-    float scale = 0;
-    float isMoving = false;
+    float scale;
+    float isMoving;
     float size;
-    bool isFull = false;
+    bool isFull;
 public:
     CoverSprite();
     ~CoverSprite();

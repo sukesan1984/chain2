@@ -51,7 +51,7 @@ void Group::registerPanel(PanelSprite* panel){
     }
     
     this->setAddedNewone(true);
-    this->groupPanels->addObject((CCObject*) panel);
+    this->groupPanels->addObject((CCObject*)panel);
 }
 
 void Group::registerPanels(CCArray* gPanels){

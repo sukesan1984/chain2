@@ -42,33 +42,33 @@ bool GameOver::init()
     background->setPosition(ccp(0, 0));
     this->addChild(background);
     
-    CCLabelTTF* titleLabel  = CCLabelTTF::create("GAME OVER", "MisakiGothic", 40);
+    CCLabelTTF* titleLabel  = CCLabelTTF::create("GAME OVER", MISAKI_FONT, 40);
     titleLabel->setPosition(CCPoint(visibleSize.width / 2, visibleSize.height * 7 / 8));
     titleLabel->setColor(ccBLACK);
     this->addChild(titleLabel);
     
-    CCLabelTTF* score = CCLabelTTF::create(CCString::createWithFormat("SCORE: %d", Score::instance().getScore())->getCString(), "MisakiGothic", 20);
+    CCLabelTTF* score = CCLabelTTF::create(CCString::createWithFormat("SCORE: %d", Score::instance().getScore())->getCString(), MISAKI_FONT, 20);
     score->setPosition(CCPoint(visibleSize.width / 2, visibleSize.height * 3 / 4 - 30));
     score->setColor(ccBLACK);
     this->addChild(score);
    
-    CCLabelTTF* hit = CCLabelTTF::create(CCString::createWithFormat("MAX HITS: %d", Score::instance().getMaxHitNum())->getCString(), "MisakiGothic", 20);
+    CCLabelTTF* hit = CCLabelTTF::create(CCString::createWithFormat("MAX HITS: %d", Score::instance().getMaxHitNum())->getCString(), MISAKI_FONT, 20);
     hit->setColor(ccBLACK);
     hit->setPosition(CCPoint(visibleSize.width / 2, visibleSize.height * 3 / 4 - 60));
     this->addChild(hit);
     
     CCMenuItemFont* gameMainFont = CCMenuItemFont::create("RETRY", this, menu_selector(GameOver::gameMainAction));
-    gameMainFont->setFontNameObj("MisakiGothic");
+    gameMainFont->setFontNameObj(MISAKI_FONT);
     CCMenuItemLabel *gameMainButton = gameMainFont;
     gameMainButton->setColor(ccBLACK);
     
     CCMenuItemFont* rankingFont = CCMenuItemFont::create("RANKING", this, menu_selector(GameOver::rankingAction));
-    rankingFont->setFontNameObj("MisakiGothic");
+    rankingFont->setFontNameObj(MISAKI_FONT);
     CCMenuItemLabel *rankingButton  = rankingFont;
     rankingButton->setColor(ccBLACK);
     
     CCMenuItemFont* topFont = CCMenuItemFont::create("TO TITLE", this, menu_selector(GameOver::topAction));
-    topFont->setFontNameObj("MisakiGothic");
+    topFont->setFontNameObj(MISAKI_FONT);
     CCMenuItemLabel *topButton  = topFont;
     topButton->setColor(ccBLACK);
     

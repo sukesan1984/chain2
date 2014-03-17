@@ -101,22 +101,35 @@ void FieldPanelsArray::groupFromCurrentGroups(Group* map[FIELD_WIDTH_NUM][FIELD_
     Group* group = NULL;
     CCObject* targetObject = NULL;
     CCARRAY_FOREACH(this->getGroups(), targetObject){
-        group = (Group*) targetObject;
+        group = dynamic_cast<Group*>(targetObject);
+        CCAssert(group != NULL, "group must not be null");
         this->group(group, map);
     }
 }
 
+// A -> B
+// (A*) B -> アップキャスト
+// (B*) A -> ダウンキャスト
+
+//CCObject(派生元) -> CCSprite -> PanelSprite(派生先)
+// PanelSpriteのインスタンスをCCObjectにキャストするのをアップキャスト
+// CCObjectのインスタンスをPanelSpriteにキャストするのをダウンキャスト
+
 void FieldPanelsArray::group(Group* group, Group* map[FIELD_WIDTH_NUM][FIELD_HEIGHT_NUM]){
+    //this->ccarray_test(group, map, group->getGroupPanels());
     PanelSprite* panel = NULL;
     CCObject* targetObject = NULL;
-    CCARRAY_FOREACH(group->getGroupPanels(), targetObject){
-        panel = (PanelSprite*) targetObject;
+    int i;
+    for(i = 0; i < group->getGroupPanels()->count(); i++){
+        //panel = dynamic_cast<PanelSprite*>(targetObject);
+        targetObject = group->getGroupPanels()->objectAtIndex(i);
+        panel = dynamic_cast<PanelSprite*>(targetObject);
         CCAssert(panel != NULL, "panel must not be null");
         CCPoint index = panel->getIndex();
         int x = (int) index.x;
         int y = (int) index.y;
         map[x][y] = group;
-        this->group(x, y, map);
+      this->group(x, y, map);
     }
 }
 
@@ -127,7 +140,7 @@ Group* FieldPanelsArray::group(int x, int y, Group* map[FIELD_WIDTH_NUM][FIELD_H
     //再帰的に見るので、どこかにくっついているなら、selfGroupは既に何らかのグループに所属している
     if(selfGroup == NULL){
         selfGroup = Group::create();
-        groups->addObject((CCObject*) selfGroup);
+        groups->addObject(selfGroup);
         selfGroup->registerPanel(selfPanel);
     }
     map[x][y] = selfGroup;
@@ -309,4 +322,24 @@ int FieldPanelsArray::calcScore(){
 void FieldPanelsArray::setGauge(Gauge* gauge){
     this->gauge = gauge;
     this->gauge->retain();
+}
+
+void FieldPanelsArray::ccarray_test(Group* group, Group* map[FIELD_WIDTH_NUM][FIELD_HEIGHT_NUM], cocos2d::CCArray *__array__){
+    cocos2d::CCObject *__object__;
+    PanelSprite* panel = NULL;
+    CCObject* targetObject = NULL;
+    if ((__array__) && (__array__)->data->num > 0) {
+       for(CCObject** __arr__ = (__array__)->data->arr, **__end__ = (__array__)->data->arr + (__array__)->data->num-1; __arr__ <= __end__ && (((__object__) = *__arr__) != NULL/* || true*/); __arr__++)
+       {
+           panel = dynamic_cast<PanelSprite*>(targetObject);
+           // 2014/3/18
+           //ここでnullになっていてクラッシュする。
+           CCAssert(panel != NULL, "panel must not be null");
+           CCPoint index = panel->getIndex();
+           int x = (int) index.x;
+           int y = (int) index.y;
+           map[x][y] = group;
+           this->group(x, y, map);
+       }
+    }
 }

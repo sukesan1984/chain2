@@ -18,11 +18,8 @@
 using namespace cocos2d;
 
 class FieldPanels : public CCArray{
-    const int WIDTH = FIELD_WIDTH_NUM;
-    const int HEIGHT = FIELD_WIDTH_NUM;
-    const int FIELD_SIZE = FIELD_WIDTH_SIZE;
     CCArray* removedPanels;
-    bool moveState = false;
+    bool moveState;
     PanelSprite* createPanel(int indexX, int indexY);
     CCNode* parentNode;
     PanelSprite* tapped;

@@ -51,18 +51,18 @@ bool Title::init()
     this->addChild(titleBackground, 1);
     
     CCMenuItemFont* gameMainFont = CCMenuItemFont::create("GAME START", this, menu_selector(Title::gameMainAction));
-    gameMainFont->setFontNameObj("MisakiGothic");
+    gameMainFont->setFontNameObj(MISAKI_FONT);
     CCMenuItemLabel *gameMainButton = gameMainFont;
     gameMainButton->setColor(ccBLACK);
     
     CCMenuItemFont* rankingFont = CCMenuItemFont::create("RANKING", this, menu_selector(Title::rankingAction));
-    rankingFont->setFontNameObj("MisakiGothic");
+    rankingFont->setFontNameObj(MISAKI_FONT);
     CCMenuItemLabel *rankingButton  =rankingFont;
     rankingButton->setColor(ccBLACK);
     //CCMenuItemLabel *gamecenterButton  = CCMenuItemFont::create("GameCenterLogin", this, menu_selector(Title::login));
     
     CCMenuItemFont* creditFont = CCMenuItemFont::create("CREDIT", this, menu_selector(Title::creditAction));
-    creditFont->setFontNameObj("MisakiGothic");
+    creditFont->setFontNameObj(MISAKI_FONT);
     CCMenuItemLabel *creditButton  =creditFont;
     creditButton->setColor(ccBLACK);
     

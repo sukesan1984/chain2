@@ -14,6 +14,9 @@
 //}
 
 PanelSprite::PanelSprite(){
+    willRemoved  = false;
+    deltaY = 0;
+    velocity = 0;
 }
 
 PanelSprite::~PanelSprite(){
@@ -68,7 +71,7 @@ PanelSprite* PanelSprite::createWithPanelType(int panelType){
 //}
 
 void PanelSprite::setSize(float size){
-    this->setScale(size / SIZE);
+    this->setScale(size / PANEL_SIZE);
 }
 
 
@@ -127,6 +130,8 @@ void PanelSprite::update(){
 }
 
 CCPoint PanelSprite::getIndex(){
+    this->getPanelType();
+    this->getTexture();
     CCPoint panelPos = this->getPosition();
     float posX = panelPos.x;
     float posY = panelPos.y;

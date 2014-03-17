@@ -42,7 +42,7 @@ bool Tutorial::init()
     background->setPosition(ccp(0, 0));
     this->addChild(background);
     
-    CCLabelTTF* title = CCLabelTTF::create("遊び方", "MisakiGothic", 40);
+    CCLabelTTF* title = CCLabelTTF::create("遊び方", MISAKI_FONT, 40);
     title->setAnchorPoint(ccp(0.5, 1.0));
     title->setPosition(ccp(visibleSize.width / 2, visibleSize.height -20));
     title->setColor(ccBLACK);
@@ -57,7 +57,7 @@ bool Tutorial::init()
     this->addChild(tutorial);
     
     CCMenuItemFont* gameMainFont = CCMenuItemFont::create("START", this, menu_selector(GameOver::gameMainAction));
-    gameMainFont->setFontNameObj("MisakiGothic");
+    gameMainFont->setFontNameObj(MISAKI_FONT);
     CCMenuItemLabel *gameMainButton = gameMainFont;
     gameMainButton->setColor(ccBLACK);
     

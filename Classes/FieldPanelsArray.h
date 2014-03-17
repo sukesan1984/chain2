@@ -65,6 +65,8 @@ public:
     int calcScore();
     void setGauge(Gauge* gauge);
     
+    void ccarray_test(Group* group, Group* map[FIELD_WIDTH_NUM][FIELD_HEIGHT_NUM], CCArray* array);
+    
     FieldPanelsArray();
     ~FieldPanelsArray();
 };

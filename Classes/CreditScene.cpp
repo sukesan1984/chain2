@@ -43,28 +43,28 @@ bool Credit::init()
     this->addChild(background);
     
        
-    CCLabelTTF* specialThanks = CCLabelTTF::create("SPECIAL THANKS", "MisakiGothic", 30);
+    CCLabelTTF* specialThanks = CCLabelTTF::create("SPECIAL THANKS", MISAKI_FONT, 30);
     specialThanks->setPosition(CCPoint(visibleSize.width / 2, visibleSize.height * 3 / 4));
     specialThanks->setColor(ccBLACK);
     this->addChild(specialThanks);
     
-    CCLabelTTF* maou = CCLabelTTF::create("魔王魂", "MisakiGothic", 20);
+    CCLabelTTF* maou = CCLabelTTF::create("魔王魂", MISAKI_FONT, 20);
     maou->setPosition(CCPoint(visibleSize.width / 2, visibleSize.height * 3 / 4 - 50));
     maou->setColor(ccBLACK);
     this->addChild(maou);
     
-    CCLabelTTF* shinchoku = CCLabelTTF::create("進捗確認会", "MisakiGothic", 20);
+    CCLabelTTF* shinchoku = CCLabelTTF::create("進捗確認会", MISAKI_FONT, 20);
     shinchoku->setPosition(CCPoint(visibleSize.width / 2, visibleSize.height * 3 / 4 - 80));
     shinchoku->setColor(ccBLACK);
     this->addChild(shinchoku);
     
-    CCLabelTTF* misaki = CCLabelTTF::create("美咲フォント", "MisakiGothic", 20);
+    CCLabelTTF* misaki = CCLabelTTF::create("美咲フォント", MISAKI_FONT, 20);
     misaki->setPosition(CCPoint(visibleSize.width / 2, visibleSize.height * 3 / 4 - 110));
     misaki->setColor(ccBLACK);
     this->addChild(misaki);
     
     CCMenuItemFont* titleFont = CCMenuItemFont::create("TO TITLE", this, menu_selector(Credit::titleAction));
-    titleFont->setFontNameObj("MisakiGothic");
+    titleFont->setFontNameObj(MISAKI_FONT);
     CCMenuItemLabel *titleButton  =titleFont;
     titleButton->setColor(ccBLACK);
     

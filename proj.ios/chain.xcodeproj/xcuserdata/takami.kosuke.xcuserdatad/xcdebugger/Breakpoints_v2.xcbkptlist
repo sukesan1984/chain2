@@ -247,11 +247,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../classes/FieldPanels.cpp"
-            timestampString = "416593886.756319"
+            timestampString = "416753497.923714"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "181"
-            endingLineNumber = "181">
+            startingLineNumber = "182"
+            endingLineNumber = "182">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -291,11 +291,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../classes/FieldPanels.cpp"
-            timestampString = "416593886.756319"
+            timestampString = "416753497.923714"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "182"
-            endingLineNumber = "182"
+            startingLineNumber = "183"
+            endingLineNumber = "183"
             landmarkName = "FieldPanels::movePanels()"
             landmarkType = "5">
             <Locations>
@@ -337,11 +337,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../classes/FieldPanels.cpp"
-            timestampString = "416593886.756319"
+            timestampString = "416753497.923714"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111">
+            startingLineNumber = "112"
+            endingLineNumber = "112">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -609,11 +609,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../classes/PanelSprite.cpp"
-            timestampString = "414860825.123136"
+            timestampString = "416753032.253073"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
             landmarkName = "PanelSprite::remove()"
             landmarkType = "5">
          </BreakpointContent>
@@ -769,11 +769,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../Classes/FieldPanelsArray.cpp"
-            timestampString = "416593886.756319"
+            timestampString = "416766434.806617"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "128"
-            endingLineNumber = "128"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
             landmarkName = "FieldPanelsArray::group(int x, int y, Group* map[FIELD_WIDTH_NUM][FIELD_HEIGHT_NUM])"
             landmarkType = "5">
          </BreakpointContent>
@@ -785,11 +785,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../Classes/FieldPanelsArray.cpp"
-            timestampString = "416593976.678834"
+            timestampString = "416766434.806617"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "262"
-            endingLineNumber = "262">
+            startingLineNumber = "275"
+            endingLineNumber = "275">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -799,11 +799,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../Classes/FieldPanelsArray.cpp"
-            timestampString = "416593886.756319"
+            timestampString = "416766434.806617"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "205"
-            endingLineNumber = "205"
+            startingLineNumber = "218"
+            endingLineNumber = "218"
             landmarkName = "FieldPanelsArray::getRemovedPanels()"
             landmarkType = "5">
          </BreakpointContent>
@@ -815,11 +815,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../Classes/FieldPanelsArray.cpp"
-            timestampString = "416593976.678834"
+            timestampString = "416766434.806617"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "232"
-            endingLineNumber = "232"
+            startingLineNumber = "245"
+            endingLineNumber = "245"
             landmarkName = "FieldPanelsArray::getRemovedPanels()"
             landmarkType = "5">
          </BreakpointContent>
@@ -831,11 +831,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../Classes/FieldPanelsArray.cpp"
-            timestampString = "416593886.756319"
+            timestampString = "416766434.806617"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "195"
-            endingLineNumber = "195"
+            startingLineNumber = "208"
+            endingLineNumber = "208"
             landmarkName = "FieldPanelsArray::getRemovedPanels()"
             landmarkType = "5">
          </BreakpointContent>
@@ -847,11 +847,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../Classes/FieldPanelsArray.cpp"
-            timestampString = "416593886.756319"
+            timestampString = "416766434.806617"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "202"
-            endingLineNumber = "202"
+            startingLineNumber = "215"
+            endingLineNumber = "215"
             landmarkName = "FieldPanelsArray::getRemovedPanels()"
             landmarkType = "5">
          </BreakpointContent>
@@ -879,11 +879,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../Classes/FieldPanelsArray.cpp"
-            timestampString = "416593976.678834"
+            timestampString = "416766434.806617"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "294"
-            endingLineNumber = "294">
+            startingLineNumber = "307"
+            endingLineNumber = "307">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -969,11 +969,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../Classes/FieldPanelsArray.cpp"
-            timestampString = "416593976.678834"
+            timestampString = "416766434.806617"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "217"
-            endingLineNumber = "217"
+            startingLineNumber = "230"
+            endingLineNumber = "230"
             landmarkName = "FieldPanelsArray::getRemovedPanels()"
             landmarkType = "5">
          </BreakpointContent>
@@ -985,23 +985,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../classes/FieldPanels.cpp"
-            timestampString = "416593886.756319"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "FieldPanels::group()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../classes/FieldPanels.cpp"
-            timestampString = "416593886.756319"
+            timestampString = "416753497.923714"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "49"
@@ -1017,7 +1001,39 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../classes/FieldPanels.cpp"
-            timestampString = "416593886.756319"
+            timestampString = "416766434.806617"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "FieldPanels::group()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../classes/FieldPanels.cpp"
+            timestampString = "416753497.923714"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "230"
+            endingLineNumber = "230"
+            landmarkName = "FieldPanels::setMoves()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../classes/FieldPanels.cpp"
+            timestampString = "416753497.923714"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "229"
@@ -1033,27 +1049,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../classes/FieldPanels.cpp"
-            timestampString = "416593886.756319"
+            timestampString = "416753497.923714"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "228"
-            endingLineNumber = "228"
-            landmarkName = "FieldPanels::setMoves()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../classes/FieldPanels.cpp"
-            timestampString = "416593886.756319"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "221"
-            endingLineNumber = "221"
+            startingLineNumber = "222"
+            endingLineNumber = "222"
             landmarkName = "FieldPanels::setMoves()"
             landmarkType = "5">
          </BreakpointContent>
@@ -1134,6 +1134,22 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "4"
             endingLineNumber = "4">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../classes/CoverSprite.cpp"
+            timestampString = "416736002.622538"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "CoverSprite::CoverSprite()"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
