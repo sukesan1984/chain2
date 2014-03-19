@@ -631,6 +631,8 @@
 		254CF27B18D4D08500228B9F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = chain/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		257DE56918D7317400AAABAD /* CCGATracker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CCGATracker.cpp; path = ../Classes/CCGATracker.cpp; sourceTree = "<group>"; };
 		257DE56A18D7317400AAABAD /* CCGATracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCGATracker.h; path = ../Classes/CCGATracker.h; sourceTree = "<group>"; };
+		257DE56E18D89A9100AAABAD /* CCGATrackerJni.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = CCGATrackerJni.cpp; path = ../Classes/CCGATrackerJni.cpp; sourceTree = "<group>"; };
+		257DE56F18D89A9100AAABAD /* CCGATrackerJni.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CCGATrackerJni.h; path = ../Classes/CCGATrackerJni.h; sourceTree = "<group>"; };
 		2591444C18C74DBB007712B8 /* Gauge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Gauge.cpp; path = ../Classes/Gauge.cpp; sourceTree = "<group>"; };
 		2591444D18C74DBB007712B8 /* Gauge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Gauge.h; path = ../Classes/Gauge.h; sourceTree = "<group>"; };
 		2591445018C74F8A007712B8 /* Memori.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Memori.cpp; path = ../Classes/Memori.cpp; sourceTree = "<group>"; };
@@ -1491,6 +1493,8 @@
 				25BA32D618D6D9A1001B4BB4 /* NativeCodeLauncher.h */,
 				257DE56918D7317400AAABAD /* CCGATracker.cpp */,
 				257DE56A18D7317400AAABAD /* CCGATracker.h */,
+				257DE56E18D89A9100AAABAD /* CCGATrackerJni.cpp */,
+				257DE56F18D89A9100AAABAD /* CCGATrackerJni.h */,
 			);
 			name = android;
 			path = ../classes;

@@ -1,2 +1,5 @@
+int bool ga_autoActivityTracking 0x7f040000
+int bool ga_reportUncaughtExceptions 0x7f040001
 int drawable icon 0x7f020000
-int string app_name 0x7f030000
+int string app_name 0x7f030001
+int string ga_trackingId 0x7f030000

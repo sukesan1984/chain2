@@ -6,7 +6,7 @@ obj/local/armeabi/objs/cocos_extension_static/CocoStudio/Armature/utils/CCDataRe
  /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../cocos2dx/include/ccConfig.h \
  /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../cocos2dx/platform/CCPlatformConfig.h \
  /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../cocos2dx/platform/android/CCPlatformDefine.h \
- /Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-9/arch-arm/usr/include/android/log.h \
+ /Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/android/log.h \
  /Users/takami.kosuke/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.6/include/cctype \
  /Users/takami.kosuke/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.6/include/climits \
  /Users/takami.kosuke/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.6/include/cstdio \
@@ -23,7 +23,7 @@ obj/local/armeabi/objs/cocos_extension_static/CocoStudio/Armature/utils/CCDataRe
  /Users/takami.kosuke/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.6/include/string \
  /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../cocos2dx/cocoa/CCGeometry.h \
  /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../cocos2dx/cocoa/CCObject.h \
- /Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-9/arch-arm/usr/include/math.h \
+ /Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/math.h \
  /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../cocos2dx/actions/CCActionInterval.h \
  /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../cocos2dx/base_nodes/CCNode.h \
  /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../cocos2dx/include/ccMacros.h \
@@ -35,16 +35,16 @@ obj/local/armeabi/objs/cocos_extension_static/CocoStudio/Armature/utils/CCDataRe
  /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../cocos2dx/cocoa/CCArray.h \
  /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../cocos2dx/support/data_support/ccCArray.h \
  /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../cocos2dx/platform/android/CCGL.h \
- /Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-9/arch-arm/usr/include/GLES2/gl2platform.h \
- /Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-9/arch-arm/usr/include/KHR/khrplatform.h \
- /Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-9/arch-arm/usr/include/GLES2/gl2.h \
- /Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-9/arch-arm/usr/include/GLES2/gl2ext.h \
+ /Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/GLES2/gl2platform.h \
+ /Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/KHR/khrplatform.h \
+ /Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/GLES2/gl2.h \
+ /Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/GLES2/gl2ext.h \
  /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../cocos2dx/shaders/ccGLStateCache.h \
  /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../cocos2dx/shaders/CCGLProgram.h \
  /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../cocos2dx/kazmath/include/kazmath/kazmath.h \
  /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../cocos2dx/kazmath/include/kazmath/vec2.h \
  /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../cocos2dx/kazmath/include/kazmath/vec3.h \
- /Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-9/arch-arm/usr/include/assert.h \
+ /Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/assert.h \
  /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../cocos2dx/kazmath/include/kazmath/mat3.h \
  /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../cocos2dx/kazmath/include/kazmath/utility.h \
  /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../cocos2dx/kazmath/include/kazmath/mat4.h \
@@ -70,7 +70,7 @@ obj/local/armeabi/objs/cocos_extension_static/CocoStudio/Armature/utils/CCDataRe
  /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../cocos2dx/sprite_nodes/CCAnimation.h \
  /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../cocos2dx/cocoa/CCDictionary.h \
  /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../cocos2dx/support/data_support/uthash.h \
- /Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-9/arch-arm/usr/include/inttypes.h \
+ /Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/inttypes.h \
  /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../cocos2dx/cocoa/CCArray.h \
  /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../cocos2dx/cocoa/CCString.h \
  /Users/takami.kosuke/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.6/include/functional \
@@ -235,19 +235,19 @@ obj/local/armeabi/objs/cocos_extension_static/CocoStudio/Armature/utils/CCDataRe
  /Users/takami.kosuke/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.6/include/cassert \
  /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../extensions/CocoStudio/Armature/utils/../../Json/rapidjson/internal/pow10.h \
  /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../extensions/CocoStudio/Armature/utils/../../Json/rapidjson/internal/stack.h \
- /Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-9/arch-arm/usr/include/setjmp.h \
- /Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-9/arch-arm/usr/include/machine/setjmp.h \
+ /Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/setjmp.h \
+ /Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/machine/setjmp.h \
  /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../extensions/CocoStudio/Armature/utils/../../Json/rapidjson/internal/strfunc.h \
  /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../extensions/CocoStudio/Armature/utils/../../Json/rapidjson/document.h \
  /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../extensions/CocoStudio/Armature/utils/CCArmatureDataManager.h \
  /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../extensions/CocoStudio/Armature/utils/CCTransformHelp.h \
  /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../extensions/CocoStudio/Armature/utils/CCUtilMath.h \
  /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../extensions/CCBReader/CCData.h \
- /Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-9/arch-arm/usr/include/errno.h \
- /Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-9/arch-arm/usr/include/linux/errno.h \
- /Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-9/arch-arm/usr/include/asm/errno.h \
- /Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-9/arch-arm/usr/include/asm-generic/errno.h \
- /Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-9/arch-arm/usr/include/asm-generic/errno-base.h \
+ /Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/errno.h \
+ /Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/linux/errno.h \
+ /Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/asm/errno.h \
+ /Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/asm-generic/errno.h \
+ /Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/asm-generic/errno-base.h \
  /Users/takami.kosuke/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.6/include/stack
 
 /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../cocos2dx/support/tinyxml2/tinyxml2.h:
@@ -262,7 +262,7 @@ obj/local/armeabi/objs/cocos_extension_static/CocoStudio/Armature/utils/CCDataRe
 
 /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../cocos2dx/platform/android/CCPlatformDefine.h:
 
-/Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-9/arch-arm/usr/include/android/log.h:
+/Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/android/log.h:
 
 /Users/takami.kosuke/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.6/include/cctype:
 
@@ -296,7 +296,7 @@ obj/local/armeabi/objs/cocos_extension_static/CocoStudio/Armature/utils/CCDataRe
 
 /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../cocos2dx/cocoa/CCObject.h:
 
-/Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-9/arch-arm/usr/include/math.h:
+/Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/math.h:
 
 /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../cocos2dx/actions/CCActionInterval.h:
 
@@ -320,13 +320,13 @@ obj/local/armeabi/objs/cocos_extension_static/CocoStudio/Armature/utils/CCDataRe
 
 /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../cocos2dx/platform/android/CCGL.h:
 
-/Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-9/arch-arm/usr/include/GLES2/gl2platform.h:
+/Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/GLES2/gl2platform.h:
 
-/Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-9/arch-arm/usr/include/KHR/khrplatform.h:
+/Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/KHR/khrplatform.h:
 
-/Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-9/arch-arm/usr/include/GLES2/gl2.h:
+/Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/GLES2/gl2.h:
 
-/Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-9/arch-arm/usr/include/GLES2/gl2ext.h:
+/Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/GLES2/gl2ext.h:
 
 /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../cocos2dx/shaders/ccGLStateCache.h:
 
@@ -338,7 +338,7 @@ obj/local/armeabi/objs/cocos_extension_static/CocoStudio/Armature/utils/CCDataRe
 
 /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../cocos2dx/kazmath/include/kazmath/vec3.h:
 
-/Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-9/arch-arm/usr/include/assert.h:
+/Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/assert.h:
 
 /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../cocos2dx/kazmath/include/kazmath/mat3.h:
 
@@ -390,7 +390,7 @@ obj/local/armeabi/objs/cocos_extension_static/CocoStudio/Armature/utils/CCDataRe
 
 /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../cocos2dx/support/data_support/uthash.h:
 
-/Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-9/arch-arm/usr/include/inttypes.h:
+/Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/inttypes.h:
 
 /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../cocos2dx/cocoa/CCArray.h:
 
@@ -720,9 +720,9 @@ obj/local/armeabi/objs/cocos_extension_static/CocoStudio/Armature/utils/CCDataRe
 
 /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../extensions/CocoStudio/Armature/utils/../../Json/rapidjson/internal/stack.h:
 
-/Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-9/arch-arm/usr/include/setjmp.h:
+/Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/setjmp.h:
 
-/Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-9/arch-arm/usr/include/machine/setjmp.h:
+/Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/machine/setjmp.h:
 
 /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../extensions/CocoStudio/Armature/utils/../../Json/rapidjson/internal/strfunc.h:
 
@@ -736,14 +736,14 @@ obj/local/armeabi/objs/cocos_extension_static/CocoStudio/Armature/utils/CCDataRe
 
 /Users/takami.kosuke/work/develop/cocos2d-x/cocos2d-x-2.2.2/projects/chain2/proj.android/../../../extensions/CCBReader/CCData.h:
 
-/Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-9/arch-arm/usr/include/errno.h:
+/Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/errno.h:
 
-/Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-9/arch-arm/usr/include/linux/errno.h:
+/Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/linux/errno.h:
 
-/Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-9/arch-arm/usr/include/asm/errno.h:
+/Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/asm/errno.h:
 
-/Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-9/arch-arm/usr/include/asm-generic/errno.h:
+/Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/asm-generic/errno.h:
 
-/Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-9/arch-arm/usr/include/asm-generic/errno-base.h:
+/Users/takami.kosuke/Downloads/android-ndk-r9d/platforms/android-8/arch-arm/usr/include/asm-generic/errno-base.h:
 
 /Users/takami.kosuke/Downloads/android-ndk-r9d/sources/cxx-stl/gnu-libstdc++/4.6/include/stack:
