@@ -7,6 +7,7 @@
 //
 
 #include "NativeCodeLauncher.h"
+#include "NativeCodeLauncherJni.h"
 namespace Cocos2dExt
 {
 	// Androidでは実装しない
@@ -16,10 +17,11 @@ namespace Cocos2dExt
     }
     void NativeCodeLauncher::openRanking()
     {
-        
+        showRankingJNI();
     }
     void NativeCodeLauncher::postHighScore(int kind,int score)
     {
+        postHighScoreJNI(kind, score);
         
     }
 }

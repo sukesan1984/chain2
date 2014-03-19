@@ -20,6 +20,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Ranking START -->
+        <meta-data android:name="gamefeat_ranking_api_key" android:value="ac1b85fcfa6b1ef30fffb80e8ee8a87c50ee7ddd548d728efe083de5ece0d9cc" />
+        <activity
+            android:name="jp.basicinc.gamefeat.ranking.android.sdk.activity.GFRankingActivity" 
+            android:label="Ranking"
+            android:configChanges="orientation|keyboardHidden">
+        </activity>
+        <!-- Ranking END -->
     </application>
     <supports-screens android:largeScreens="true"
                       android:smallScreens="true"
